@@ -88,8 +88,8 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/steve-johnson-SZvTWuTR1XM-unsplash.jpg
-accent_color:          rgb(240,240,240)
+accent_image:          assets/img/steve-johnson-SZvTWuTR1XM-unsplash.jpg
+accent_color:          rgb(245,245,245)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
@@ -209,7 +209,7 @@ hydejack:
 
   # Set to `true` if you don't intend on changing the accent color on a per-page basis. 
   # This will increase site build speed!
-  no_page_style:       true
+  no_page_style:       false
 
   # Code blocks and tables "break" the layout by spanning the full available width.
   # Set this to true if you want them to be the same width as other content.
