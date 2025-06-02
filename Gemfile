@@ -8,8 +8,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.2"
-
+gem "jekyll", "4.3.2"
+gem "csv"
+gem "base64"
+gem "logger"
 gem "jekyll-remote-theme"
 
 # If you are part of the ["Customers" team](https://github.com/orgs/hydecorp/teams/pro-customers), 
