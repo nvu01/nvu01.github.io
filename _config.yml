@@ -361,11 +361,10 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-      - https://github.com/nvu01
+social:
+  name:                Ngan Vu
+  links:
+    - https://github.com/nvu01
 
 
 # Plugin Configs
