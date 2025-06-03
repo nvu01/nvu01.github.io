@@ -8,7 +8,7 @@ redirect_from:
   - /download/
 ---
 
-# About
+# About Me
 
 1. this list will be replaced by the toc
 {:toc .large-only}
@@ -20,7 +20,7 @@ redirect_from:
 I’m a **curious and driven data analyst** who thrives on tackling challenges and digging beneath the surface of data to uncover meaningful patterns. While my technical foundation lies in Python, SQL, and data visualization tools like Tableau and Power BI, what truly sets me apart is **how I think** — critically, creatively, and always with an eye toward improvement.
 {:.lead}
 
-In just one year, I completed a full **4-year bachelor’s degree in Data Analytics** from [Western Governors University](https://www.wgu.edu/). That pace wasn’t just about ambition — it was about mindset. I learn quickly, adapt to complexity, and push through ambiguity with persistence and clarity. Whether I’m debugging a machine learning pipeline or distilling a story for business stakeholders, I bring focus, clarity, and energy to everything I do.
+In just one year, I completed a full **4-year bachelor’s degree in Data Analytics** from [Western Governors University](https://www.wgu.edu/). That pace wasn’t just about ambition — it was about mindset. I learn quickly, adapt to complexity, and push through ambiguity with persistence and clarity. Whether I’m debugging a machine learning pipeline or distilling a story for business stakeholders, I bring focus, and energy to everything I do.
 {:.lead}
 
 
@@ -33,21 +33,25 @@ In just one year, I completed a full **4-year bachelor’s degree in Data Analyt
 
 ## 🛠️ Skills & Tools
 
-**Languages & Libraries**: SQL, Python (pandas, NumPy, scikit-learn, statsmodels, Seaborn, Matplotlib), R, VBA, HTML
+**Languages & Libraries**: SQL, Python (pandas, NumPy, scikit-learn, statsmodels, Seaborn, Matplotlib), R, VBA, Power Query M, HTML  
+
 **Tools**: PostgreSQL, MySQL, Tableau, Power BI, Excel, Jupyter Notebook, VS Code, PyCharm  
-**Certifications**:  
-- CompTIA Data+ (Oct 2024)  
-- AWS Cloud Practitioner (July 2024)  
-- Udacity ML DevOps (Mar 2025)
+
+**Certifications**:
+- CompTIA Project+ (December 2024)
+- CompTIA Data+ (October 2024)
+- AWS Certified Cloud Practitioner (July 2024)
+
 
 ## 🌱 Where I'm Headed
 
-Every project is an opportunity to grow. I’m currently exploring:
+Every project is an opportunity to grow. My current development goals include:
 
 - Cloud-based data engineering workflows
-- Experiment tracking and model governance
-- More advanced statistical modeling and causal inference
-- Deeper integration of data storytelling into business decisions
+- Expanding my ability to translate data into business insights and decision-making support
+- Gaining experience in applied analytics across domains like marketing, finance, healthcare, and supply chain
+- Continuing formal training and certification to stay current with industry trends
+- Building deeper expertise in data engineering workflows like ETL and ELT
 
 I'm excited to continue learning, collaborating, and building solutions that matter.
 
