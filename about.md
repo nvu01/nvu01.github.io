@@ -15,21 +15,21 @@ redirect_from:
 
 <!--author-->
 
+
 ## 🚀 The Curious Analyst
 
-I’m a **curious and driven data analyst** who thrives on tackling challenges and digging beneath the surface of data to uncover meaningful patterns. While my technical foundation lies in Python, SQL, and data visualization tools like Tableau and Power BI, what truly sets me apart is **how I think** — critically, creatively, and always with an eye toward improvement.
-{:.lead}
+I’m a **curious and driven data analyst** who loves digging into data, asking a million “why’s,” and figuring out how to turn chaos into clarity. While my technical foundation lies in Python, SQL, and data visualization tools like Tableau and Power BI, what truly sets me apart is **how I think** critically, creatively, and always looking for ways to make things better.
 
-In just one year, I completed a full **4-year bachelor’s degree in Data Analytics** from [Western Governors University](https://www.wgu.edu/). That pace wasn’t just about ambition — it was about mindset. I learn quickly, adapt to complexity, and push through ambiguity with persistence and clarity. Whether I’m debugging a machine learning pipeline or distilling a story for business stakeholders, I bring focus, and energy to everything I do.
-{:.lead}
+In just one year, I completed a full 4-year bachelor’s degree in Data Analytics from [Western Governors University](https://www.wgu.edu/). No, I didn’t time travel! I just really like learning, figuring things out fast, and getting stuff done. 
 
 
 ## 💡 What I Bring to the Table
 
-- **Critical Thinker**: I ask tough questions, explore alternative hypotheses, and don’t settle for surface-level answers.
-- **Fast Learner**: From APIs to ML deployment, I pick up new tools fast — and apply them just as quickly.
-- **Communicator**: I translate technical findings into clear, actionable insights for non-technical stakeholders.
-- **Collaborator**: My background across HR, operations, and entrepreneurship taught me how to work with cross-functional teams and build bridges between data and action.
+- **Critical Thinker** – I don’t just crunch numbers. I question them (politely).
+- **Fast Learner** – New tech? New tools? Challenge accepted.
+- **Communicator** – I make sure insights don’t get lost in translation.
+- **Team Player** – I’ve collaborated with HR teams, retail ops, and cross-functional partners and ran my own Etsy shop, where I wore every hat from designer to data analyst to customer support.
+
 
 ## 🛠️ Skills & Tools
 
@@ -45,20 +45,18 @@ In just one year, I completed a full **4-year bachelor’s degree in Data Analyt
 
 ## 🌱 Where I'm Headed
 
-Every project is an opportunity to grow. My current development goals include:
+Learning never stops and that’s the fun part. Right now I’m leveling up in:
 
-- Cloud-based data engineering workflows
+- Cloud-based data workflows and automation
 - Expanding my ability to translate data into business insights and decision-making support
-- Gaining experience in applied analytics across domains like marketing, finance, healthcare, and supply chain
-- Continuing formal training and certification to stay current with industry trends
+- Exploring real-world projects in marketing, finance, healthcare, supply chain and beyond
+- Earning new certs (my favorite kind of side quest)
 - Building deeper expertise in data engineering workflows like ETL and ELT
-
-I'm excited to continue learning, collaborating, and building solutions that matter.
 
 
 ## 🤝 Let’s Connect
 
-I love meeting others who are passionate about solving problems with data. Reach out if you're working on something interesting — or just want to talk shop.
+Got a cool project, a strange dataset, or just stuck in a pivot table rabbit hole? Let’s connect — I’m always up for a good data conversation!
 
-- [GitHub](https://github.com/nvu01)  
-- [LinkedIn](https://linkedin.com/in/ngan-vu-719896328)  
+[<i class="icon-github"></i>](https://github.com/nvu01)  
+[<i class="icon-linkedin2"></i>](https://www.linkedin.com/in/ngan-vu-719896328/)

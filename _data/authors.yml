@@ -8,7 +8,8 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Hi! I'm Ngan Vu, a data analyst with a passion for uncovering actionable insights and delivering clean, clear solutions through data. 
+    Hey there! I'm Ngan Vu, a data analyst powered by curiosity, iced coffee, and the occasional over-engineered Excel spreadsheet.
+    {:.lead}
 
   # This photo will be used in the about section
   picture:
