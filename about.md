@@ -2,8 +2,7 @@
 layout: about
 image: /assets/img/blog/hydejack-9.jpg
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  This is where I introduce myself. 
 hide_description: true
 redirect_from:
   - /download/
@@ -13,9 +12,9 @@ redirect_from:
 
 <!--author-->
 
-## Hydejack
+## The Curious Analyst
 
-A boutique Jekyll theme for hackers, nerds, and academics.  
+Hi, I'm **Ngan Vu**, a data analyst who thrives on solving complex problems with clarity and purpose.
 {:.lead}
 
 1. this list will be replaced by the toc
