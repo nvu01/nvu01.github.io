@@ -1,5 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-03T16:54:37+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">X Marks the Spot in Hydejack 9.2</title><link href="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/" rel="alternate" type="text/html" title="X Marks the Spot in Hydejack 9.2" /><published>2024-09-08T00:00:00+00:00</published><updated>2025-06-03T16:54:21+00:00</updated><id>https://nvu01.github.io//x-marks-the-spot-in-hydejack-9-2</id><content type="html" xml:base="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/"><![CDATA[<h2 id="new-social-media-icons">New Social Media Icons</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-03T22:11:19+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-03-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-03T00:00:00+00:00</published><updated>2025-06-03T22:11:00+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+
+<p><a href="https://github.com/nvu01/BSDA-Capstone-Project"><i class="icon-github"></i> GitHub Repo</a></p>
+
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#project-overview" id="markdown-toc-project-overview">Project Overview</a></li>
+  <li><a href="#description-of-dataset" id="markdown-toc-description-of-dataset">Description of Dataset</a></li>
+  <li><a href="#data-collection" id="markdown-toc-data-collection">Data Collection</a></li>
+  <li><a href="#data-wrangling" id="markdown-toc-data-wrangling">Data Wrangling</a></li>
+  <li><a href="#summary-of-data-analysis-methods" id="markdown-toc-summary-of-data-analysis-methods">Summary of Data Analysis Methods</a></li>
+  <li><a href="#project-outcomes" id="markdown-toc-project-outcomes">Project Outcomes</a></li>
+</ul>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<p>Poverty is a multifaceted issue that is influenced by many factors such as income levels, education, employment rates, healthcare access, public programs and housing conditions. These variables interact in ways that are not immediately apparent, and their combined effects on poverty rates can vary widely across different regions. Data analysis provides objective insights rather than relying on surface-level observations. As a data analyst, I wanted to answer a critical question: <strong>What are the most important socioeconomic factors that explain poverty rates in U.S. counties, and how reliably can we model those rates using multiple linear regression?</strong></p>
+
+<p>In this project, I applied a rigorous, statistics approach to analyze data from the U.S. Census Bureau’s 2023 American Community Survey. The goal was not just to model poverty, but to surface meaningful insights that could guide policy and resource allocation.</p>
+
+<p>I used Jupyter Notebook as the primary development platform. The whole analytical process wwa done using Python libraries such as pandas for data manipulation, Matplotlib and Seaborn for visualization, NumPy for numerical operations, statsmodels for regression and statistical testing, and scikit-learn for scaling and model validation.</p>
+
+<h2 id="description-of-dataset">Description of Dataset</h2>
+
+<p>The dataset for this project comes from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on data.census.gov, the dataset includes relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.</p>
+
+<p>A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 report, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.</p>
+
+<h2 id="data-collection">Data Collection</h2>
+
+<p>The data were collected using API requests to the U.S. Census Bureau’s 2023 ACS 1-Year datasets. The data collection process required learning how ACS data is structured. I studied Census Bureau documentation to understand table formats, variable naming, and geographic codes like the ucgid, which was essential for accurate county-level API requests.</p>
+
+<p>Initially, I planned to manually search for variable and geographic codes, but I later developed a more efficient method. I created a Python script that searches downloaded metadata files for variable codes based on table IDs and label keywords. This tool handles case and spacing issues, reducing human error. Part of the code was adapted from a Stack Overflow thread, which I cited.</p>
+
+<h2 id="data-wrangling">Data Wrangling</h2>
+
+<p>Data from ACS tables were saved as .json files, parsed using Python, and combined into a single county-level dataset with Pandas. During data preparation, I renamed coded headers to descriptive variable names, converted data types, and addressed missing or special values by imputing based on 2022 ACS data. I also removed redundant columns and combined related variables to enhance usability. The cleaned dataset was then saved as a .csv file for modeling.</p>
+
+<h2 id="summary-of-data-analysis-methods">Summary of Data Analysis Methods</h2>
+
+<p>I began EDA with descriptive statistics to examine central tendencies and spread. This is followed by calculating a correlation matrix and VIF to detect multicolinearity. I dropped or transformed any predictor whose VIF topped 5. To explore relationships between the response and explanatory variables, I used pairplots and scatter plots. To address nonlinearity and skewness in the data, I applied appropriate transformations based on the distribution and each variable’s relationship with the response: log transformation for heavy right-tails, log1p when zeros appeared, and square-root for moderate skew.</p>
+
+<p>The main analytical approach was a multiple linear regression method, which allowed me to quantify relationships between socioeconomic factors and poverty rates while considering the influence of multiple variables simultaneously. Specifically, the project used ordinary least squares (OLS) model which allowed a straightforward interpretation of coefficients, significance testing and model evaluation.</p>
+
+<p>To evaluate the model’s predictive performance, I used metrics such as R-squared on both the training and test sets, adjusted R-squared, and mean squared error (MSE) on the test set. These metrics provided insight into how well the model fit the training data and how accurately it predicted poverty rates on new, unseen data.</p>
+
+<p>To evaluate the role of socioeconomic factors in explaining poverty rates across U.S. counties, both a global and individual hypothesis testing framework will be used.</p>
+<ul>
+  <li>Global hypothesis (F-test): This test evaluates whether the full set of predictors contributes to explaining poverty rates.
+    <ul>
+      <li>Null hypothesis: All regression coefficients are equal to zero<br />
+𝐻0: 𝛽1=𝛽2=⋯=𝛽𝑘=0</li>
+      <li>Alternative hypothesis: At least one regression coefficient is not equal to zero<br />
+𝐻1: 𝐴𝑡 𝑙𝑒𝑎𝑠𝑡 𝑜𝑛𝑒 𝛽𝑖≠0</li>
+    </ul>
+  </li>
+  <li>Individual hypotheses (t-test for each coefficient): These tests assess the significance of each predictor.
+    <ul>
+      <li>Null Hypothesis: The coefficient for predictor i is zero.<br />
+  H0: βi=0</li>
+      <li>Alternative Hypothesis: The coefficient for predictor i is not zero.<br />
+  H1: βi≠0</li>
+    </ul>
+  </li>
+</ul>
+
+<p>To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using MinMaxScaler before fitting the model. This will ensure that the predictors are on the same scale.</p>
+
+<p>For the baseline model and the improved model, I implemented residual analysis to verify model assumptions and ensure the model’s validity. OLS regression relies on several assumptions: linearity of relationships between predictors and the dependent variable, homoscedasticity (constant variance of residuals), independence of residuals, and normally distributed errors. The analysis included visualizations such as residual plots, histogram and boxplot of residuals, and Q-Q plot. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
+
+<p>Finally, to address issues identified in model diagnostics, I applied several refinement methods. The response variable was transformed to reduce heteroscedasticity and improve linearity. An interaction term was added to improve model accuracy when the effect of one variable depends on another. Robust standard errors (HC3) were used to produce more reliable p-values in the presence of heteroscedasticity.</p>
+
+<h2 id="project-outcomes">Project Outcomes</h2>
+
+<ul>
+  <li>
+    <p><strong>Predictive Power</strong>: My refined regression model worked well and explained 79.6% of the variance in training data and 83.1% in the test set. That’s high, especially for social data, where perfect predictions are rare.</p>
+  </li>
+  <li>
+    <p><strong>Overall Model Significance:</strong> Based on the F-test result, the final model was statistically significant overall (p &lt; 0.001).</p>
+  </li>
+  <li>
+    <p><strong>Model Validity:</strong></p>
+    <ul>
+      <li>Residual vs fitted plot: Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.</li>
+      <li>Residuals vs predictors: No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.</li>
+      <li>Histogram &amp; boxplot of residuals: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.</li>
+      <li>Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Overall, the final model met the linear regression assumptions and its results (coefficients, p-values) can be trusted for inference.</p>
+
+<ul>
+  <li><strong>Most Impactful Predictors</strong>:
+    <ul>
+      <li><strong>Interaction between income and home value</strong></li>
+      <li><strong>Median household income</strong> (log-transformed)</li>
+      <li><strong>Median home value</strong> (square root-transformed)</li>
+      <li><strong>Health insurance coverage</strong></li>
+      <li><strong>Public transit usage</strong> (log-transformed)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Counties with higher incomes and home values tend to have significantly lower poverty rates. On the other hand, higher unemployment, greater health insurance coverage and more use of public transit (a potentially tied to urban poverty) were associated with higher poverty.</p>
+
+<p>Surprisingly, public assistance rates and the percentage of bachelor’s degree holders were not statistically significant in the final model. This means that these factors have limited unique contribution to predictive power of the model once other variables were controlled.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="public policy" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/poverty-tornado-diagram.png" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/poverty-tornado-diagram.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">X Marks the Spot in Hydejack 9.2</title><link href="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/" rel="alternate" type="text/html" title="X Marks the Spot in Hydejack 9.2" /><published>2024-09-08T00:00:00+00:00</published><updated>2025-06-03T22:11:00+00:00</updated><id>https://nvu01.github.io//x-marks-the-spot-in-hydejack-9-2</id><content type="html" xml:base="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/"><![CDATA[<h2 id="new-social-media-icons">New Social Media Icons</h2>
 
 <p>Lots of things have changed in the world of social media since the last release. To bring Hydejack up to date, the default logo for Twitter has changed:</p>
 
@@ -104,7 +211,7 @@ No Google product feels appropriate as a default option for an ownership and sel
 
 <p>On a related note, I’ve also decided against updating the included Google Analytics script, in part because the upgrade path is incomprehensible, but also due the the same privacy concerns that make Google Fonts a bad default option. I recommend independent analytics services like 
 <a href="https://plausible.io">Plausible</a>, <a href="https://matomo.org/">Matomo</a> or maybe even <a href="https://counterscale.dev">Counterscale</a> (if you are a Cloudflare customer).
-You can include the tracking scripts by <a href="../../docs/basics.md#adding-custom-html-to-the-head">adding them as custom HTML</a>.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[This feature release adds new social media icons for 2024 and makes dark mode available to everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+00:00</published><updated>2025-06-03T16:54:21+00:00</updated><id>https://nvu01.github.io//introducing-hydejack-9</id><content type="html" xml:base="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
+You can include the tracking scripts by <a href="../../docs/basics.md#adding-custom-html-to-the-head">adding them as custom HTML</a>.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[This feature release adds new social media icons for 2024 and makes dark mode available to everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+00:00</published><updated>2025-06-03T22:11:00+00:00</updated><id>https://nvu01.github.io//introducing-hydejack-9</id><content type="html" xml:base="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
 
 <p><a href="#linking-in-style">Modernized</a> <a href="#whats-in-the-cards">design</a>, <a href="#ready-for-the-big-screen">big headlines</a>, big new features: <a href="#built-in-search">Built-In Search</a>, <a href="#sticky-table-of-contents">Sticky Table of Contents</a>, and <a href="#auto-hiding-navbar">Auto-Hiding Navbar</a>. That <a href="#and-much-more">and more</a> is Hydejack 9.</p>
 
@@ -193,7 +300,7 @@ The source code is available on <a href="https://github.com/hydecorp/hydejack">G
   If you’re technically inclined, you can adopt the code located in <code class="language-plaintext highlighter-rouge">_includes/js/search-worker.js</code> to your needs. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="https://nvu01.github.io//2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+00:00</published><updated>2025-06-03T16:54:21+00:00</updated><id>https://nvu01.github.io//example-content-iii</id><content type="html" xml:base="https://nvu01.github.io//2018-06-01-example-content-iii/"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
+</div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="https://nvu01.github.io//2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+00:00</published><updated>2025-06-03T22:11:00+00:00</updated><id>https://nvu01.github.io//example-content-iii</id><content type="html" xml:base="https://nvu01.github.io//2018-06-01-example-content-iii/"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
 Don’t worry, these are merely CSS classes added with kramdown’s <code class="language-plaintext highlighter-rouge">{:...}</code> syntax,
 so that your content remains compatible with other Jekyll themes.</p>
 
@@ -413,7 +520,7 @@ A caption to an image.</p>
 </blockquote>
 
 <h2 id="faded-text">Faded text</h2>
-<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="https://nvu01.github.io//2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+00:00</published><updated>2025-06-03T16:54:21+00:00</updated><id>https://nvu01.github.io//example-content-ii</id><content type="html" xml:base="https://nvu01.github.io//2017-11-23-example-content-ii/"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="https://nvu01.github.io//2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+00:00</published><updated>2025-06-03T22:11:00+00:00</updated><id>https://nvu01.github.io//example-content-ii</id><content type="html" xml:base="https://nvu01.github.io//2017-11-23-example-content-ii/"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
 
 <p>There should be whitespace between paragraphs.</p>
 
@@ -596,7 +703,7 @@ A caption to an image.</p>
 </code></pre></div></div>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="https://nvu01.github.io//2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+00:00</published><updated>2025-06-03T16:54:21+00:00</updated><id>https://nvu01.github.io//example-content</id><content type="html" xml:base="https://nvu01.github.io//2012-02-07-example-content/"><![CDATA[<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+</code></pre></div></div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="https://nvu01.github.io//2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+00:00</published><updated>2025-06-03T22:11:00+00:00</updated><id>https://nvu01.github.io//example-content</id><content type="html" xml:base="https://nvu01.github.io//2012-02-07-example-content/"><![CDATA[<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
 
 <blockquote>
   <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
