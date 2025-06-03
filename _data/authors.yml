@@ -8,11 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    Hi! I'm Ngan Vu, a data analyst with a passion for uncovering actionable insights and delivering clean, clear solutions through data. 
 
   # This photo will be used in the about section
   picture:
@@ -27,9 +23,10 @@ author1:
   # Rearrange to change the order in which they appear
   # You can also provide an absolute URL (starting with https://) instead of usernames
   social:
-    # twitter:         <username>
+    linkedin:        ngan-vu-719896328
     github:          nvu01
     # email:           <mail@domain.tld>
+    # twitter:         <username>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -58,7 +55,6 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    linkedin:        ngan-vu-719896328
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
