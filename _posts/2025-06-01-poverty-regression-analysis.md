@@ -32,7 +32,7 @@ I used Jupyter Notebook as the primary development platform. The whole analytica
 
 The datasets for this project come from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on data.census.gov, the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.
 
-A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 report, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.
+A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html" target="_blank" rel="noopener">report</a>, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.
 
 👉 <a href="https://www.census.gov/data/developers/data-sets/acs-1year.html" target="_blank" rel="noopener">More information about the U.S. Census Bureau’s ACS data</a>.
 
@@ -110,6 +110,7 @@ My refined regression model worked well and explained 79.6% of the variance in p
 
 Since the p-value is well below 0.05, we reject the null hypothesis. This indicates the model as a whole is statistically significant.
 
+Final model summary:
 ```
                             OLS Regression Results                            
 ==============================================================================
@@ -137,25 +138,30 @@ Mean Squared Error: 0.07192225315999502
 >Overall, the final model met the linear regression assumptions and its results (coefficients, p-values) can be trusted for inference.
 {:.lead}
 
-**Residual vs fitted plot:**
+**Residual vs fitted plot:** Was used to evaluate model fit and assumption validity, such as linearity and homoscedasticity.
 
 <img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
 
 Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.
 
-
-**Residuals vs predictors plots:**
+**Residuals vs predictors plots:** Were used to detect potential non-linear relationships or predictors that could benefit from transformations.
 
 <img src="/assets/img/posts/1/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
 
 No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.
 
-**Histogram and Q-Q plot:**
+**Histogram and boxplot:** Were used to assess whether residuals are normally distributed.
 
 <img src="/assets/img/posts/1/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
 
-- Histogram: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.
+- Histogram and boxplot of residuals: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.
+
+**Q-Q plot:** Was used to assess normality of residuals by comparing their distribution to a theoretical normal distribution.
+
+<img src="/assets/img/posts/1/final_qq.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
+
 - Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.
+
 
 ### Most Impactful Predictors
 
@@ -219,3 +225,6 @@ This is a reminder: statistics model relative relationships, not realities. The 
 
 If you're a policymaker, nonprofit leader, or fellow data scientist: I hope this analysis adds value to your work or sparks new questions worth pursuing.
 
+
+## References
+- Creamer, J., & King, M. D. (2024, November 14). [How Do Policies and Expenses Affect Supplemental Poverty Rates?](https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html)
