@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" />
 <meta property="twitter:title" content="Socioeconomic Factors Impacting Poverty in U.S. Counties" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-04T04:35:41+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-04T05:06:50+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -118,7 +118,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-04T04:36:00+00:00',
+    INDEX_KEY: 'index--2025-06-04T05:07:06+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -286,7 +286,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
             <span class="ellipsis" data-tippy-content="Last modified at: 04 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-04T04:35:41+00:00">2025-06-04</time>
+              <time datetime="2025-06-04T05:06:50+00:00">2025-06-04</time>
             </span>
           
         
@@ -342,7 +342,16 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li><a href="#data-collection" id="markdown-toc-data-collection">Data Collection</a></li>
   <li><a href="#data-wrangling" id="markdown-toc-data-wrangling">Data Wrangling</a></li>
   <li><a href="#summary-of-data-analysis-methods" id="markdown-toc-summary-of-data-analysis-methods">Summary of Data Analysis Methods</a></li>
-  <li><a href="#project-outcomes" id="markdown-toc-project-outcomes">Project Outcomes</a></li>
+  <li><a href="#project-outcomes" id="markdown-toc-project-outcomes">Project Outcomes</a>    <ul>
+      <li><a href="#models-predictive-power-and-significance" id="markdown-toc-models-predictive-power-and-significance">Model’s Predictive Power and Significance</a></li>
+      <li><a href="#model-validity" id="markdown-toc-model-validity">Model Validity</a></li>
+      <li><a href="#most-impactful-predictors" id="markdown-toc-most-impactful-predictors">Most Impactful Predictors</a>        <ul>
+          <li><a href="#statistical-significance" id="markdown-toc-statistical-significance">Statistical Significance:</a></li>
+          <li><a href="#relative-importance" id="markdown-toc-relative-importance">Relative Importance:</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
   <li><a href="#recommended-courses-of-action" id="markdown-toc-recommended-courses-of-action">Recommended Courses of Action</a></li>
   <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
 </ul>
@@ -422,10 +431,11 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li>An interaction term was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I’m assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.</li>
 </ul>
 
-<p><img src="" alt="poverty rate vs (income x house value) scatter plot" /></p>
+<p><img src="/assets/img/posts/interaction_term.png" alt="description" width="600" style="display: block; margin: 0 auto;" /></p>
 
-<p>The drop in poverty rate with increasing income appears steeper for counties with lower house value than ones with higher house value. This means that the effect of income on poverty varies depending on house values.
-Here’s the interaction term:
+<p>The drop in poverty rate with increasing income appears steeper for counties with lower house value than ones with higher house value. This means that the effect of income on poverty varies depending on house values.</p>
+
+<p>Here’s the interaction term:
 <code class="language-plaintext highlighter-rouge">df2['income_x_house_value'] = (df2['log_median_income'] * df2['sqrt_median_house_value'])</code></p>
 
 <ul>
@@ -434,46 +444,56 @@ Here’s the interaction term:
 
 <h2 id="project-outcomes">Project Outcomes</h2>
 
-<ul>
-  <li>
-    <p><strong>Predictive Power</strong>: My refined regression model worked well and explained 79.6% of the variance in training data and 83.1% in the test set. That’s high, especially for social data, where perfect predictions are rare.</p>
-  </li>
-  <li>
-    <p><strong>Overall Model Significance:</strong> Based on the F-test result, the final model was statistically significant overall (p &lt; 0.001).</p>
-  </li>
-  <li>
-    <p><strong>Model Validity:</strong></p>
-    <ul>
-      <li>Residual vs fitted plot: Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.</li>
-    </ul>
-  </li>
-</ul>
+<h3 id="models-predictive-power-and-significance">Model’s Predictive Power and Significance</h3>
 
-<p><img src="" alt="Residual vs fitted plot" /></p>
+<p>My refined regression model worked well and explained 79.6% of the variance in training data and 83.1% in the test set. That’s high, especially for social data, where perfect predictions are rare.</p>
 
-<ul>
-  <li>Residuals vs predictors: No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.</li>
-</ul>
+<p>Based on the F-test result, the final model was statistically significant overall (p &lt; 0.001).</p>
 
-<p><img src="" alt="Residuals vs predictors" /></p>
+<iframe src="/assets/html/final_model_summary.html" width="100%" height="400px"></iframe>
 
-<ul>
-  <li>Histogram &amp; boxplot of residuals: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.</li>
-</ul>
+<h3 id="model-validity">Model Validity</h3>
 
-<p><img src="" alt="Histogram &amp; boxplot of residuals" /></p>
+<p><strong>Residual vs fitted plot</strong></p>
+
+<p><img src="/assets/img/posts/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;" /></p>
+
+<p>Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.</p>
+
+<p><strong>Residuals vs predictors plots:</strong></p>
+
+<p><img src="/assets/img/posts/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;" /></p>
+
+<p>No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.</p>
+
+<p><strong>Histogram and Q-Q plot:</strong></p>
+
+<p><img src="/assets/img/posts/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;" /></p>
 
 <ul>
+  <li>Histogram: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.</li>
   <li>Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.</li>
 </ul>
 
-<p>Overall, the final model met the linear regression assumptions and its results (coefficients, p-values) can be trusted for inference.</p>
+<blockquote class="lead">
+  <p>Overall, the final model met the linear regression assumptions and its results (coefficients, p-values) can be trusted for inference.</p>
+</blockquote>
 
+<h3 id="most-impactful-predictors">Most Impactful Predictors</h3>
+
+<h4 id="statistical-significance">Statistical Significance:</h4>
+
+<p>Based on the predictors’ p-values in the model’s summary above:</p>
 <ul>
-  <li><strong>Most Impactful Predictors</strong>:</li>
+  <li>Counties with higher incomes and home values tend to have significantly lower poverty rates. On the other hand, higher unemployment, greater health insurance coverage and more use of public transit (a potentially tied to urban poverty) were associated with higher poverty.</li>
+  <li>Surprisingly, public assistance rates and the percentage of bachelor’s degree holders were not statistically significant in the final model. This means that these factors have limited unique contribution to predictive power of the model once other variables were controlled.</li>
 </ul>
 
-<p><img src="/assets/img/posts/tornado_diagram.png" alt="description" width="650" /></p>
+<p>It is important to note that unlike SPM, the OPM does not include non-cash public assistance (like SNAP, housing subsidies, TANF) in its calculation. So counties with high assistance rates may not show reduced poverty under OPM even though aid might be helping in reality.</p>
+
+<h4 id="relative-importance">Relative Importance:</h4>
+
+<p><img src="/assets/img/posts/tornado_diagram.png" alt="description" width="650" style="display: block; margin: 0 auto;" /></p>
 
 <ul>
   <li>The interaction between income and house value had the largest impact.</li>
@@ -486,12 +506,6 @@ Here’s the interaction term:
     </ul>
   </li>
 </ul>
-
-<p>Counties with higher incomes and home values tend to have significantly lower poverty rates. On the other hand, higher unemployment, greater health insurance coverage and more use of public transit (a potentially tied to urban poverty) were associated with higher poverty.</p>
-
-<p>Surprisingly, public assistance rates and the percentage of bachelor’s degree holders were not statistically significant in the final model. This means that these factors have limited unique contribution to predictive power of the model once other variables were controlled.</p>
-
-<p>It is important to note that unlike SPM, the OPM does not include non-cash public assistance (like SNAP, housing subsidies, TANF) in its calculation. So counties with high assistance rates may not show reduced poverty under OPM even though aid might be helping in reality.</p>
 
 <h2 id="recommended-courses-of-action">Recommended Courses of Action</h2>
 <p>A local government or policymaker could use this model to identify counties most at risk based on these factors and effectively target resources or policies.</p>
