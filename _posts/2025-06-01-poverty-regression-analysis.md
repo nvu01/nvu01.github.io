@@ -53,46 +53,37 @@ Data from ACS tables were saved as .json files, parsed using Python, and combine
 
 ## Summary of Analytical Methods
 
-I began EDA with descriptive statistics to examine central tendencies and spread. This is followed by calculating a correlation matrix and VIF to detect multicolinearity. I dropped or transformed any predictor whose VIF topped 5. To explore relationships between the response and explanatory variables, I used pairplots and scatter plots. To address nonlinearity and skewness in the data, I applied appropriate transformations based on the distribution and each variable's relationship with the response: log transformation for heavy right-tails, log1p when zeros appeared, and square-root for moderate skew.
+I began exploratory data analysis (EDA) with **descriptive statistics** to examine central tendencies and spread. This is followed by calculating a **correlation matrix** and **VIF** to detect multicolinearity. Predictors with a VIF above 5 were either dropped or transformed. To explore relationships between the response and explanatory variables, I used **pairplots** and **scatter plots**. To address nonlinearity and skewness in the data, I applied appropriate transformations based on the distribution and each variable's relationship with the response: 
+- Log transformation for heavy right-tails
+- Log(x+1) transformation when zeros appeared
+- Square root transformation for moderate skew.
 
-The main analytical approach was a multiple linear regression method, which allowed me to quantify relationships between socioeconomic factors and poverty rates while considering the influence of multiple variables simultaneously. Specifically, the project used ordinary least squares (OLS) model which allowed a straightforward interpretation of coefficients, significance testing and model evaluation.
+The main analytical approach was a **multiple linear regression** method, which allowed me to quantify relationships between socioeconomic factors and poverty rates while considering the influence of multiple variables simultaneously. Specifically, the project used **ordinary least squares (OLS)** model which allowed a straightforward interpretation of coefficients, significance testing and model evaluation.
 
-To evaluate the model’s predictive performance, I used metrics such as R-squared on both the training and test sets, adjusted R-squared, and mean squared error (MSE) on the test set. These metrics provided insight into how well the model fit the training data and how accurately it predicted poverty rates on new, unseen data.
+To evaluate the model’s predictive performance, I used metrics such as **R-squared** on both the training and test sets, **adjusted R-squared**, and **mean squared error (MSE)** on the test set. These metrics provided insight into how well the model fit the training data and how accurately it predicted poverty rates on new, unseen data.
 
 To evaluate the role of socioeconomic factors in explaining poverty rates across U.S. counties, both a global and individual hypothesis testing framework will be used.
 - **Global hypothesis** (F-test): This test evaluates whether the full set of predictors contributes to explaining poverty rates.
-  - Null hypothesis: All regression coefficients are equal to zero 
+  - Null hypothesis: All regression coefficients are equal to zero.  
+      $$ H_0:\;\beta_1=\beta_2=\dots=\beta_k=0 $$
 
-    $$
-    H_0:\;\beta_1=\beta_2=\dots=\beta_k=0
-    $$
-
-  - Alternative hypothesis: At least one regression coefficient is not equal to zero  
-
-    $$
-    H_1:\;\text{at least one } \beta_i \ne 0
-    $$
+  - Alternative hypothesis: At least one regression coefficient is not equal to zero.  
+      $$ H_1:\;\text{at least one } \beta_i \ne 0 $$
 
 - **Individual hypotheses** (t-test for each coefficient): These tests assess the significance of each predictor.
 	- Null Hypothesis: The coefficient for predictor i is zero.  
-
-    $$
-    H_0:\;\beta_i = 0
-    $$
+    $$ H_0:\;\beta_i = 0 $$
 
 	- Alternative Hypothesis: The coefficient for predictor i is not zero.  
+    $$ H_0:\;\beta_i \neq 0 $$
 
-    $$
-    H_0:\;\beta_i \neq 0
-    $$
+To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using **MinMaxScaler** before fitting the model. This will ensure that the predictors are on the same scale.
 
-To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using MinMaxScaler before fitting the model. This will ensure that the predictors are on the same scale.
-
-For the baseline model and the improved model, I implemented residual analysis to verify model assumptions and ensure the model’s validity. OLS regression relies on several assumptions: linearity of relationships between predictors and the dependent variable, homoscedasticity (constant variance of residuals), independence of residuals, and normally distributed errors. The analysis included visualizations such as residual plots, histogram and boxplot of residuals, and Q-Q plot. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.
+For the baseline model and the improved model, I implemented residual analysis to **verify model assumptions** and ensure the **model’s validity**. OLS regression relies on several assumptions: **linearity** of relationships between predictors and the dependent variable, **homoscedasticit**y (constant variance of residuals), **independence of residual**s, and **normally distributed errors**. The analysis included visualizations such as **residual plots**, **histogram** and **boxplot of residual**s, and **Q-Q plot**. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.
 
 Finally, to address issues identified in model diagnostics, I applied several refinement methods: 
-- Square root transformation was applied to the response variable to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.  
-- An interaction term was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I'm assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.
+- **Square root transformation** was applied to the **response variable** to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.  
+- An **interaction term** was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I'm assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.
 
 <img src="/assets/img/posts/1/interaction_term.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
 
@@ -101,11 +92,11 @@ The drop in poverty rate with increasing income appears steeper for counties wit
 Here's the interaction term:  
 ```df2['income_x_house_value'] = (df2['log_median_income'] * df2['sqrt_median_house_value'])```
 
-- Finally, robust standard errors (HC3) were used to produce more reliable p-values in the presence of heteroscedasticity.
-
-👉 <a href="/assets/html/main_analysis.html" target="_blank" rel="noopener">See my notebook for application of analytical methods</a>.
+- Finally, **robust standard errors (HC3)** were used to produce more reliable p-values in the presence of heteroscedasticity.
 
 Once I transformed the response variable and introduced interaction, I get a clearer, more interpretable model.
+
+👉 <a href="/assets/html/main_analysis.html" target="_blank" rel="noopener">See my notebook for application of analytical methods</a>.
 
 
 ## Project Outcomes
@@ -146,7 +137,7 @@ Mean Squared Error: 0.07192225315999502
 >Overall, the final model met the linear regression assumptions and its results (coefficients, p-values) can be trusted for inference.
 {:.lead}
 
-**Residual vs fitted plot**
+**Residual vs fitted plot:**
 
 <img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
 
@@ -190,8 +181,8 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 ```
 
 Based on the predictors' p-values in the model's summary above:
-- Significant predictors included **median income**, **median house value**, **health insurance coverage**, **public transit use**, and an **income × house value** interaction.
-- Surprisingly, public assistance rates and the percentage of bachelor’s degree holders were not statistically significant in the final model. This means that these factors have limited unique contribution to predictive power of the model once other variables were controlled. 
+- **Significant** predictors included **median income**, **median house value**, **health insurance coverage**, **public transit use**, and an **income × house value** interaction.
+- Surprisingly, **public assistance rates** and the **percentage of bachelor’s degree holders** were **not statistically significant** in the final model. This means that these factors have limited unique contribution to predictive power of the model once other variables were controlled. 
 
 It is important to note that unlike SPM, the OPM does not include non-cash public assistance (like SNAP, housing subsidies, TANF) in its calculation. So counties with high assistance rates may not show reduced poverty under OPM even though aid might be helping in reality.
 
@@ -222,11 +213,9 @@ A local government or policymaker could use this model to identify counties most
 
 This project demonstrates how careful data wrangling, transparent statistical methods, and principled diagnostics can produce models that are both insightful and trustworthy. It also highlights the importance of questioning assumptions, especially when working with policy-related data.
 
-Not every result was expected. Public assistance didn’t come through as a statistically significant predictor likely due to limitations of the Official Poverty Measure (OPM), which does not account for non-cash assistance like SNAP or housing vouchers. That’s a structural flaw in the poverty definition itself — not necessarily in the data.
+Not every result was expected. Public assistance didn’t come through as a statistically significant predictor likely due to limitations of the Official Poverty Measure (OPM), which does not account for non-cash assistance like SNAP or housing vouchers. That’s a flaw in the poverty definition itself, not necessarily in the data. 
 
-This is a reminder: statistics model relationships, not realities. The real world is messier. Numbers don’t capture dignity, barriers, or the trade-offs that people in poverty navigate every day.
-
-Still, we can quantify strong patterns. And we should, especially when it helps decision-makers focus investments in education, income support, housing, and healthcare — where they’ll make the most impact.
+This is a reminder: statistics model relative relationships, not realities. The real world is messier. Numbers can't fully capture dignity, barriers, or the trade-offs that people in poverty navigate every day. Still, we can quantify strong patterns, and we should, especially when it helps guide policymakers, public agencies, and community organizations in prioritizing resources and interventions.
 
 If you're a policymaker, nonprofit leader, or fellow data scientist: I hope this analysis adds value to your work or sparks new questions worth pursuing.
 
