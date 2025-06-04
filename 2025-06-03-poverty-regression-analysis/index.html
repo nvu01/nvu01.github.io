@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" />
 <meta property="twitter:title" content="Socioeconomic Factors Impacting Poverty in U.S. Counties" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-03T23:47:39+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-04T04:35:41+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -118,7 +118,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-03T23:47:54+00:00',
+    INDEX_KEY: 'index--2025-06-04T04:36:00+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -274,12 +274,20 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2025-06-03T00:00:00+00:00">03 Jun 2025</time>  on <span>Regression</span>, <span>Public policy</span>, <span>Socioeconomic data</span>, <span>Poverty</span>, <span>Census data</span>
+        <time datetime="2025-06-03T00:00:00+00:00">03 Jun 2025</time>  on <span>Regression</span>, <span>Socioeconomic data</span>, <span>Poverty</span>, <span>Census data</span>, <span>Public policy</span>
       </span>
       
         
           
           
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 04 Jun 2025">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2025-06-04T04:35:41+00:00">2025-06-04</time>
+            </span>
           
         
       
@@ -357,9 +365,9 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>The data were collected using API requests to the U.S. Census Bureau’s 2023 ACS 1-Year datasets. The data collection process required learning how ACS data is structured. I studied Census Bureau documentation to understand table formats, variable naming, and geographic codes like the ucgid, which was essential for accurate county-level API requests.</p>
 
-<p>Initially, I planned to manually search for variable and geographic codes, but I later developed a more efficient method. I created a Python script that searches downloaded metadata files for variable codes based on table IDs and label keywords. This tool handles case and spacing issues, reducing human error. Part of the code was adapted from a Stack Overflow thread, which I cited.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Code for variable code retrieval
-</code></pre></div></div>
+<p>Initially, I planned to manually search for variable and geographic codes, but I later developed a more efficient method. I created a Python script that searches downloaded metadata files for variable codes based on table IDs and variable labels. This tool handles case and spacing issues, reducing human error. Part of the code was adapted from a <a href="https://stackoverflow.com/questions/70383942/filtering-a-column-specify-case-sensitivity">Stack Overflow thread</a>.</p>
+
+<p>See the full code <a href="https://github.com/nvu01/BSDA-Capstone-Project/blob/main/retrieving_variable_codes.ipynb">here</a>.</p>
 
 <h2 id="data-wrangling">Data Wrangling</h2>
 
@@ -408,7 +416,21 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>For the baseline model and the improved model, I implemented residual analysis to verify model assumptions and ensure the model’s validity. OLS regression relies on several assumptions: linearity of relationships between predictors and the dependent variable, homoscedasticity (constant variance of residuals), independence of residuals, and normally distributed errors. The analysis included visualizations such as residual plots, histogram and boxplot of residuals, and Q-Q plot. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
 
-<p>Finally, to address issues identified in model diagnostics, I applied several refinement methods. The response variable was transformed to reduce heteroscedasticity and improve linearity. An interaction term was added to improve model accuracy when the effect of one variable depends on another. Robust standard errors (HC3) were used to produce more reliable p-values in the presence of heteroscedasticity.</p>
+<p>Finally, to address issues identified in model diagnostics, I applied several refinement methods:</p>
+<ul>
+  <li>Square root transformation was applied to the response variable to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.</li>
+  <li>An interaction term was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I’m assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.</li>
+</ul>
+
+<p><img src="" alt="poverty rate vs (income x house value) scatter plot" /></p>
+
+<p>The drop in poverty rate with increasing income appears steeper for counties with lower house value than ones with higher house value. This means that the effect of income on poverty varies depending on house values.
+Here’s the interaction term:
+<code class="language-plaintext highlighter-rouge">df2['income_x_house_value'] = (df2['log_median_income'] * df2['sqrt_median_house_value'])</code></p>
+
+<ul>
+  <li>Robust standard errors (HC3) were used to produce more reliable p-values in the presence of heteroscedasticity.</li>
+</ul>
 
 <h2 id="project-outcomes">Project Outcomes</h2>
 
@@ -451,7 +473,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li><strong>Most Impactful Predictors</strong>:</li>
 </ul>
 
-<p><img src="" alt="Tornado Diagram" /></p>
+<p><img src="/assets/img/posts/tornado_diagram.png" alt="description" width="650" /></p>
 
 <ul>
   <li>The interaction between income and house value had the largest impact.</li>
