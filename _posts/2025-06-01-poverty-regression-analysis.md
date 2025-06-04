@@ -6,7 +6,7 @@ description: >
 image: /assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg
 subtitle: "A Data-Driven Approach to Understanding Poverty Using Multiple Linear Regression"
 date: 2025-06-03
-tags: [regression, public policy, socioeconomic data, poverty, census data]
+tags: [regression, socioeconomic data, poverty, census data, public policy]
 ---
 
 This post summarizes my capstone project for my program in Data Analytics at WGU. I used **multiple linear regression** to investigate how socioeconomic factors influence poverty rates across U.S. counties.
@@ -34,10 +34,10 @@ A key limitation is that the poverty rate is based on the Official Poverty Measu
 
 The data were collected using API requests to the U.S. Census Bureau’s 2023 ACS 1-Year datasets. The data collection process required learning how ACS data is structured. I studied Census Bureau documentation to understand table formats, variable naming, and geographic codes like the ucgid, which was essential for accurate county-level API requests. 
 
-Initially, I planned to manually search for variable and geographic codes, but I later developed a more efficient method. I created a Python script that searches downloaded metadata files for variable codes based on table IDs and label keywords. This tool handles case and spacing issues, reducing human error. Part of the code was adapted from a Stack Overflow thread, which I cited.
-```
-Code for variable code retrieval
-```
+Initially, I planned to manually search for variable and geographic codes, but I later developed a more efficient method. I created a Python script that searches downloaded metadata files for variable codes based on table IDs and variable labels. This tool handles case and spacing issues, reducing human error. Part of the code was adapted from a [Stack Overflow thread](https://stackoverflow.com/questions/70383942/filtering-a-column-specify-case-sensitivity).
+
+See the full code [here](https://github.com/nvu01/BSDA-Capstone-Project/blob/main/retrieving_variable_codes.ipynb).
+
 
 ## Data Wrangling
 
@@ -82,7 +82,17 @@ To evaluate the relative importance of each socioeconomic factor in explaining p
 
 For the baseline model and the improved model, I implemented residual analysis to verify model assumptions and ensure the model’s validity. OLS regression relies on several assumptions: linearity of relationships between predictors and the dependent variable, homoscedasticity (constant variance of residuals), independence of residuals, and normally distributed errors. The analysis included visualizations such as residual plots, histogram and boxplot of residuals, and Q-Q plot. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.
 
-Finally, to address issues identified in model diagnostics, I applied several refinement methods. The response variable was transformed to reduce heteroscedasticity and improve linearity. An interaction term was added to improve model accuracy when the effect of one variable depends on another. Robust standard errors (HC3) were used to produce more reliable p-values in the presence of heteroscedasticity.
+Finally, to address issues identified in model diagnostics, I applied several refinement methods: 
+- Square root transformation was applied to the response variable to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.  
+- An interaction term was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I'm assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.
+
+![poverty rate vs (income x house value) scatter plot]()
+
+The drop in poverty rate with increasing income appears steeper for counties with lower house value than ones with higher house value. This means that the effect of income on poverty varies depending on house values.
+Here's the interaction term: 
+```df2['income_x_house_value'] = (df2['log_median_income'] * df2['sqrt_median_house_value'])```
+
+- Robust standard errors (HC3) were used to produce more reliable p-values in the presence of heteroscedasticity.
 
 ## Project Outcomes
 
@@ -109,7 +119,7 @@ Overall, the final model met the linear regression assumptions and its results (
 
 - **Most Impactful Predictors**:
 
-![Tornado Diagram]() 
+<img src="/assets/img/posts/tornado_diagram.png" alt="description" width="650" />
 
   - The interaction between income and house value had the largest impact.
   - The most impactful predictors of poverty rates are “median house value” and “median household income” as they both show strong negative relationships. Counties with higher home values and incomes tend to have lower poverty rates.
