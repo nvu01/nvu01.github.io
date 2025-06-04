@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" />
 <meta property="twitter:title" content="Socioeconomic Factors Impacting Poverty in U.S. Counties" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-04T21:38:04+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-04T22:47:57+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-03-poverty-regression-analysis/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -118,7 +118,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-04T21:38:24+00:00',
+    INDEX_KEY: 'index--2025-06-04T22:48:13+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -286,7 +286,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
             <span class="ellipsis" data-tippy-content="Last modified at: 04 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-04T21:38:04+00:00">2025-06-04</time>
+              <time datetime="2025-06-04T22:47:57+00:00">2025-06-04</time>
             </span>
           
         
@@ -356,6 +356,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   </li>
   <li><a href="#recommended-courses-of-action" id="markdown-toc-recommended-courses-of-action">Recommended Courses of Action</a></li>
   <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 <h2 id="project-overview">Project Overview</h2>
@@ -370,7 +371,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>The datasets for this project come from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on data.census.gov, the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.</p>
 
-<p>A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 report, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.</p>
+<p>A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html" target="_blank" rel="noopener">report</a>, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.</p>
 
 <p>👉 <a href="https://www.census.gov/data/developers/data-sets/acs-1year.html" target="_blank" rel="noopener">More information about the U.S. Census Bureau’s ACS data</a>.</p>
 
@@ -467,6 +468,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>Since the p-value is well below 0.05, we reject the null hypothesis. This indicates the model as a whole is statistically significant.</p>
 
+<p>Final model summary:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                            OLS Regression Results                            
 ==============================================================================
 Dep. Variable:      sqrt_poverty_rate   R-squared:                       0.796
@@ -493,24 +495,31 @@ Mean Squared Error: 0.07192225315999502
   <p>Overall, the final model met the linear regression assumptions and its results (coefficients, p-values) can be trusted for inference.</p>
 </blockquote>
 
-<p><strong>Residual vs fitted plot:</strong></p>
+<p><strong>Residual vs fitted plot:</strong> Was used to evaluate model fit and assumption validity, such as linearity and homoscedasticity.</p>
 
 <p><img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;" /></p>
 
 <p>Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.</p>
 
-<p><strong>Residuals vs predictors plots:</strong></p>
+<p><strong>Residuals vs predictors plots:</strong> Were used to detect potential non-linear relationships or predictors that could benefit from transformations.</p>
 
 <p><img src="/assets/img/posts/1/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;" /></p>
 
 <p>No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.</p>
 
-<p><strong>Histogram and Q-Q plot:</strong></p>
+<p><strong>Histogram and boxplot:</strong> Were used to assess whether residuals are normally distributed.</p>
 
 <p><img src="/assets/img/posts/1/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;" /></p>
 
 <ul>
-  <li>Histogram: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.</li>
+  <li>Histogram and boxplot of residuals: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.</li>
+</ul>
+
+<p><strong>Q-Q plot:</strong> Was used to assess normality of residuals by comparing their distribution to a theoretical normal distribution.</p>
+
+<p><img src="/assets/img/posts/1/final_qq.png" alt="description" width="600" style="display: block; margin: 0 auto;" /></p>
+
+<ul>
   <li>Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.</li>
 </ul>
 
@@ -584,6 +593,11 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <p>This is a reminder: statistics model relative relationships, not realities. The real world is messier. Numbers can’t fully capture dignity, barriers, or the trade-offs that people in poverty navigate every day. Still, we can quantify strong patterns, and we should, especially when it helps guide policymakers, public agencies, and community organizations in prioritizing resources and interventions.</p>
 
 <p>If you’re a policymaker, nonprofit leader, or fellow data scientist: I hope this analysis adds value to your work or sparks new questions worth pursuing.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
+</ul>
 
   
 </article>
