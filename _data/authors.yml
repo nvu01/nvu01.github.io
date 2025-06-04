@@ -9,7 +9,6 @@ author1:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
     Hey there! I'm Ngan Vu, a data analyst powered by curiosity, iced coffee, and the occasional over-engineered Excel spreadsheet.
-    {:.lead}
 
   # This photo will be used in the about section
   picture:

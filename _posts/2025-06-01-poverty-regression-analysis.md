@@ -3,7 +3,7 @@ layout: post
 title: Socioeconomic Factors Impacting Poverty in U.S. Counties
 description: >
   A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.
-image: /assets/img/posts/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg
+image: /assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg
 subtitle: "A Data-Driven Approach to Understanding Poverty Using Multiple Linear Regression"
 date: 2025-06-03
 tags: [regression, socioeconomic data, poverty, census data, public policy]
@@ -90,7 +90,7 @@ Finally, to address issues identified in model diagnostics, I applied several re
 - Square root transformation was applied to the response variable to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.  
 - An interaction term was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I'm assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.
 
-<img src="/assets/img/posts/interaction_term.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/interaction_term.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
 
 The drop in poverty rate with increasing income appears steeper for counties with lower house value than ones with higher house value. This means that the effect of income on poverty varies depending on house values.
 
@@ -114,20 +114,20 @@ Based on the F-test result, the final model was statistically significant overal
 
 **Residual vs fitted plot**
 
-<img src="/assets/img/posts/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
 
 Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.
 
 
 **Residuals vs predictors plots:**
 
-<img src="/assets/img/posts/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
 
 No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.
 
 **Histogram and Q-Q plot:**
 
-<img src="/assets/img/posts/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
 
 - Histogram: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.
 - Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.
@@ -147,7 +147,7 @@ It is important to note that unlike SPM, the OPM does not include non-cash publi
 
 #### Relative Importance:
 
-<img src="/assets/img/posts/tornado_diagram.png" alt="description" width="650" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/tornado_diagram.png" alt="description" width="650" style="display: block; margin: 0 auto;"/>
 
   - The interaction between income and house value had the largest impact.
   - The most impactful predictors of poverty rates are “median house value” and “median household income” as they both show strong negative relationships. Counties with higher home values and incomes tend to have lower poverty rates.
