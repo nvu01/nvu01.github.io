@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           poverty_rate   R-squared:                       0.763
+Model:                            OLS   Adj. R-squared:                  0.761
+Method:                 Least Squares   F-statistic:                     307.1
+Date:                Wed, 04 Jun 2025   Prob (F-statistic):          1.04e-203
+Time:                        00:29:00   Log-Likelihood:                -1513.3
+No. Observations:                 674   AIC:                             3043.
+Df Residuals:                     666   BIC:                             3079.
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                      20.8661      0.641     32.554      0.000      19.608      22.125
+health_insurance           -2.7029      0.710     -3.807      0.000      -4.097      -1.309
+unemployment_rate           6.7305      0.769      8.753      0.000       5.221       8.240
+bachelor_holders            1.2994      0.854      1.521      0.129      -0.378       2.977
+public_assistance           0.1061      0.838      0.127      0.899      -1.540       1.752
+log_median_income         -26.6265      1.060    -25.125      0.000     -28.707     -24.546
+log_public_transit          5.6042      0.698      8.027      0.000       4.233       6.975
+sqrt_median_house_value     4.7093      1.205      3.908      0.000       2.343       7.075
+==============================================================================
+Omnibus:                       53.971   Durbin-Watson:                   1.804
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              121.840
+Skew:                           0.456   Prob(JB):                     3.49e-27
+Kurtosis:                       4.873   Cond. No.                         25.0
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
