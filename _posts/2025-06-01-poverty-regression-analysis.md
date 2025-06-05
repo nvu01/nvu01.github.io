@@ -2,10 +2,8 @@
 layout: post
 title: Socioeconomic Factors Impacting Poverty in U.S. Counties
 description: >
-  A regression-based analysis of how socioeconomic variables drive poverty rates across 854 U.S. counties, using data from the U.S. Census Bureau.
+  A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.
 image: /assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg
-subtitle: "A Data-Driven Approach to Understanding Poverty Using Multiple Linear Regression"
-date: 2025-06-03
 tags: [regression, socioeconomic data, poverty, census data, public policy]
 ---
 
@@ -207,6 +205,7 @@ It is important to note that unlike SPM, the OPM does not include non-cash publi
   - More public transit use relates to higher poverty (possibly reflecting urban conditions)
 - Another interesting finding is that **median household income** in the **base model** had a **positive coefficient** (4.7) (see the <a href="/assets/other/base_OLS Regression Results.txt" target="_blank" rel="noopener">base model summary</a>), which was unexpected because a 
 <a href="/assets/img/posts/1/scatter_poverty_house-value.png" target="_blank" rel="noopener">regression plot between poverty rate and median household income</a> suggests otherwise. However, in the **refined model**, the sign of this coefficient flipped due to the interaction term (see [predictors' metrics](#predictors-metrics)). The **negative coefficient** means that higher housing values are associated with lower poverty rates. This adjusted effect of median house values in the final model aligns more with general economic assumptions.
+
 
 ## Recommended Courses of Action
 
