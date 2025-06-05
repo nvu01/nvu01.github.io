@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-05T19:36:31+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-05T19:36:11+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-05T23:51:24+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-05T23:51:03+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
 
 <p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -28,8 +28,14 @@
     </ul>
   </li>
   <li><a href="#-dashboards-that-tell-a-story" id="markdown-toc--dashboards-that-tell-a-story">📊 Dashboards that Tell a Story</a>    <ul>
-      <li><a href="#dashboard-1-undervalued-stocks" id="markdown-toc-dashboard-1-undervalued-stocks">Dashboard 1: Undervalued Stocks</a></li>
-      <li><a href="#dashboard-2-industry-averages" id="markdown-toc-dashboard-2-industry-averages">Dashboard 2: Industry Averages</a></li>
+      <li><a href="#dashboard-1-undervalued-stocks" id="markdown-toc-dashboard-1-undervalued-stocks">Dashboard 1: Undervalued Stocks</a>        <ul>
+          <li><a href="#key-features--how-to-use-them" id="markdown-toc-key-features--how-to-use-them">Key Features &amp; How to Use Them</a></li>
+        </ul>
+      </li>
+      <li><a href="#dashboard-2-industry-averages" id="markdown-toc-dashboard-2-industry-averages">Dashboard 2: Industry Averages</a>        <ul>
+          <li><a href="#key-features--how-to-use-them-1" id="markdown-toc-key-features--how-to-use-them-1">Key Features &amp; How to Use Them</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li><a href="#automating-the-mess-turning-chaos-into-clean-data" id="markdown-toc-automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</a></li>
@@ -102,23 +108,85 @@ To make industry comparisons fair and statistically sound, we calculate the mean
 
 <h3 id="dashboard-1-undervalued-stocks">Dashboard 1: Undervalued Stocks</h3>
 
-<p>To highlight the top-scoring undervalued stocks across sectors — based on the criteria in our conceptual framework.</p>
+<p>I created this interactive dashboard to help users explore the top-scoring undervalued stocks across sectors based on the criteria in our conceptual framework.</p>
 
-<p><a href="https://app.powerbi.com/reportEmbed?reportId=ef6792ca-3df2-4562-add0-486ece1032b8&amp;autoAuth=true&amp;ctid=10dee7e3-bc0d-4cc7-b36a-a3d430a3db9d">See dashboard</a></p>
+<iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiNzUyMmMxOTctMzM4Mi00YTRjLTkyNjEtNDVlNzBlZWE0NzhjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
 
-<p>Key Visuals:</p>
+<h4 id="key-features--how-to-use-them">Key Features &amp; How to Use Them</h4>
 
-<p>Example Insight:</p>
+<p>This dashboard showcases stocks that meet preliminary undervaluation criteria, then scores and ranks them to help users identify top opportunities at a glance.</p>
+
+<p><strong>1. Filter by Sector and Market Cap</strong></p>
+
+<p>Use the filters at the right corner to select a sector (e.g., Communication Services) and market cap (Large, Mid, or Small). This tailors the view to peer groups for fair comparison.</p>
+
+<p><strong>2. Score-Based Stock Evaluation</strong></p>
+
+<p>All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5:</p>
+
+<p>✅ P/B &lt; 70% of the industry average<br />
+✅ ROE &gt; industry average<br />
+✅ ROA &gt; industry average<br />
+✅ P/E &lt; industry average<br />
+✅ P/E between 1 and 25</p>
+
+<p>The score for each stock is displayed as a horizontally stacked bar with one color-coded block per point. A stock with 3 bars scored 3 out of 5. A stock with 5 bars met all additional criteria and is a top candidate.</p>
+
+<p><strong>3. Z-Score Rankings: Performance Relative to Industry</strong></p>
+
+<p>Z-scores show how far a stock’s metric deviates from the industry average. This helps you spot the best stocks.</p>
+
+<p>Undervalued metrics:</p>
+
+<p>✅ P/FCF, P/B, A/E, P/E → negative z-score is better<br />
+✅ ROE, ROA → positive z-score is better</p>
+
+<p>Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
+Z-scores further from 0 (stronger deviations) are shaded in darker green, making standout values easy to spot.</p>
+
+<p><strong>4. Summary Cards</strong></p>
+
+<p>In the middle of the dashboard, you’ll find 6 cards showing the top 3 stocks for each fundamental metric (based on z-score).</p>
+
+<p>Use this to quickly identify leaders in: P/FCF, P/B, ROE, ROA, A/E, P/E</p>
+
+<p><strong>5. Metric Breakdown Table</strong></p>
+
+<p>Scroll through the table to see these detailed financial metrics for each stock: P/FCF, P/B, ROE, ROA, A/E, and P/E</p>
+
+<p><strong>6. Tooltips for Context</strong></p>
+
+<p>Hover over the bar chart to get deeper insight. Tooltips show a stock’s industry, market cap, current price, score for additional criteria.</p>
 
 <h3 id="dashboard-2-industry-averages">Dashboard 2: Industry Averages</h3>
 
-<p>To help users understand the financial “norms” for each industry and market cap group — so undervalued stocks can be spotted in context.</p>
+<p>I also created a dashboard showing industry averages of individual metric to help users understand the financial “norms” for each industry and market cap group.</p>
 
-<p><a href="https://app.powerbi.com/reportEmbed?reportId=b6a40ee2-828c-45bb-9d3f-b4b0c2e59120&amp;autoAuth=true&amp;ctid=10dee7e3-bc0d-4cc7-b36a-a3d430a3db9d">See dashboard</a></p>
+<iframe title="Industry Averages Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiZjBkYTRjNjUtYzQ2Yy00ZTNmLWFkNzMtY2Y0ZGVlMjdjNTQ0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
 
-<p>Key Visuals:</p>
+<h4 id="key-features--how-to-use-them-1">Key Features &amp; How to Use Them</h4>
 
-<p>Example Insight:</p>
+<p>This dashboard provides a high-level view of how financial fundamentals vary across sectors and industries. You can use the slicers to narrow the view to the industry and market cap in you’re interested in.</p>
+
+<p>Each visual displays industry-level averages for six core financial metrics, broken down by sector and market cap group (Large, Mid, Small):</p>
+<ul>
+  <li>Average P/FCF</li>
+  <li>Average P/B</li>
+  <li>Average ROE</li>
+  <li>Average ROA</li>
+  <li>Average A/E</li>
+  <li>Average P/E</li>
+</ul>
+
+<p>These averages are calculated after filtering out outliers using the interquartile range method. That way, each benchmark reflects a more accurate picture of what’s typical within a group of industry and market cap.</p>
+
+<p>Use this dashboard to identify which industries have:</p>
+
+<ul>
+  <li>Higher profitability (ROE, ROA)</li>
+  <li>Lower valuations (P/B, P/E)</li>
+  <li>More leverage (A/E)</li>
+</ul>
 
 <h2 id="automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</h2>
 
@@ -142,7 +210,7 @@ To make industry comparisons fair and statistically sound, we calculate the mean
   <li>Enable non-technical users to explore insights without needing to touch the raw data</li>
 </ul>
 
-<p>All DAX measures were designed to align with the logic used in Excel, ensuring consistency between platforms.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-05T19:36:11+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+<p>All DAX measures were designed to align with the logic used in Excel, ensuring consistency between platforms.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-05T23:51:03+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
 
 <p><a href="https://github.com/nvu01/BSDA-Capstone-Project" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -407,7 +475,7 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <h2 id="references">References</h2>
 <ul>
   <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
-</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">X Marks the Spot in Hydejack 9.2</title><link href="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/" rel="alternate" type="text/html" title="X Marks the Spot in Hydejack 9.2" /><published>2024-09-08T00:00:00+00:00</published><updated>2025-06-05T19:36:11+00:00</updated><id>https://nvu01.github.io//x-marks-the-spot-in-hydejack-9-2</id><content type="html" xml:base="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/"><![CDATA[<h2 id="new-social-media-icons">New Social Media Icons</h2>
+</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">X Marks the Spot in Hydejack 9.2</title><link href="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/" rel="alternate" type="text/html" title="X Marks the Spot in Hydejack 9.2" /><published>2024-09-08T00:00:00+00:00</published><updated>2025-06-05T23:51:03+00:00</updated><id>https://nvu01.github.io//x-marks-the-spot-in-hydejack-9-2</id><content type="html" xml:base="https://nvu01.github.io//2024-09-08-x-marks-the-spot-in-hydejack-9-2/"><![CDATA[<h2 id="new-social-media-icons">New Social Media Icons</h2>
 
 <p>Lots of things have changed in the world of social media since the last release. To bring Hydejack up to date, the default logo for Twitter has changed:</p>
 
@@ -512,7 +580,7 @@ No Google product feels appropriate as a default option for an ownership and sel
 
 <p>On a related note, I’ve also decided against updating the included Google Analytics script, in part because the upgrade path is incomprehensible, but also due the the same privacy concerns that make Google Fonts a bad default option. I recommend independent analytics services like 
 <a href="https://plausible.io">Plausible</a>, <a href="https://matomo.org/">Matomo</a> or maybe even <a href="https://counterscale.dev">Counterscale</a> (if you are a Cloudflare customer).
-You can include the tracking scripts by <a href="../../docs/basics.md#adding-custom-html-to-the-head">adding them as custom HTML</a>.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[This feature release adds new social media icons for 2024 and makes dark mode available to everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+00:00</published><updated>2025-06-05T19:36:11+00:00</updated><id>https://nvu01.github.io//introducing-hydejack-9</id><content type="html" xml:base="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
+You can include the tracking scripts by <a href="../../docs/basics.md#adding-custom-html-to-the-head">adding them as custom HTML</a>.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[This feature release adds new social media icons for 2024 and makes dark mode available to everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+00:00</published><updated>2025-06-05T23:51:03+00:00</updated><id>https://nvu01.github.io//introducing-hydejack-9</id><content type="html" xml:base="https://nvu01.github.io//2020-07-03-introducing-hydejack-9/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
 
 <p><a href="#linking-in-style">Modernized</a> <a href="#whats-in-the-cards">design</a>, <a href="#ready-for-the-big-screen">big headlines</a>, big new features: <a href="#built-in-search">Built-In Search</a>, <a href="#sticky-table-of-contents">Sticky Table of Contents</a>, and <a href="#auto-hiding-navbar">Auto-Hiding Navbar</a>. That <a href="#and-much-more">and more</a> is Hydejack 9.</p>
 
@@ -601,7 +669,7 @@ The source code is available on <a href="https://github.com/hydecorp/hydejack">G
   If you’re technically inclined, you can adopt the code located in <code class="language-plaintext highlighter-rouge">_includes/js/search-worker.js</code> to your needs. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="https://nvu01.github.io//2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+00:00</published><updated>2025-06-05T19:36:11+00:00</updated><id>https://nvu01.github.io//example-content-iii</id><content type="html" xml:base="https://nvu01.github.io//2018-06-01-example-content-iii/"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
+</div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="https://nvu01.github.io//2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+00:00</published><updated>2025-06-05T23:51:03+00:00</updated><id>https://nvu01.github.io//example-content-iii</id><content type="html" xml:base="https://nvu01.github.io//2018-06-01-example-content-iii/"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
 Don’t worry, these are merely CSS classes added with kramdown’s <code class="language-plaintext highlighter-rouge">{:...}</code> syntax,
 so that your content remains compatible with other Jekyll themes.</p>
 
@@ -821,7 +889,7 @@ A caption to an image.</p>
 </blockquote>
 
 <h2 id="faded-text">Faded text</h2>
-<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="https://nvu01.github.io//2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+00:00</published><updated>2025-06-05T19:36:11+00:00</updated><id>https://nvu01.github.io//example-content-ii</id><content type="html" xml:base="https://nvu01.github.io//2017-11-23-example-content-ii/"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="https://nvu01.github.io//2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+00:00</published><updated>2025-06-05T23:51:03+00:00</updated><id>https://nvu01.github.io//example-content-ii</id><content type="html" xml:base="https://nvu01.github.io//2017-11-23-example-content-ii/"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
 
 <p>There should be whitespace between paragraphs.</p>
 
@@ -1004,7 +1072,7 @@ A caption to an image.</p>
 </code></pre></div></div>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="https://nvu01.github.io//2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+00:00</published><updated>2025-06-05T19:36:11+00:00</updated><id>https://nvu01.github.io//example-content</id><content type="html" xml:base="https://nvu01.github.io//2012-02-07-example-content/"><![CDATA[<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+</code></pre></div></div>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="https://nvu01.github.io//2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+00:00</published><updated>2025-06-05T23:51:03+00:00</updated><id>https://nvu01.github.io//example-content</id><content type="html" xml:base="https://nvu01.github.io//2012-02-07-example-content/"><![CDATA[<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
 
 <blockquote>
   <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
