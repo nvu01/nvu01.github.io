@@ -81,26 +81,83 @@ For each criterion met, a stock gets 1 point. The highest score a stock can get 
 
 ### Dashboard 1: Undervalued Stocks
 
-To highlight the top-scoring undervalued stocks across sectors — based on the criteria in our conceptual framework.
+I created this interactive dashboard to help users explore the top-scoring undervalued stocks across sectors based on the criteria in our conceptual framework.
 
-[See dashboard](https://app.powerbi.com/reportEmbed?reportId=ef6792ca-3df2-4562-add0-486ece1032b8&autoAuth=true&ctid=10dee7e3-bc0d-4cc7-b36a-a3d430a3db9d)
+<iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiNzUyMmMxOTctMzM4Mi00YTRjLTkyNjEtNDVlNzBlZWE0NzhjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+
+#### Key Features & How to Use Them
+
+This dashboard showcases stocks that meet preliminary undervaluation criteria, then scores and ranks them to help users identify top opportunities at a glance.
+
+**1. Filter by Sector and Market Cap**
+
+Use the filters at the right corner to select a sector (e.g., Communication Services) and market cap (Large, Mid, or Small). This tailors the view to peer groups for fair comparison.
+
+**2. Score-Based Stock Evaluation**
+
+All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5:
+
+✅ P/B < 70% of the industry average  
+✅ ROE > industry average  
+✅ ROA > industry average  
+✅ P/E < industry average  
+✅ P/E between 1 and 25  
+
+The score for each stock is displayed as a horizontally stacked bar with one color-coded block per point. A stock with 3 bars scored 3 out of 5. A stock with 5 bars met all additional criteria and is a top candidate.
+
+**3. Z-Score Rankings: Performance Relative to Industry**
+
+Z-scores show how far a stock’s metric deviates from the industry average. This helps you spot the best stocks.
+
+Undervalued metrics:
+
+✅ P/FCF, P/B, A/E, P/E → negative z-score is better  
+✅ ROE, ROA → positive z-score is better
+
+Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
+Z-scores further from 0 (stronger deviations) are shaded in darker green, making standout values easy to spot.
+
+**4. Summary Cards**
+
+In the middle of the dashboard, you’ll find 6 cards showing the top 3 stocks for each fundamental metric (based on z-score).
+
+Use this to quickly identify leaders in: P/FCF, P/B, ROE, ROA, A/E, P/E
+
+**5. Metric Breakdown Table**
+
+Scroll through the table to see these detailed financial metrics for each stock: P/FCF, P/B, ROE, ROA, A/E, and P/E
 
 
-Key Visuals:
+**6. Tooltips for Context**
 
-
-Example Insight:
-
+Hover over the bar chart to get deeper insight. Tooltips show a stock's industry, market cap, current price, score for additional criteria.
 
 ### Dashboard 2: Industry Averages
 
-To help users understand the financial “norms” for each industry and market cap group — so undervalued stocks can be spotted in context.
+I also created a dashboard showing industry averages of individual metric to help users understand the financial “norms” for each industry and market cap group.
 
-[See dashboard](https://app.powerbi.com/reportEmbed?reportId=b6a40ee2-828c-45bb-9d3f-b4b0c2e59120&autoAuth=true&ctid=10dee7e3-bc0d-4cc7-b36a-a3d430a3db9d)
+<iframe title="Industry Averages Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiZjBkYTRjNjUtYzQ2Yy00ZTNmLWFkNzMtY2Y0ZGVlMjdjNTQ0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
-Key Visuals:
+#### Key Features & How to Use Them
 
-Example Insight:
+This dashboard provides a high-level view of how financial fundamentals vary across sectors and industries. You can use the slicers to narrow the view to the industry and market cap in you're interested in.
+
+Each visual displays industry-level averages for six core financial metrics, broken down by sector and market cap group (Large, Mid, Small):
+- Average P/FCF
+- Average P/B
+- Average ROE
+- Average ROA
+- Average A/E
+- Average P/E
+
+These averages are calculated after filtering out outliers using the interquartile range method. That way, each benchmark reflects a more accurate picture of what’s typical within a group of industry and market cap.
+
+Use this dashboard to identify which industries have:
+
+- Higher profitability (ROE, ROA)
+- Lower valuations (P/B, P/E)
+- More leverage (A/E)
+
 
 ## Automating the Mess: Turning Chaos into Clean Data
 
