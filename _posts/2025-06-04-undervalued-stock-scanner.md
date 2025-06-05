@@ -80,18 +80,23 @@ For each criterion met, a stock gets 1 point. The highest score a stock can get 
 ## 📊 Dashboards that Tell a Story
 
 ### Dashboard 1: Undervalued Stocks
-Purpose:
+
 To highlight the top-scoring undervalued stocks across sectors — based on the criteria in our conceptual framework.
 
+[See dashboard](https://app.powerbi.com/reportEmbed?reportId=ef6792ca-3df2-4562-add0-486ece1032b8&autoAuth=true&ctid=10dee7e3-bc0d-4cc7-b36a-a3d430a3db9d)
+
+
 Key Visuals:
+
 
 Example Insight:
 
 
 ### Dashboard 2: Industry Averages
 
-Purpose:
 To help users understand the financial “norms” for each industry and market cap group — so undervalued stocks can be spotted in context.
+
+[See dashboard](https://app.powerbi.com/reportEmbed?reportId=b6a40ee2-828c-45bb-9d3f-b4b0c2e59120&autoAuth=true&ctid=10dee7e3-bc0d-4cc7-b36a-a3d430a3db9d)
 
 Key Visuals:
 
