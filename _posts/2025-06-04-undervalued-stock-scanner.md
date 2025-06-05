@@ -9,7 +9,7 @@ tags: [dashboard, stock market, financial market]
 
 Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn't caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards. 
 
-While my husband handled the financial theory, I built a repeatable, error-resistant data solution. It taught me the importance of scalable workflows, modular data cleaning, and clear visual storytelling skills I now use professionally in analytics.
+
 
 <a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -22,7 +22,10 @@ While my husband handled the financial theory, I built a repeatable, error-resis
 
 ## 🎯 Project at a Glance
 
-The Undervalued Stock Scanner project aims to help identify potentially undervalued stocks by analyzing key financial metrics across various sectors. The project focuses on three market cap categories (Large Cap, Mid Cap, and Small Cap) and applies statistical methods to assess stock fundamentals.
+This project started over casual investment conversations with my husband. While my husband handled the financial theory, I built a repeatable, error-resistant data solution. Our goal? Identifying potentially undervalued stocks by analyzing key financial metrics across various sectors. The project focuses on three market cap categories (Large Cap, Mid Cap, and Small Cap) and applies statistical methods to assess stock fundamentals.
+
+It taught me the importance of scalable workflows, modular data cleaning, and clear visual storytelling skills I now use professionally in analytics.
+The Undervalued Stock Scanner project aims to help 
 
 ## 📂 Datasets
 
@@ -74,9 +77,25 @@ We further rank stocks based on these bonus signals:
 
 For each criterion met, a stock gets 1 point. The highest score a stock can get is 5 points.
 
-## Dashboards that Tell a Story
+## 📊 Dashboards that Tell a Story
+
+### Dashboard 1: Undervalued Stocks
+Purpose:
+To highlight the top-scoring undervalued stocks across sectors — based on the criteria in our conceptual framework.
+
+Key Visuals:
+
+Example Insight:
 
 
+### Dashboard 2: Industry Averages
+
+Purpose:
+To help users understand the financial “norms” for each industry and market cap group — so undervalued stocks can be spotted in context.
+
+Key Visuals:
+
+Example Insight:
 
 ## Automating the Mess: Turning Chaos into Clean Data
 
