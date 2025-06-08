@@ -33,7 +33,7 @@ In just one year, I completed a full 4-year bachelor’s degree in Data Analytic
 
 ## Skills & Tools
 
-**Languages & Libraries**: SQL, Python (pandas, NumPy, scikit-learn, statsmodels, Seaborn, Matplotlib), R, VBA, Power Query M, HTML  
+**Languages & Libraries**: SQL, Python (pandas, NumPy, scikit-learn, statsmodels, Seaborn, Matplotlib), Power Query M, R, VBA, HTML  
 
 **Tools**: PostgreSQL, MySQL, Tableau, Power BI, Excel, Jupyter Notebook, VS Code, PyCharm  
 
@@ -56,7 +56,7 @@ Learning never stops and that’s the fun part. Right now I’m leveling up in:
 
 ## Let’s Connect!
 
-Got a cool project, a strange dataset, or just stuck in a pivot table rabbit hole? Let’s connect — I’m always up for a good data conversation!
+Got a cool project, a strange dataset, or just stuck in a pivot table rabbit hole? Let’s connect! I’m always up for a good data conversation!
 
 [<i class="icon-github"></i>](https://github.com/nvu01)  
 [<i class="icon-linkedin2"></i>](https://www.linkedin.com/in/ngan-vu-719896328/)

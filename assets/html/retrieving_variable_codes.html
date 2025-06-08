@@ -7517,12 +7517,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This notebook is used to retrieve codes of variables in ACS tables.</p>
-<p>Variables in this project are gathered from 3 different types of tables: Subject Tables, Detailed Tables, Data Profiles.</p>
-<p>An API request requires variable codes of the selected variables and ucgid (geographic code).</p>
-<p>A variable code starts with a table ID with the first letter representing the table type: "S" for Subject Tables, "B" for Detailed Tables, "DP" for Data Profiles. For examples: S1701_C03_001E, DP03_0009PE, etc.</p>
-<p>More information about the table types and variables: <a href="https://www.census.gov/data/developers/data-sets/acs-1year.html">LINK</a></p>
-<p>Relevant variables are selected by browsing tables and variable labels on <a href="https://data.census.gov/">https://data.census.gov/</a>.</p>
+<p>An API request requires variable codes of the selected variables and ucgid (geographic code). This notebook is used to retrieve variable codes in ACS tables.</p>
 <p>The U.S. Census Bureau provides variable metadata in JSON format. These JSON format documentations were downloaded and saved as .json files in project folder:</p>
 <ul>
 <li><a href="./b_variables.json">b_variables.json</a> was downloaded from <a href="https://api.census.gov/data/2023/acs/acs1/variables.json">Detailed Tables Variables</a>.</li>
@@ -7945,7 +7940,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To retrieve variable code of a selected variable, run the below code and enter table ID, column names, and labels (case insensitive; leading and trailing spaces are accepted) as prompted.</p>
+<p>Variables in this project are gathered from 3 different types of tables: Subject Tables, Detailed Tables, Data Profiles.</p>
+<p>A variable code starts with a table ID with the first letter representing the table type: "S" for Subject Tables, "B" for Detailed Tables, "DP" for Data Profiles. For examples: S1701_C03_001E, DP03_0009PE, etc.</p>
+<p>Relevant variables are selected by browsing tables and variable labels on <a href="https://data.census.gov/">https://data.census.gov/</a>.</p>
+<p>To retrieve variable code of a selected variable, run the below code and enter table ID, column names, and labels as prompted (case insensitive; leading and trailing spaces are accepted).</p>
 <p>Example: to get variable code for poverty rate:</p>
 <ul>
 <li>Input:<br/>
@@ -7953,15 +7951,25 @@ Table ID: s1701<br/>
 Parent column: percent below poverty level<br/>
 Child column: estimate<br/>
 Parent label: Population for whom poverty status is determined<br/>
-Child label 1:<br/>
-Child label 2:<br/>
-Child label 3:</li>
+Child label 1: <code>Press Enter to skip</code><br/>
+Child label 2: <code>Press Enter to skip</code><br/>
+Child label 3: <code>Press Enter to skip</code></li>
 <li>Output:<br/>
 Table: S1701<br/>
 Variable label: Estimate!!Percent below poverty level!!Population for whom poverty status is determined<br/>
 Variable code: S1701_C03_001E</li>
 </ul>
-<p>The following get_var_id function is adapted from a Stack Overflow thread: <a href="https://stackoverflow.com/questions/70383942/filtering-a-column-specify-case-sensitivity">LINK</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=603929cc-96f8-4d68-9da7-91f9c9e5c105">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="My Local GIF" src="../other/example_retrieving_variable_codes.gif"/></p>
 </div>
 </div>
 </div>
@@ -8058,7 +8066,21 @@ Variable code: S1701_C03_001E
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3e49ba45-7bf0-46aa-99e2-34b6415e8ec4">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4c3ae0af-484d-44dc-bba0-1a86650142e8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="References">References<a class="anchor-link" href="#References">¶</a></h2><ul>
+<li>More information about ACS table types and variables: <a href="https://www.census.gov/data/developers/data-sets/acs-1year.html">LINK</a></li>
+<li>The get_var_id function is adapted from a Stack Overflow thread: <a href="https://stackoverflow.com/questions/70383942/filtering-a-column-specify-case-sensitivity">LINK</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=944cba23-6b4c-424b-b678-226168bccc86">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

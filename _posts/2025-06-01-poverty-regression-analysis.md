@@ -36,7 +36,7 @@ A key limitation is that the poverty rate is based on the Official Poverty Measu
 
 ## Data Collection
 
-The data were collected using API requests to the U.S. Census Bureau’s 2023 ACS 1-Year datasets. The data collection process required learning how ACS data is structured. I studied Census Bureau documentation to understand table formats, variable naming, and geographic codes like the ucgid, which was essential for accurate county-level API requests. 
+The data were collected using API requests to the U.S. Census Bureau’s 2023 ACS 1-Year datasets. The data collection process required learning how ACS data is structured. The whole process felt a bit overwhelming at first because the data is structured in ways I wasn’t used to. So, I spent time going through the Census Bureau’s documentation to get a clear picture of how everything fit together, including the nuances of table formats, variable naming and the geographic codes like the ucgid. 
 
 Initially, I planned to manually search for variable and geographic codes, but I later developed a more efficient method. I created a Python script that searches downloaded metadata files for variable codes based on table IDs and variable labels. This tool handles case and spacing issues, reducing human error. Part of the code was adapted from this 
 <a href="https://stackoverflow.com/questions/70383942/filtering-a-column-specify-case-sensitivity" target="_blank" rel="noopener">Stack Overflow thread</a>.
@@ -77,15 +77,15 @@ To evaluate the role of socioeconomic factors in explaining poverty rates across
 
 To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using **MinMaxScaler** before fitting the model. This will ensure that the predictors are on the same scale.
 
-For the baseline model and the improved model, I implemented residual analysis to **verify model assumptions** and ensure the **model’s validity**. OLS regression relies on several assumptions: **linearity** of relationships between predictors and the dependent variable, **homoscedasticit**y (constant variance of residuals), **independence of residual**s, and **normally distributed errors**. The analysis included visualizations such as **residual plots**, **histogram** and **boxplot of residual**s, and **Q-Q plot**. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.
+For the baseline model and the improved model, I implemented residual analysis to **verify model assumptions** and **ensure the model’s validity**. OLS regression relies on several assumptions: **linearity** of relationships between predictors and the dependent variable, **homoscedasticit**y (constant variance of residuals), **independence of residual**s, and **normally distributed errors**. The analysis included visualizations such as **residual plots**, **histogram** and **boxplot of residual**s, and **Q-Q plot**. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.
 
-Finally, to address issues identified in model diagnostics, I applied several refinement methods: 
+Finally, to address issues identified in model diagnostics, I applied several **refinement methods**: 
 - **Square root transformation** was applied to the **response variable** to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.  
 - An **interaction term** was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I'm assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.
 
-<img src="/assets/img/posts/1/interaction_term.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/interaction_term.png" alt="description" width="550" style="display: block; margin: 0 auto;"/>
 
-The drop in poverty rate with increasing income appears steeper for counties with lower house value than ones with higher house value. This means that the effect of income on poverty varies depending on house values.
+The drop in poverty rate with increasing income appears steeper for counties with lower house value (blue cluster) than ones with higher house value (orange cluster). This means that the effect of income on poverty varies depending on house values.
 
 Here's the interaction term:  
 ```df2['income_x_house_value'] = (df2['log_median_income'] * df2['sqrt_median_house_value'])```
@@ -138,7 +138,7 @@ Mean Squared Error: 0.07192225315999502
 
 **Residual vs fitted plot:** Was used to evaluate model fit and assumption validity, such as linearity and homoscedasticity.
 
-<img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="500" style="display: block; margin: 0 auto;"/>
 
 Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.
 
@@ -156,14 +156,14 @@ No strong patterns or funnel shapes. This supports the assumption of constant va
 
 **Q-Q plot:** Was used to assess normality of residuals by comparing their distribution to a theoretical normal distribution.
 
-<img src="/assets/img/posts/1/final_qq.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/1/final_qq.png" alt="description" width="500" style="display: block; margin: 0 auto;"/>
 
 - Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.
 
 
 ### Most Impactful Predictors
 
-#### Statistical Significance
+#### Statistical Significance of Individual Predictors
 
 >Public assistance may still matter, despite not being statistically significant, due to how poverty is defined.
 {:.lead}
@@ -190,7 +190,7 @@ Based on the predictors' p-values in the model's summary above:
 
 It is important to note that unlike SPM, the OPM does not include non-cash public assistance (like SNAP, housing subsidies, TANF) in its calculation. So counties with high assistance rates may not show reduced poverty under OPM even though aid might be helping in reality.
 
-#### Relative Importance
+#### Relative Importance of Individual Predictors
 
 >Counties with higher home values and incomes tend to have lower poverty rates, but each factor’s impact weakens as the other increases.
 {:.lead}
