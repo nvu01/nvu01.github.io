@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-07T03:57:51+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-07T03:57:29+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-08T23:52:58+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-08T23:52:34+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
 
 <p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -190,7 +190,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions.</p>
 
-<p>That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-07T03:57:29+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+<p>That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-08T23:52:34+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
 
 <p><a href="https://github.com/nvu01/BSDA-Capstone-Project" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -206,8 +206,8 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
       <li><a href="#models-predictive-power-and-significance" id="markdown-toc-models-predictive-power-and-significance">Model’s Predictive Power and Significance</a></li>
       <li><a href="#models-validity" id="markdown-toc-models-validity">Model’s Validity</a></li>
       <li><a href="#most-impactful-predictors" id="markdown-toc-most-impactful-predictors">Most Impactful Predictors</a>        <ul>
-          <li><a href="#statistical-significance" id="markdown-toc-statistical-significance">Statistical Significance</a></li>
-          <li><a href="#relative-importance" id="markdown-toc-relative-importance">Relative Importance</a></li>
+          <li><a href="#statistical-significance-of-individual-predictors" id="markdown-toc-statistical-significance-of-individual-predictors">Statistical Significance of Individual Predictors</a></li>
+          <li><a href="#relative-importance-of-individual-predictors" id="markdown-toc-relative-importance-of-individual-predictors">Relative Importance of Individual Predictors</a></li>
         </ul>
       </li>
     </ul>
@@ -235,7 +235,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <h2 id="data-collection">Data Collection</h2>
 
-<p>The data were collected using API requests to the U.S. Census Bureau’s 2023 ACS 1-Year datasets. The data collection process required learning how ACS data is structured. I studied Census Bureau documentation to understand table formats, variable naming, and geographic codes like the ucgid, which was essential for accurate county-level API requests.</p>
+<p>The data were collected using API requests to the U.S. Census Bureau’s 2023 ACS 1-Year datasets. The data collection process required learning how ACS data is structured. The whole process felt a bit overwhelming at first because the data is structured in ways I wasn’t used to. So, I spent time going through the Census Bureau’s documentation to get a clear picture of how everything fit together, including the nuances of table formats, variable naming and the geographic codes like the ucgid.</p>
 
 <p>Initially, I planned to manually search for variable and geographic codes, but I later developed a more efficient method. I created a Python script that searches downloaded metadata files for variable codes based on table IDs and variable labels. This tool handles case and spacing issues, reducing human error. Part of the code was adapted from this 
 <a href="https://stackoverflow.com/questions/70383942/filtering-a-column-specify-case-sensitivity" target="_blank" rel="noopener">Stack Overflow thread</a>.</p>
@@ -291,17 +291,17 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using <strong>MinMaxScaler</strong> before fitting the model. This will ensure that the predictors are on the same scale.</p>
 
-<p>For the baseline model and the improved model, I implemented residual analysis to <strong>verify model assumptions</strong> and ensure the <strong>model’s validity</strong>. OLS regression relies on several assumptions: <strong>linearity</strong> of relationships between predictors and the dependent variable, <strong>homoscedasticit</strong>y (constant variance of residuals), <strong>independence of residual</strong>s, and <strong>normally distributed errors</strong>. The analysis included visualizations such as <strong>residual plots</strong>, <strong>histogram</strong> and <strong>boxplot of residual</strong>s, and <strong>Q-Q plot</strong>. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
+<p>For the baseline model and the improved model, I implemented residual analysis to <strong>verify model assumptions</strong> and <strong>ensure the model’s validity</strong>. OLS regression relies on several assumptions: <strong>linearity</strong> of relationships between predictors and the dependent variable, <strong>homoscedasticit</strong>y (constant variance of residuals), <strong>independence of residual</strong>s, and <strong>normally distributed errors</strong>. The analysis included visualizations such as <strong>residual plots</strong>, <strong>histogram</strong> and <strong>boxplot of residual</strong>s, and <strong>Q-Q plot</strong>. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
 
-<p>Finally, to address issues identified in model diagnostics, I applied several refinement methods:</p>
+<p>Finally, to address issues identified in model diagnostics, I applied several <strong>refinement methods</strong>:</p>
 <ul>
   <li><strong>Square root transformation</strong> was applied to the <strong>response variable</strong> to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.</li>
   <li>An <strong>interaction term</strong> was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I’m assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.</li>
 </ul>
 
-<p><img src="/assets/img/posts/1/interaction_term.png" alt="description" width="600" style="display: block; margin: 0 auto;" /></p>
+<p><img src="/assets/img/posts/1/interaction_term.png" alt="description" width="550" style="display: block; margin: 0 auto;" /></p>
 
-<p>The drop in poverty rate with increasing income appears steeper for counties with lower house value than ones with higher house value. This means that the effect of income on poverty varies depending on house values.</p>
+<p>The drop in poverty rate with increasing income appears steeper for counties with lower house value (blue cluster) than ones with higher house value (orange cluster). This means that the effect of income on poverty varies depending on house values.</p>
 
 <p>Here’s the interaction term:<br />
 <code class="language-plaintext highlighter-rouge">df2['income_x_house_value'] = (df2['log_median_income'] * df2['sqrt_median_house_value'])</code></p>
@@ -355,7 +355,7 @@ Mean Squared Error: 0.07192225315999502
 
 <p><strong>Residual vs fitted plot:</strong> Was used to evaluate model fit and assumption validity, such as linearity and homoscedasticity.</p>
 
-<p><img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="600" style="display: block; margin: 0 auto;" /></p>
+<p><img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="500" style="display: block; margin: 0 auto;" /></p>
 
 <p>Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.</p>
 
@@ -375,7 +375,7 @@ Mean Squared Error: 0.07192225315999502
 
 <p><strong>Q-Q plot:</strong> Was used to assess normality of residuals by comparing their distribution to a theoretical normal distribution.</p>
 
-<p><img src="/assets/img/posts/1/final_qq.png" alt="description" width="600" style="display: block; margin: 0 auto;" /></p>
+<p><img src="/assets/img/posts/1/final_qq.png" alt="description" width="500" style="display: block; margin: 0 auto;" /></p>
 
 <ul>
   <li>Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.</li>
@@ -383,7 +383,7 @@ Mean Squared Error: 0.07192225315999502
 
 <h3 id="most-impactful-predictors">Most Impactful Predictors</h3>
 
-<h4 id="statistical-significance">Statistical Significance</h4>
+<h4 id="statistical-significance-of-individual-predictors">Statistical Significance of Individual Predictors</h4>
 
 <blockquote class="lead">
   <p>Public assistance may still matter, despite not being statistically significant, due to how poverty is defined.</p>
@@ -412,7 +412,7 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 
 <p>It is important to note that unlike SPM, the OPM does not include non-cash public assistance (like SNAP, housing subsidies, TANF) in its calculation. So counties with high assistance rates may not show reduced poverty under OPM even though aid might be helping in reality.</p>
 
-<h4 id="relative-importance">Relative Importance</h4>
+<h4 id="relative-importance-of-individual-predictors">Relative Importance of Individual Predictors</h4>
 
 <blockquote class="lead">
   <p>Counties with higher home values and incomes tend to have lower poverty rates, but each factor’s impact weakens as the other increases.</p>
@@ -455,35 +455,31 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <h2 id="references">References</h2>
 <ul>
   <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
-</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-07T03:57:29+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>In this Tableau project, I explored trending YouTube videos across the U.S. to uncover insights into viewer sentiment, content performance, and regional preferences.</p>
+</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-08T23:52:34+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
 
 <p><a href="https://github.com/nvu01/Tableau-Public-Dashboard/tree/main" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
 </a></p>
 
 <ul class="large-only" id="markdown-toc">
-  <li><a href="#datasets-overview" id="markdown-toc-datasets-overview">Datasets Overview</a></li>
-  <li><a href="#what-i-built-and-why" id="markdown-toc-what-i-built-and-why">What I Built and Why</a>    <ul>
-      <li><a href="#key-visualizations" id="markdown-toc-key-visualizations">Key Visualizations:</a></li>
-      <li><a href="#tooltips" id="markdown-toc-tooltips">Tooltips</a></li>
-    </ul>
-  </li>
+  <li><a href="#data-source" id="markdown-toc-data-source">Data Source</a></li>
+  <li><a href="#what-i-set-out-to-discover" id="markdown-toc-what-i-set-out-to-discover">What I Set Out to Discover</a></li>
   <li><a href="#interactive-dashboard" id="markdown-toc-interactive-dashboard">Interactive Dashboard</a></li>
   <li><a href="#guided-story-a-walkthrough-of-insights" id="markdown-toc-guided-story-a-walkthrough-of-insights">Guided Story: A Walkthrough of Insights</a></li>
   <li><a href="#key-takeaways" id="markdown-toc-key-takeaways">Key Takeaways</a></li>
+  <li><a href="#behind-the-visualizations" id="markdown-toc-behind-the-visualizations">Behind the Visualizations</a></li>
   <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
 </ul>
 
-<h2 id="datasets-overview">Datasets Overview</h2>
+<h2 id="data-source">Data Source</h2>
 
-<p>For my data visualization project, I am using datasets containing statistics on trending YouTube videos in the U.S. These datasets were originally sourced from Kaggle and then transformed and cleaned by Udacity for educational purposes. The cleaned datasets can be found in my GitHub repo.</p>
+<p>For my data visualization project, I am using datasets containing statistics on trending YouTube videos in the U.S. These datasets were originally sourced from Kaggle and then transformed and cleaned by Udacity for educational purposes. The cleaned datasets can be found in my <a href="https://github.com/nvu01/Tableau-Public-Dashboard/tree/main">GitHub repo</a>.</p>
 
 <p>Data source: <a href="https://www.kaggle.com/datasets/datasnaek/youtube-new/data?select=USvideos.csv">Kaggle</a></p>
 
-<h2 id="what-i-built-and-why">What I Built and Why</h2>
+<h2 id="what-i-set-out-to-discover">What I Set Out to Discover</h2>
 
-<p>I designed four interactive visualizations to tell a story and answer deeper questions that go beyond surface metrics like views or likes:</p>
-
+<p>I designed four interactive visualizations to tell a story and answer deeper questions that go beyond surface metrics like views or likes. These business questions guided the structure and design of the dashboard:</p>
 <ul>
   <li>Do more popular videos also attract more criticism?</li>
   <li>Which creators consistently break through the noise?</li>
@@ -491,54 +487,18 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
   <li>How does content preference vary across the U.S.?</li>
 </ul>
 
-<h3 id="key-visualizations">Key Visualizations:</h3>
-
-<p>The analysis is powered by four main visualizations:</p>
-
-<p><strong>1. Top 20 YouTube Channels (Bar Chart)</strong>:</p>
-
-<p>To identify the most influential creators, I built a bar chart ranking the top 20 YouTube channels by total views. Since trending videos in the dataset appear repeatedly across multiple dates (as long as it remained trending), I used Tableau’s Level of Detail (LOD) calculation to ensure only the maximum view count per unique video was used in the plot, avoiding duplicate entries. Then I aggregated these values to get the total views per channel.</p>
-
-<p><strong>2. Likes vs. Dislikes Across YouTube Categories (Scatter Plot)</strong>:</p>
-
-<p>The scatter plot reveals the relationship between likes and dislikes for trending videos in different categories. Each data point represents an individual video. The shape of each point corresponds to the video’s category, so users can immediately identify content types without relying on color alone.</p>
-
-<p>I added a “Category Name” filter to let users focus on specific genres (like Comedy or Music) and investigate how sentiment patterns vary.</p>
-
-<p><strong>3. Video and View Counts by Category (Dual-Axis Bar Chart)</strong>:</p>
-
-<p>This chart addresses an important question: is volume or impact more important in content trends?</p>
-
-<p>I created a dual-axis chart to show:</p>
-<ul>
-  <li>Bar chart: Total view counts per category (aggregated from highest view count per video)</li>
-  <li>Dot plot: Number of unique trending videos in that category</li>
-</ul>
-
-<p>I also structured the hierarchy with Channel Title nested under Category Name, so users can drill down into specific creators within each genre.</p>
-
-<p><strong>4. Top YouTube Categories by State (Interactive Map)</strong>:</p>
-
-<p>The interactive map shows regional preferences with each state colored by its most popular YouTube category (based on total views). This visualization offers a regional perspective on video trends and helps understand geographic differences in content preferences.</p>
-
-<p>Users can also apply the Category Name filter to see where specific content types are trending, even if they’re not the most dominant in that state. This interaction makes it easy to investigate niche audiences or regional differences in taste.</p>
-
-<h3 id="tooltips">Tooltips</h3>
-
-<p>Every chart in the dashboard includes tooltips that appear when users hover over data points. These tooltips provide additional context such as video titles, channel names, categories, view counts, likes, and dislikes, without cluttering the visual space. This design choice keeps the interface clean while giving users quick access to details for deeper insight.</p>
-
 <h2 id="interactive-dashboard">Interactive Dashboard</h2>
 
-<p>Explore the full dashboard here, filter by category or hover over charts to get deeper insights.</p>
+<p>Let’s explore the full dashboard here! Filter by category, hover over the charts for tooltips, and uncover deeper insights as you interact with the data.</p>
 
-<iframe src="https://public.tableau.com/views/U_S_YouTubeVideoTrends/U_S_YouTubeVideoTrends?:showVizHome=no&amp;:embed=true" width="1280" height="720px" frameborder="0" allowfullscreen="">
+<iframe src="https://public.tableau.com/views/U_S_YouTubeVideoTrends/U_S_YouTubeVideoTrends?:showVizHome=no&amp;:embed=true" width="1280" height="725" frameborder="0" allowfullscreen="">
 </iframe>
 
 <h2 id="guided-story-a-walkthrough-of-insights">Guided Story: A Walkthrough of Insights</h2>
 
 <p>This Tableau Story walks you through the key findings, one insight at a time.</p>
 
-<iframe src="https://public.tableau.com/views/StoryU_S_YouTubeVideoTrends/Story?:showVizHome=no&amp;:embed=true" width="1000" height="800px" frameborder="0" allowfullscreen="">
+<iframe src="https://public.tableau.com/views/StoryU_S_YouTubeVideoTrends/Story?:showVizHome=no&amp;:embed=true" width="1000" height="827px" frameborder="0" allowfullscreen="">
 </iframe>
 
 <h2 id="key-takeaways">Key Takeaways</h2>
@@ -550,6 +510,44 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
   <li><strong>Geography matters.</strong> Music reigns nationwide, but Entertainment and Gaming see regional spikes.</li>
 </ul>
 
+<h2 id="behind-the-visualizations">Behind the Visualizations</h2>
+
+<p>The analysis is powered by four main visualizations:</p>
+
+<p><strong>1. Top 20 YouTube Channels (Bar Chart)</strong>:</p>
+
+<p>To identify the most influential creators, I built a bar chart ranking the top 20 YouTube channels by total views. Since trending videos in the dataset appear repeatedly across multiple dates (as long as it remained trending), I used Tableau’s Level of Detail (LOD) calculation to extract the maximum value of views per unique video, avoiding duplicate entries. Then I aggregated these values to get the total views per channel.</p>
+
+<p><strong>2. Likes vs. Dislikes Across YouTube Categories (Scatter Plot)</strong>:</p>
+
+<p>The scatter plot reveals the relationship between likes and dislikes for trending videos in different categories. Each data point represents an individual video. The shape of each point corresponds to the video’s category, so users can immediately identify content types without relying on color alone.</p>
+
+<p>Because the same video could appear on multiple trending days, I again applied an LOD calculation to capture only each video’s highest recorded engagement (likes and dislikes), instead of a cumulative total across multiple entries.</p>
+
+<p>I also added a “Category Name” filter to let users focus on specific genres (like Comedy or Music) and investigate how sentiment patterns vary.</p>
+
+<p><strong>3. Video and View Counts by Category (Dual-Axis Bar Chart)</strong>:</p>
+
+<p>This chart addresses an important question: is volume or impact more important in content trends?</p>
+
+<p>I created a dual-axis chart to show:</p>
+<ul>
+  <li>Bar chart: Total view counts per category (aggregated from highest view count per video)</li>
+  <li>Dot plot: Number of unique trending videos in that category</li>
+</ul>
+
+<p>I also structured the hierarchy with “Channel Title” nested under “Category Name”, so users can drill down into specific creators within each genre.</p>
+
+<p><strong>4. Top YouTube Categories by State (Interactive Map)</strong>:</p>
+
+<p>The interactive map shows regional preferences with each state colored by its most popular YouTube category (based on total views). This visualization offers a regional perspective on video trends and helps understand geographic differences in content preferences.</p>
+
+<p>Users can also apply the “Category Name” filter to see where specific content types are trending, even if they’re not the most dominant in that state. This interaction makes it easy to investigate niche audiences or regional differences in taste.</p>
+
+<p><strong>Tooltips</strong></p>
+
+<p>Every visualization includes tooltips that appear when users hover over data points. These tooltips provide additional context such as video titles, channel names, categories, view counts, likes, and dislikes, without cluttering the visual space. This design choice keeps the interface clean while giving users quick access to details for deeper insight.</p>
+
 <h2 id="final-thoughts">Final Thoughts</h2>
 
-<p>With Tableau, I turned a complex dataset into an accessible, interactive tool that surfaces insights through design and exploration. But this project was more than just building a dashboard. It was an exercise in turning raw data into narrative. Beyond the technical skills, this project pushed me to think like a storyteller, to guide users through the data, not just analyze it.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="youtube" /><category term="tableau dashboard" /><category term="data visualization" /><summary type="html"><![CDATA[An interactive Tableau dashboard that visualizes U.S. YouTube trending data to reveal viewer sentiment, top channels, and regional content preferences.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>With Tableau, I turned a complex dataset into an accessible, interactive tool that surfaces insights through design and exploration. But this project was more than just building a dashboard. It was an exercise in turning raw data into narrative. Beyond the technical skills, this project pushed me to think like a storyteller, to guide users through the data, not just analyze it.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="youtube" /><category term="tableau dashboard" /><category term="tableau story" /><category term="data visualization" /><category term="storytelling" /><summary type="html"><![CDATA[An interactive Tableau dashboard that visualizes U.S. YouTube trending data to reveal viewer sentiment, top channels, and regional content preferences.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

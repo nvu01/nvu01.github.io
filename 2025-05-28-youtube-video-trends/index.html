@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" />
 <meta property="twitter:title" content="U.S. YouTube Video Trends: A Tableau Dashboard &amp; Story" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-07T03:57:29+00:00","datePublished":"2025-05-28T00:00:00+00:00","description":"An interactive Tableau dashboard that visualizes U.S. YouTube trending data to reveal viewer sentiment, top channels, and regional content preferences.","headline":"U.S. YouTube Video Trends: A Tableau Dashboard &amp; Story","image":"https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-05-28-youtube-video-trends/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-05-28-youtube-video-trends/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-08T23:52:34+00:00","datePublished":"2025-05-28T00:00:00+00:00","description":"An interactive Tableau dashboard that visualizes U.S. YouTube trending data to reveal viewer sentiment, top channels, and regional content preferences.","headline":"U.S. YouTube Video Trends: A Tableau Dashboard &amp; Story","image":"https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-05-28-youtube-video-trends/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-05-28-youtube-video-trends/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -118,7 +118,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-07T03:57:51+00:00',
+    INDEX_KEY: 'index--2025-06-08T23:52:58+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -274,7 +274,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2025-05-28T00:00:00+00:00">28 May 2025</time>  on <span>Youtube</span>, <span>Tableau dashboard</span>, <span>Data visualization</span>
+        <time datetime="2025-05-28T00:00:00+00:00">28 May 2025</time>  on <span>Youtube</span>, <span>Tableau dashboard</span>, <span>Tableau story</span>, <span>Data visualization</span>, <span>Storytelling</span>
       </span>
       
         
@@ -283,10 +283,10 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
           
             
             
-            <span class="ellipsis" data-tippy-content="Last modified at: 07 Jun 2025">
+            <span class="ellipsis" data-tippy-content="Last modified at: 08 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-07T03:57:29+00:00">2025-06-07</time>
+              <time datetime="2025-06-08T23:52:34+00:00">2025-06-08</time>
             </span>
           
         
@@ -332,35 +332,31 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   </header>
 
   
-    <p>In this Tableau project, I explored trending YouTube videos across the U.S. to uncover insights into viewer sentiment, content performance, and regional preferences.</p>
+    <p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
 
 <p><a href="https://github.com/nvu01/Tableau-Public-Dashboard/tree/main" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
 </a></p>
 
 <ul class="large-only" id="markdown-toc">
-  <li><a href="#datasets-overview" id="markdown-toc-datasets-overview">Datasets Overview</a></li>
-  <li><a href="#what-i-built-and-why" id="markdown-toc-what-i-built-and-why">What I Built and Why</a>    <ul>
-      <li><a href="#key-visualizations" id="markdown-toc-key-visualizations">Key Visualizations:</a></li>
-      <li><a href="#tooltips" id="markdown-toc-tooltips">Tooltips</a></li>
-    </ul>
-  </li>
+  <li><a href="#data-source" id="markdown-toc-data-source">Data Source</a></li>
+  <li><a href="#what-i-set-out-to-discover" id="markdown-toc-what-i-set-out-to-discover">What I Set Out to Discover</a></li>
   <li><a href="#interactive-dashboard" id="markdown-toc-interactive-dashboard">Interactive Dashboard</a></li>
   <li><a href="#guided-story-a-walkthrough-of-insights" id="markdown-toc-guided-story-a-walkthrough-of-insights">Guided Story: A Walkthrough of Insights</a></li>
   <li><a href="#key-takeaways" id="markdown-toc-key-takeaways">Key Takeaways</a></li>
+  <li><a href="#behind-the-visualizations" id="markdown-toc-behind-the-visualizations">Behind the Visualizations</a></li>
   <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
 </ul>
 
-<h2 id="datasets-overview">Datasets Overview</h2>
+<h2 id="data-source">Data Source</h2>
 
-<p>For my data visualization project, I am using datasets containing statistics on trending YouTube videos in the U.S. These datasets were originally sourced from Kaggle and then transformed and cleaned by Udacity for educational purposes. The cleaned datasets can be found in my GitHub repo.</p>
+<p>For my data visualization project, I am using datasets containing statistics on trending YouTube videos in the U.S. These datasets were originally sourced from Kaggle and then transformed and cleaned by Udacity for educational purposes. The cleaned datasets can be found in my <a href="https://github.com/nvu01/Tableau-Public-Dashboard/tree/main">GitHub repo</a>.</p>
 
 <p>Data source: <a href="https://www.kaggle.com/datasets/datasnaek/youtube-new/data?select=USvideos.csv">Kaggle</a></p>
 
-<h2 id="what-i-built-and-why">What I Built and Why</h2>
+<h2 id="what-i-set-out-to-discover">What I Set Out to Discover</h2>
 
-<p>I designed four interactive visualizations to tell a story and answer deeper questions that go beyond surface metrics like views or likes:</p>
-
+<p>I designed four interactive visualizations to tell a story and answer deeper questions that go beyond surface metrics like views or likes. These business questions guided the structure and design of the dashboard:</p>
 <ul>
   <li>Do more popular videos also attract more criticism?</li>
   <li>Which creators consistently break through the noise?</li>
@@ -368,19 +364,44 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li>How does content preference vary across the U.S.?</li>
 </ul>
 
-<h3 id="key-visualizations">Key Visualizations:</h3>
+<h2 id="interactive-dashboard">Interactive Dashboard</h2>
+
+<p>Let’s explore the full dashboard here! Filter by category, hover over the charts for tooltips, and uncover deeper insights as you interact with the data.</p>
+
+<iframe src="https://public.tableau.com/views/U_S_YouTubeVideoTrends/U_S_YouTubeVideoTrends?:showVizHome=no&amp;:embed=true" width="1280" height="725" frameborder="0" allowfullscreen="">
+</iframe>
+
+<h2 id="guided-story-a-walkthrough-of-insights">Guided Story: A Walkthrough of Insights</h2>
+
+<p>This Tableau Story walks you through the key findings, one insight at a time.</p>
+
+<iframe src="https://public.tableau.com/views/StoryU_S_YouTubeVideoTrends/Story?:showVizHome=no&amp;:embed=true" width="1000" height="827px" frameborder="0" allowfullscreen="">
+</iframe>
+
+<h2 id="key-takeaways">Key Takeaways</h2>
+
+<ul>
+  <li><strong>Popularity attracts polarity.</strong> Trending videos with high likes often come with a high number of dislikes.</li>
+  <li><strong>Big brands dominate.</strong> Marvel Entertainment and YouTube Spotlight top the charts in total views.</li>
+  <li><strong>Music wins in impact.</strong> Fewer videos, but each with massive reach.</li>
+  <li><strong>Geography matters.</strong> Music reigns nationwide, but Entertainment and Gaming see regional spikes.</li>
+</ul>
+
+<h2 id="behind-the-visualizations">Behind the Visualizations</h2>
 
 <p>The analysis is powered by four main visualizations:</p>
 
 <p><strong>1. Top 20 YouTube Channels (Bar Chart)</strong>:</p>
 
-<p>To identify the most influential creators, I built a bar chart ranking the top 20 YouTube channels by total views. Since trending videos in the dataset appear repeatedly across multiple dates (as long as it remained trending), I used Tableau’s Level of Detail (LOD) calculation to ensure only the maximum view count per unique video was used in the plot, avoiding duplicate entries. Then I aggregated these values to get the total views per channel.</p>
+<p>To identify the most influential creators, I built a bar chart ranking the top 20 YouTube channels by total views. Since trending videos in the dataset appear repeatedly across multiple dates (as long as it remained trending), I used Tableau’s Level of Detail (LOD) calculation to extract the maximum value of views per unique video, avoiding duplicate entries. Then I aggregated these values to get the total views per channel.</p>
 
 <p><strong>2. Likes vs. Dislikes Across YouTube Categories (Scatter Plot)</strong>:</p>
 
 <p>The scatter plot reveals the relationship between likes and dislikes for trending videos in different categories. Each data point represents an individual video. The shape of each point corresponds to the video’s category, so users can immediately identify content types without relying on color alone.</p>
 
-<p>I added a “Category Name” filter to let users focus on specific genres (like Comedy or Music) and investigate how sentiment patterns vary.</p>
+<p>Because the same video could appear on multiple trending days, I again applied an LOD calculation to capture only each video’s highest recorded engagement (likes and dislikes), instead of a cumulative total across multiple entries.</p>
+
+<p>I also added a “Category Name” filter to let users focus on specific genres (like Comedy or Music) and investigate how sentiment patterns vary.</p>
 
 <p><strong>3. Video and View Counts by Category (Dual-Axis Bar Chart)</strong>:</p>
 
@@ -392,40 +413,17 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li>Dot plot: Number of unique trending videos in that category</li>
 </ul>
 
-<p>I also structured the hierarchy with Channel Title nested under Category Name, so users can drill down into specific creators within each genre.</p>
+<p>I also structured the hierarchy with “Channel Title” nested under “Category Name”, so users can drill down into specific creators within each genre.</p>
 
 <p><strong>4. Top YouTube Categories by State (Interactive Map)</strong>:</p>
 
 <p>The interactive map shows regional preferences with each state colored by its most popular YouTube category (based on total views). This visualization offers a regional perspective on video trends and helps understand geographic differences in content preferences.</p>
 
-<p>Users can also apply the Category Name filter to see where specific content types are trending, even if they’re not the most dominant in that state. This interaction makes it easy to investigate niche audiences or regional differences in taste.</p>
+<p>Users can also apply the “Category Name” filter to see where specific content types are trending, even if they’re not the most dominant in that state. This interaction makes it easy to investigate niche audiences or regional differences in taste.</p>
 
-<h3 id="tooltips">Tooltips</h3>
+<p><strong>Tooltips</strong></p>
 
-<p>Every chart in the dashboard includes tooltips that appear when users hover over data points. These tooltips provide additional context such as video titles, channel names, categories, view counts, likes, and dislikes, without cluttering the visual space. This design choice keeps the interface clean while giving users quick access to details for deeper insight.</p>
-
-<h2 id="interactive-dashboard">Interactive Dashboard</h2>
-
-<p>Explore the full dashboard here, filter by category or hover over charts to get deeper insights.</p>
-
-<iframe src="https://public.tableau.com/views/U_S_YouTubeVideoTrends/U_S_YouTubeVideoTrends?:showVizHome=no&amp;:embed=true" width="1280" height="720px" frameborder="0" allowfullscreen="">
-</iframe>
-
-<h2 id="guided-story-a-walkthrough-of-insights">Guided Story: A Walkthrough of Insights</h2>
-
-<p>This Tableau Story walks you through the key findings, one insight at a time.</p>
-
-<iframe src="https://public.tableau.com/views/StoryU_S_YouTubeVideoTrends/Story?:showVizHome=no&amp;:embed=true" width="1000" height="800px" frameborder="0" allowfullscreen="">
-</iframe>
-
-<h2 id="key-takeaways">Key Takeaways</h2>
-
-<ul>
-  <li><strong>Popularity attracts polarity.</strong> Trending videos with high likes often come with a high number of dislikes.</li>
-  <li><strong>Big brands dominate.</strong> Marvel Entertainment and YouTube Spotlight top the charts in total views.</li>
-  <li><strong>Music wins in impact.</strong> Fewer videos, but each with massive reach.</li>
-  <li><strong>Geography matters.</strong> Music reigns nationwide, but Entertainment and Gaming see regional spikes.</li>
-</ul>
+<p>Every visualization includes tooltips that appear when users hover over data points. These tooltips provide additional context such as video titles, channel names, categories, view counts, likes, and dislikes, without cluttering the visual space. This design choice keeps the interface clean while giving users quick access to details for deeper insight.</p>
 
 <h2 id="final-thoughts">Final Thoughts</h2>
 
