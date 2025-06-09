@@ -39,24 +39,36 @@ Each sector includes multiple industries. When comparing stocks, it's important 
 
 Here’s a quick overview of the financial metrics we used:
 
-#### Price-to-Free Cash Flow ratio (P/FCF)
+**Price-to-Free Cash Flow ratio (P/FCF)**
+
 Price-to-Free Cash Flow (P/FCF): A high P/FCF ratio indicates that the specific firm is trading at a high price but is not generating enough free cash flows to justify the price. Smaller price ratios are generally preferred, as they may reveal a firm generating ample cash flows that may not yet be reflected in the price.
-#### Price-to-Book ratio (P/B)
+
+**Price-to-Book ratio (P/B)**
+
 Book Value Per Share (BVPS) shows a company's net assets per share. If BVPS is higher than the stock price, the stock may be undervalued. The P/B ratio compares market price to book value. Thus, P/B of 1 means it is traded at exactly where it should be. Higher P/B means it might be overvalued.
-#### Return on Equity (ROE)
+
+**Return on Equity (ROE)**
+
 This ratio is a gauge of a corporation's profitability and how efficiently it generates those profits. The higher the ROE, the better a company is at converting its equity financing into profits.
-#### Return on Assets (ROA)
+
+**Return on Assets (ROA)**
+
 Return on assets measures how effective a company's management is in generating profit from the total assets on its balance sheet. A ROA that rises over time indicates that the company is doing well at increasing its profits with each investment dollar it spends.
-#### Asset-to-equity ratio (A/E)
+
+**Asset-to-equity ratio (A/E)**
+
 The asset-to-equity ratio measures a company's financial leverage by comparing its total assets to its shareholders' equity. A higher ratio means more debt and higher financial risk. A lower ratio signals a more conservative, equity-heavy structure. 
-#### Price-to-Earnings ratio (P/E)
+
+**Price-to-Earnings ratio (P/E)**
+
 This metric shows how much investors are paying for each dollar of earnings. A high P/E can signal high growth expectations or overvaluation. A low P/E might suggest undervaluation or strong recent performance.
 
 ### How We Evaluate Stocks Using These Metrics
 Our evaluation is based on a series of carefully selected financial criteria but here’s the key: we never compare a stock to the wrong peer group. Each stock is only evaluated relative to the industry average within its own market cap category.
 To make industry comparisons fair and statistically sound, we calculate the mean and standard deviation for each metric within the same industry and market cap group, **excluding outliers**. Outliers are identified using the interquartile range (IQR) method, and removed before calculating averages and z-scores. 
 
-#### Preliminary criteria: 
+**Preliminary criteria:**
+
 To be considered “undervalued,” a stock must meet all of these:
 - P/FCF > 0 and below the industry average
 - P/B > 0 and below the industry average
@@ -64,7 +76,8 @@ To be considered “undervalued,” a stock must meet all of these:
 - ROE > 10%
 - ROA > 5%
 
-#### Additional criteria: 
+**Additional criteria:**
+
 We further rank stocks based on these bonus signals:
 - P/B < 70% of industry average
 - ROE > industry average
@@ -130,7 +143,7 @@ Users can use this dashboard to identify which industries are overhyped with low
 
 ## Automating the Mess: Turning Chaos into Clean Data
 
-Initially, my husband manually cleaned and analyzed the raw stock data in Excel. But with 11 sector-specific datasets and dozens of formulas, the process quickly became time-consuming, repetitive, and prone to error, especially with frequent data updates. Each refresh could take hours.
+Initially, my husband manually cleaned and analyzed the raw stock data in Excel. But with 11 sector-specific datasets and dozens of formulas, the process quickly became time-consuming, repetitive, and prone to error. Especially with frequent data updates, each refresh could take hours.
 
 I completely re-engineered the process to be fast, accurate, and user-friendly by implementing a set of tools:
 - Power Query (20+ custom functions): For automatic cleaning, transformation, and metric calculation across all datasets.
@@ -152,6 +165,4 @@ All DAX measures were designed to align with the logic used in Excel, ensuring c
 
 This project started with a shared curiosity and turned into a complete, repeatable workflow that saves hours and delivers clear insights. It was as much about collaboration as it was about technology. Working closely with my husband, a non-technical stakeholder, I used an informal agile approach by delivering in small chunks, gathering feedback, and adapting quickly. Clear communication and step-by-step guides I created helped my husband transition smoothly to the new process. I’m proud to have taken initiative, self-taught new skills ahead of coursework, and built a fully automated system that saves time and drives smarter investment decisions.
 
-The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions.
-
-That’s what I aim to build, every time.
+The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.

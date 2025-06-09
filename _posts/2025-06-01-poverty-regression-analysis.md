@@ -28,11 +28,12 @@ I used Jupyter Notebook as the primary development platform. The whole analytica
 
 ## Description of Dataset
 
-The datasets for this project come from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on data.census.gov, the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.
+The dataset for this project comes from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on [data.census.gov](https://data.census.gov/), the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.
 
 A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html" target="_blank" rel="noopener">report</a>, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.
 
 👉 <a href="https://www.census.gov/data/developers/data-sets/acs-1year.html" target="_blank" rel="noopener">More information about the U.S. Census Bureau’s ACS data</a>.
+
 
 ## Data Collection
 
@@ -43,13 +44,15 @@ Initially, I planned to manually search for variable and geographic codes, but I
 
 👉 <a href="/assets/html/retrieving_variable_codes.html" target="_blank" rel="noopener">See my notebook for variable code retrieval</a>.
 
+
 ## Data Wrangling
 
 Data from ACS tables were saved as .json files, parsed using Python, and combined into a single county-level dataset with Pandas. During data preparation, I renamed coded headers to descriptive variable names, converted data types, and addressed missing or special values by imputing based on 2022 ACS data. I also removed redundant columns and combined related variables to enhance usability. The cleaned dataset was then saved as a .csv file for modeling.
 
 👉 <a href="/assets/html/data_extraction_&_data_wrangling.html" target="_blank" rel="noopener">See my notebook for data wrangling step</a>.
 
-## Summary of Analytical Methods
+
+## Analytical Methods
 
 I began exploratory data analysis (EDA) with **descriptive statistics** to examine central tendencies and spread. This is followed by calculating a **correlation matrix** and **VIF** to detect multicolinearity. Predictors with a VIF above 5 were either dropped or transformed. To explore relationships between the response and explanatory variables, I used **pairplots** and **scatter plots**. To address nonlinearity and skewness in the data, I applied appropriate transformations based on the distribution and each variable's relationship with the response: 
 - Log transformation for heavy right-tails
@@ -77,7 +80,7 @@ To evaluate the role of socioeconomic factors in explaining poverty rates across
 
 To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using **MinMaxScaler** before fitting the model. This will ensure that the predictors are on the same scale.
 
-For the baseline model and the improved model, I implemented residual analysis to **verify model assumptions** and **ensure the model’s validity**. OLS regression relies on several assumptions: **linearity** of relationships between predictors and the dependent variable, **homoscedasticit**y (constant variance of residuals), **independence of residual**s, and **normally distributed errors**. The analysis included visualizations such as **residual plots**, **histogram** and **boxplot of residual**s, and **Q-Q plot**. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.
+For the baseline model and the improved model, I implemented residual analysis to **verify model assumptions** and **ensure the model’s validity**. OLS regression relies on several assumptions: **linearity** of relationships between predictors and the dependent variable, **homoscedasticit**y (constant variance of residuals), **independence of residual**s, and **normally distributed errors**. The analysis included visualizations such as **residual plots**, **histogram and boxplot of residual**s, and **Q-Q plot**. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.
 
 Finally, to address issues identified in model diagnostics, I applied several **refinement methods**: 
 - **Square root transformation** was applied to the **response variable** to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.  
