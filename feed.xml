@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-08T23:52:58+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-08T23:52:34+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-09T02:21:03+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-09T02:20:42+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
 
 <p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -11,20 +11,8 @@
   <li><a href="#project-at-a-glance" id="markdown-toc-project-at-a-glance">Project at a Glance</a></li>
   <li><a href="#datasets" id="markdown-toc-datasets">Datasets</a></li>
   <li><a href="#what-makes-a-stock-undervalued" id="markdown-toc-what-makes-a-stock-undervalued">What Makes a Stock Undervalued?</a>    <ul>
-      <li><a href="#key-fundamentals" id="markdown-toc-key-fundamentals">Key Fundamentals</a>        <ul>
-          <li><a href="#price-to-free-cash-flow-ratio-pfcf" id="markdown-toc-price-to-free-cash-flow-ratio-pfcf">Price-to-Free Cash Flow ratio (P/FCF)</a></li>
-          <li><a href="#price-to-book-ratio-pb" id="markdown-toc-price-to-book-ratio-pb">Price-to-Book ratio (P/B)</a></li>
-          <li><a href="#return-on-equity-roe" id="markdown-toc-return-on-equity-roe">Return on Equity (ROE)</a></li>
-          <li><a href="#return-on-assets-roa" id="markdown-toc-return-on-assets-roa">Return on Assets (ROA)</a></li>
-          <li><a href="#asset-to-equity-ratio-ae" id="markdown-toc-asset-to-equity-ratio-ae">Asset-to-equity ratio (A/E)</a></li>
-          <li><a href="#price-to-earnings-ratio-pe" id="markdown-toc-price-to-earnings-ratio-pe">Price-to-Earnings ratio (P/E)</a></li>
-        </ul>
-      </li>
-      <li><a href="#how-we-evaluate-stocks-using-these-metrics" id="markdown-toc-how-we-evaluate-stocks-using-these-metrics">How We Evaluate Stocks Using These Metrics</a>        <ul>
-          <li><a href="#preliminary-criteria" id="markdown-toc-preliminary-criteria">Preliminary criteria:</a></li>
-          <li><a href="#additional-criteria" id="markdown-toc-additional-criteria">Additional criteria:</a></li>
-        </ul>
-      </li>
+      <li><a href="#key-fundamentals" id="markdown-toc-key-fundamentals">Key Fundamentals</a></li>
+      <li><a href="#how-we-evaluate-stocks-using-these-metrics" id="markdown-toc-how-we-evaluate-stocks-using-these-metrics">How We Evaluate Stocks Using These Metrics</a></li>
     </ul>
   </li>
   <li><a href="#dashboards-that-tell-a-story" id="markdown-toc-dashboards-that-tell-a-story">Dashboards that Tell a Story</a>    <ul>
@@ -64,24 +52,36 @@
 
 <p>Here’s a quick overview of the financial metrics we used:</p>
 
-<h4 id="price-to-free-cash-flow-ratio-pfcf">Price-to-Free Cash Flow ratio (P/FCF)</h4>
+<p><strong>Price-to-Free Cash Flow ratio (P/FCF)</strong></p>
+
 <p>Price-to-Free Cash Flow (P/FCF): A high P/FCF ratio indicates that the specific firm is trading at a high price but is not generating enough free cash flows to justify the price. Smaller price ratios are generally preferred, as they may reveal a firm generating ample cash flows that may not yet be reflected in the price.</p>
-<h4 id="price-to-book-ratio-pb">Price-to-Book ratio (P/B)</h4>
+
+<p><strong>Price-to-Book ratio (P/B)</strong></p>
+
 <p>Book Value Per Share (BVPS) shows a company’s net assets per share. If BVPS is higher than the stock price, the stock may be undervalued. The P/B ratio compares market price to book value. Thus, P/B of 1 means it is traded at exactly where it should be. Higher P/B means it might be overvalued.</p>
-<h4 id="return-on-equity-roe">Return on Equity (ROE)</h4>
+
+<p><strong>Return on Equity (ROE)</strong></p>
+
 <p>This ratio is a gauge of a corporation’s profitability and how efficiently it generates those profits. The higher the ROE, the better a company is at converting its equity financing into profits.</p>
-<h4 id="return-on-assets-roa">Return on Assets (ROA)</h4>
+
+<p><strong>Return on Assets (ROA)</strong></p>
+
 <p>Return on assets measures how effective a company’s management is in generating profit from the total assets on its balance sheet. A ROA that rises over time indicates that the company is doing well at increasing its profits with each investment dollar it spends.</p>
-<h4 id="asset-to-equity-ratio-ae">Asset-to-equity ratio (A/E)</h4>
+
+<p><strong>Asset-to-equity ratio (A/E)</strong></p>
+
 <p>The asset-to-equity ratio measures a company’s financial leverage by comparing its total assets to its shareholders’ equity. A higher ratio means more debt and higher financial risk. A lower ratio signals a more conservative, equity-heavy structure.</p>
-<h4 id="price-to-earnings-ratio-pe">Price-to-Earnings ratio (P/E)</h4>
+
+<p><strong>Price-to-Earnings ratio (P/E)</strong></p>
+
 <p>This metric shows how much investors are paying for each dollar of earnings. A high P/E can signal high growth expectations or overvaluation. A low P/E might suggest undervaluation or strong recent performance.</p>
 
 <h3 id="how-we-evaluate-stocks-using-these-metrics">How We Evaluate Stocks Using These Metrics</h3>
 <p>Our evaluation is based on a series of carefully selected financial criteria but here’s the key: we never compare a stock to the wrong peer group. Each stock is only evaluated relative to the industry average within its own market cap category.
 To make industry comparisons fair and statistically sound, we calculate the mean and standard deviation for each metric within the same industry and market cap group, <strong>excluding outliers</strong>. Outliers are identified using the interquartile range (IQR) method, and removed before calculating averages and z-scores.</p>
 
-<h4 id="preliminary-criteria">Preliminary criteria:</h4>
+<p><strong>Preliminary criteria:</strong></p>
+
 <p>To be considered “undervalued,” a stock must meet all of these:</p>
 <ul>
   <li>P/FCF &gt; 0 and below the industry average</li>
@@ -91,7 +91,8 @@ To make industry comparisons fair and statistically sound, we calculate the mean
   <li>ROA &gt; 5%</li>
 </ul>
 
-<h4 id="additional-criteria">Additional criteria:</h4>
+<p><strong>Additional criteria:</strong></p>
+
 <p>We further rank stocks based on these bonus signals:</p>
 <ul>
   <li>P/B &lt; 70% of industry average</li>
@@ -162,7 +163,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <h2 id="automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</h2>
 
-<p>Initially, my husband manually cleaned and analyzed the raw stock data in Excel. But with 11 sector-specific datasets and dozens of formulas, the process quickly became time-consuming, repetitive, and prone to error, especially with frequent data updates. Each refresh could take hours.</p>
+<p>Initially, my husband manually cleaned and analyzed the raw stock data in Excel. But with 11 sector-specific datasets and dozens of formulas, the process quickly became time-consuming, repetitive, and prone to error. Especially with frequent data updates, each refresh could take hours.</p>
 
 <p>I completely re-engineered the process to be fast, accurate, and user-friendly by implementing a set of tools:</p>
 <ul>
@@ -188,9 +189,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>This project started with a shared curiosity and turned into a complete, repeatable workflow that saves hours and delivers clear insights. It was as much about collaboration as it was about technology. Working closely with my husband, a non-technical stakeholder, I used an informal agile approach by delivering in small chunks, gathering feedback, and adapting quickly. Clear communication and step-by-step guides I created helped my husband transition smoothly to the new process. I’m proud to have taken initiative, self-taught new skills ahead of coursework, and built a fully automated system that saves time and drives smarter investment decisions.</p>
 
-<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions.</p>
-
-<p>That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-08T23:52:34+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-09T02:20:42+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
 
 <p><a href="https://github.com/nvu01/BSDA-Capstone-Project" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -201,7 +200,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
   <li><a href="#description-of-dataset" id="markdown-toc-description-of-dataset">Description of Dataset</a></li>
   <li><a href="#data-collection" id="markdown-toc-data-collection">Data Collection</a></li>
   <li><a href="#data-wrangling" id="markdown-toc-data-wrangling">Data Wrangling</a></li>
-  <li><a href="#summary-of-analytical-methods" id="markdown-toc-summary-of-analytical-methods">Summary of Analytical Methods</a></li>
+  <li><a href="#analytical-methods" id="markdown-toc-analytical-methods">Analytical Methods</a></li>
   <li><a href="#project-outcomes" id="markdown-toc-project-outcomes">Project Outcomes</a>    <ul>
       <li><a href="#models-predictive-power-and-significance" id="markdown-toc-models-predictive-power-and-significance">Model’s Predictive Power and Significance</a></li>
       <li><a href="#models-validity" id="markdown-toc-models-validity">Model’s Validity</a></li>
@@ -227,7 +226,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <h2 id="description-of-dataset">Description of Dataset</h2>
 
-<p>The datasets for this project come from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on data.census.gov, the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.</p>
+<p>The dataset for this project comes from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on <a href="https://data.census.gov/">data.census.gov</a>, the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.</p>
 
 <p>A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html" target="_blank" rel="noopener">report</a>, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.</p>
 
@@ -248,7 +247,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>👉 <a href="/assets/html/data_extraction_&amp;_data_wrangling.html" target="_blank" rel="noopener">See my notebook for data wrangling step</a>.</p>
 
-<h2 id="summary-of-analytical-methods">Summary of Analytical Methods</h2>
+<h2 id="analytical-methods">Analytical Methods</h2>
 
 <p>I began exploratory data analysis (EDA) with <strong>descriptive statistics</strong> to examine central tendencies and spread. This is followed by calculating a <strong>correlation matrix</strong> and <strong>VIF</strong> to detect multicolinearity. Predictors with a VIF above 5 were either dropped or transformed. To explore relationships between the response and explanatory variables, I used <strong>pairplots</strong> and <strong>scatter plots</strong>. To address nonlinearity and skewness in the data, I applied appropriate transformations based on the distribution and each variable’s relationship with the response:</p>
 <ul>
@@ -291,7 +290,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using <strong>MinMaxScaler</strong> before fitting the model. This will ensure that the predictors are on the same scale.</p>
 
-<p>For the baseline model and the improved model, I implemented residual analysis to <strong>verify model assumptions</strong> and <strong>ensure the model’s validity</strong>. OLS regression relies on several assumptions: <strong>linearity</strong> of relationships between predictors and the dependent variable, <strong>homoscedasticit</strong>y (constant variance of residuals), <strong>independence of residual</strong>s, and <strong>normally distributed errors</strong>. The analysis included visualizations such as <strong>residual plots</strong>, <strong>histogram</strong> and <strong>boxplot of residual</strong>s, and <strong>Q-Q plot</strong>. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
+<p>For the baseline model and the improved model, I implemented residual analysis to <strong>verify model assumptions</strong> and <strong>ensure the model’s validity</strong>. OLS regression relies on several assumptions: <strong>linearity</strong> of relationships between predictors and the dependent variable, <strong>homoscedasticit</strong>y (constant variance of residuals), <strong>independence of residual</strong>s, and <strong>normally distributed errors</strong>. The analysis included visualizations such as <strong>residual plots</strong>, <strong>histogram and boxplot of residual</strong>s, and <strong>Q-Q plot</strong>. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
 
 <p>Finally, to address issues identified in model diagnostics, I applied several <strong>refinement methods</strong>:</p>
 <ul>
@@ -455,7 +454,7 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <h2 id="references">References</h2>
 <ul>
   <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
-</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-08T23:52:34+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
+</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-09T02:20:42+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
 
 <p><a href="https://github.com/nvu01/Tableau-Public-Dashboard/tree/main" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo

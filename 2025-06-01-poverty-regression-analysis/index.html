@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" />
 <meta property="twitter:title" content="Socioeconomic Factors Impacting Poverty in U.S. Counties" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-08T23:52:34+00:00","datePublished":"2025-06-01T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-09T02:20:42+00:00","datePublished":"2025-06-01T00:00:00+00:00","description":"A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.","headline":"Socioeconomic Factors Impacting Poverty in U.S. Counties","image":"https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -118,7 +118,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-08T23:52:58+00:00',
+    INDEX_KEY: 'index--2025-06-09T02:21:03+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -283,10 +283,10 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
           
             
             
-            <span class="ellipsis" data-tippy-content="Last modified at: 08 Jun 2025">
+            <span class="ellipsis" data-tippy-content="Last modified at: 09 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-08T23:52:34+00:00">2025-06-08</time>
+              <time datetime="2025-06-09T02:20:42+00:00">2025-06-09</time>
             </span>
           
         
@@ -343,7 +343,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li><a href="#description-of-dataset" id="markdown-toc-description-of-dataset">Description of Dataset</a></li>
   <li><a href="#data-collection" id="markdown-toc-data-collection">Data Collection</a></li>
   <li><a href="#data-wrangling" id="markdown-toc-data-wrangling">Data Wrangling</a></li>
-  <li><a href="#summary-of-analytical-methods" id="markdown-toc-summary-of-analytical-methods">Summary of Analytical Methods</a></li>
+  <li><a href="#analytical-methods" id="markdown-toc-analytical-methods">Analytical Methods</a></li>
   <li><a href="#project-outcomes" id="markdown-toc-project-outcomes">Project Outcomes</a>    <ul>
       <li><a href="#models-predictive-power-and-significance" id="markdown-toc-models-predictive-power-and-significance">Model’s Predictive Power and Significance</a></li>
       <li><a href="#models-validity" id="markdown-toc-models-validity">Model’s Validity</a></li>
@@ -369,7 +369,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <h2 id="description-of-dataset">Description of Dataset</h2>
 
-<p>The datasets for this project come from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on data.census.gov, the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.</p>
+<p>The dataset for this project comes from the U.S. Census Bureau’s 2023 American Community Survey (ACS) 1-Year Estimates, a trusted national source of socioeconomic data. Publicly available on <a href="https://data.census.gov/">data.census.gov</a>, the datasets include relevant indicators like income, education, unemployment, and public assistance, making it well-suited for analyzing poverty predictors at the county level.</p>
 
 <p>A key limitation is that the poverty rate is based on the Official Poverty Measure (OPM), which doesn’t factor in regional living costs or non-cash benefits like SNAP or housing subsidies. This could limit how socioeconomic factors are interpreted. According to the Census Bureau’s 2023 <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html" target="_blank" rel="noopener">report</a>, the OPM showed a national poverty rate of 11.5%, while the more comprehensive Supplemental Poverty Measure (SPM) reported 12.7%, underscoring the impact of additional costs and public assistance income on poverty assessments.</p>
 
@@ -390,7 +390,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>👉 <a href="/assets/html/data_extraction_&amp;_data_wrangling.html" target="_blank" rel="noopener">See my notebook for data wrangling step</a>.</p>
 
-<h2 id="summary-of-analytical-methods">Summary of Analytical Methods</h2>
+<h2 id="analytical-methods">Analytical Methods</h2>
 
 <p>I began exploratory data analysis (EDA) with <strong>descriptive statistics</strong> to examine central tendencies and spread. This is followed by calculating a <strong>correlation matrix</strong> and <strong>VIF</strong> to detect multicolinearity. Predictors with a VIF above 5 were either dropped or transformed. To explore relationships between the response and explanatory variables, I used <strong>pairplots</strong> and <strong>scatter plots</strong>. To address nonlinearity and skewness in the data, I applied appropriate transformations based on the distribution and each variable’s relationship with the response:</p>
 <ul>
@@ -433,7 +433,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using <strong>MinMaxScaler</strong> before fitting the model. This will ensure that the predictors are on the same scale.</p>
 
-<p>For the baseline model and the improved model, I implemented residual analysis to <strong>verify model assumptions</strong> and <strong>ensure the model’s validity</strong>. OLS regression relies on several assumptions: <strong>linearity</strong> of relationships between predictors and the dependent variable, <strong>homoscedasticit</strong>y (constant variance of residuals), <strong>independence of residual</strong>s, and <strong>normally distributed errors</strong>. The analysis included visualizations such as <strong>residual plots</strong>, <strong>histogram</strong> and <strong>boxplot of residual</strong>s, and <strong>Q-Q plot</strong>. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
+<p>For the baseline model and the improved model, I implemented residual analysis to <strong>verify model assumptions</strong> and <strong>ensure the model’s validity</strong>. OLS regression relies on several assumptions: <strong>linearity</strong> of relationships between predictors and the dependent variable, <strong>homoscedasticit</strong>y (constant variance of residuals), <strong>independence of residual</strong>s, and <strong>normally distributed errors</strong>. The analysis included visualizations such as <strong>residual plots</strong>, <strong>histogram and boxplot of residual</strong>s, and <strong>Q-Q plot</strong>. This diagnostic step helped confirm whether the use of OLS and the resulting hypothesis tests were valid.</p>
 
 <p>Finally, to address issues identified in model diagnostics, I applied several <strong>refinement methods</strong>:</p>
 <ul>
