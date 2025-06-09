@@ -146,12 +146,15 @@ Users can use this dashboard to identify which industries are overhyped with low
 Initially, my husband manually cleaned and analyzed the raw stock data in Excel. But with 11 sector-specific datasets and dozens of formulas, the process quickly became time-consuming, repetitive, and prone to error. Especially with frequent data updates, each refresh could take hours.
 
 I completely re-engineered the process to be fast, accurate, and user-friendly by implementing a set of tools:
-- Power Query (20+ custom functions): For automatic cleaning, transformation, and metric calculation across all datasets.
+- Power Query (20+ custom functions): For automatic cleaning and transformation.
+- Advanced Excel formulas: For metric calculation across all datasets.
 - VBA Macros: To refresh all data and recalculate results with a single click.
-- Dynamic file paths: So the project works across any machine without broken links.
 - Pivot tables: To calculate industry averages while filtering outliers.
+- Dynamic file paths: So the project works across any machine without broken links.
 - RTD function for real-time stock prices: the RTD (Real-Time Data) function integrates with the Thinkorswim platform to pull real-time stock prices directly into the workbooks.
 - Conditional formatting: To surface strong candidates visually, making stock analysis easier for non-technical users.
+
+<iframe title="Industry Averages Dashboard" width="1280" height="720" src="/assets/other/data_refresh_automation.gif" frameborder="0" allowFullScreen="true"></iframe>
 
 After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that:
 - Compare metrics across sectors and industries
