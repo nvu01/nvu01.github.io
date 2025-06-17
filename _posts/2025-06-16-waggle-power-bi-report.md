@@ -45,7 +45,7 @@ The report also needed to meet Waggle’s design standards:
 - One reset button per page to clear filters
 - Buttons for page-to-page navigation
 
-<img src="/assets/img/posts/4/color_palette.png" alt="description" width="600" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/4/color_palette.png" alt="description" width="600" style="display: block; margin: 1rem 0; text-align: left;"/>
 
 
 ## The Report
