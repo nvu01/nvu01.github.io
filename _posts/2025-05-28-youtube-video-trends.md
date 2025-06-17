@@ -9,7 +9,7 @@ tags: [youtube, tableau dashboard, tableau story, data visualization, storytelli
 
 What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.
 
-<a href="https://github.com/nvu01/Tableau-Public-Dashboard/tree/main" target="_blank" rel="noopener">
+<a href="https://github.com/nvu01/Tableau-Public-Dashboard" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
 </a>
 
