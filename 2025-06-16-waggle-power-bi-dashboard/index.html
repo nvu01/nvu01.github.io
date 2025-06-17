@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg" />
 <meta property="twitter:title" content="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-17T05:51:34+00:00","datePublished":"2025-06-16T00:00:00+00:00","description":"An interactive Power BI report that visualizes product performance and user data for Waggle.","headline":"Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle","image":"https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-16-waggle-power-bi-dashboard/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-16-waggle-power-bi-dashboard/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-17T19:37:28+00:00","datePublished":"2025-06-16T00:00:00+00:00","description":"An interactive Power BI report that visualizes product performance and user data for Waggle.","headline":"Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle","image":"https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-06-16-waggle-power-bi-dashboard/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-06-16-waggle-power-bi-dashboard/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -118,7 +118,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-17T05:52:21+00:00',
+    INDEX_KEY: 'index--2025-06-17T19:55:14+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -294,7 +294,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
             <span class="ellipsis" data-tippy-content="Last modified at: 17 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-17T05:51:34+00:00">2025-06-17</time>
+              <time datetime="2025-06-17T19:37:28+00:00">2025-06-17</time>
             </span>
           
         
@@ -350,6 +350,8 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li><a href="#datasets-overview" id="markdown-toc-datasets-overview">Datasets Overview</a></li>
   <li><a href="#business-requirements" id="markdown-toc-business-requirements">Business Requirements</a></li>
   <li><a href="#the-report" id="markdown-toc-the-report">The Report</a>    <ul>
+      <li><a href="#explore-the-interactive-report" id="markdown-toc-explore-the-interactive-report">Explore the Interactive Report</a></li>
+      <li><a href="#demo-video" id="markdown-toc-demo-video">Demo Video</a></li>
       <li><a href="#report-layout-overview" id="markdown-toc-report-layout-overview">Report Layout Overview</a></li>
     </ul>
   </li>
@@ -367,40 +369,64 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <h2 id="business-requirements">Business Requirements</h2>
 
-<p>Waggle stakeholders are asking key questions to evaluate the impact and market potential of LapCat:</p>
+<p>Waggle stakeholders posed strategic questions to evaluate LapCat’s market performance and user reception:</p>
 
 <p><strong>From the CEO:</strong></p>
 <ul>
-  <li>Did the average daily steps increase for cats wearing the device, as they did for dogs?</li>
-  <li>Were owners of Lapcat devices as satisfied with the product as Lapdog owners?</li>
+  <li>Did average daily steps increase for cats wearing the LapCat, as they did for dogs with the LapDog?</li>
+  <li>Were LapCat users as satisfied with the product as LapDog users?</li>
 </ul>
 
-<p><strong>From the Product Team:</strong> They are especially interested in demographic insights related to pets and families.</p>
+<p><strong>From the Product Team:</strong></p>
+<ul>
+  <li>What demographic insights can we uncover about Waggle families and their pets?</li>
+</ul>
+
+<p><strong>Design &amp; Usability Requirements:</strong>
+The report also needed to meet Waggle’s design standards:</p>
+
+<ul>
+  <li>A branded header on each page, showing the page title and Waggle logo</li>
+  <li>Slicers positioned on the left or beneath the banner to filter visuals</li>
+  <li>Navigation buttons placed consistently for ease of use</li>
+  <li>Only Waggle-approved palette colors (plus black, white, and gray tones)</li>
+  <li>One reset button per page to clear filters</li>
+  <li>Buttons for page-to-page navigation</li>
+</ul>
 
 <h2 id="the-report">The Report</h2>
 
+<h3 id="explore-the-interactive-report">Explore the Interactive Report</h3>
+
 <iframe title="Waggle Report" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiYzdiYWYzMzQtMDI5NC00OGYxLWEyY2MtZGZkZjAzYWU2MzlmIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
 
+<h3 id="demo-video">Demo Video</h3>
+
+<div style="max-width: 900px; margin: 0 auto;">
+  <video width="100%" controls="">
+    <source src="/assets/other/Post 4 demo vid.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 <h3 id="report-layout-overview">Report Layout Overview</h3>
-<p>The Power BI report is organized into four interactive pages, with a consistent layout that includes a Waggle-branded header, slicer panel, and navigation buttons to enhance usability:</p>
+<p>The Power BI report contains four interactive pages, with consistent navigation and styling. Key interface elements include a slicer panel, reset filters button, and page-specific navigation—all wrapped in Waggle’s visual identity.</p>
 
 <p><strong>Page 1: LapDog vs LapCat (Home)</strong></p>
 
-<p>This page directly addresses the CEO’s questions.</p>
-
-<p>Visual comparisons:</p>
+<p>This page directly addresses the CEO’s questions with side-by-side compareisons:</p>
 
 <ul>
-  <li>Average daily step count by device type</li>
-  <li>Average satisfaction ratings</li>
-  <li>Step trends over time</li>
+  <li>Average daily step count and satisfaction ratings by device</li>
+  <li>Step trends over time by species</li>
+  <li>Activity minutes and daily steps by month/year</li>
 </ul>
 
 <p><strong>Page 2: Pets Summary</strong></p>
 
 <ul>
   <li>Demographics of Waggle pets: species, breed, age, weight.</li>
-  <li>Activity breakdown: steps and active minutes by age group.</li>
+  <li>Activity breakdown: steps and active minutes by pet age and weight</li>
 </ul>
 
 <p><strong>Page 3: Family Summary</strong></p>
@@ -420,10 +446,11 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 <p><strong><em>Key Features</em></strong></p>
 
 <ul>
-  <li>All visuals use the Waggle-approved color palette.</li>
-  <li>Buttons for navigation, dynamic visuals swapping and filter reset to enhance interaction.</li>
-  <li>Built-in slicers and filters for stakeholder exploration.</li>
-  <li>Drill-through capability for detailed investigation.</li>
+  <li>Waggle-branded theme and layout for consistency</li>
+  <li>Dynamic visual swapping for comparing trends</li>
+  <li>Filter reset and drill-through functionality</li>
+  <li>Built-in slicers for stakeholder exploration</li>
+  <li>Used the same colors for dogs and cats across all pages to make comparisons easy and intuitive.</li>
 </ul>
 
 <h2 id="key-findings">Key Findings</h2>
@@ -432,10 +459,10 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <ul>
   <li>
-    <p>Activity Impact: LapDog devices led to a significant increase in average daily steps for dogs, while LapCat devices showed a decrease in feline activity. In 2020, dogs wearing the LapDog averaged 14,667 steps per day, compared to only 2,765 steps for cats.</p>
+    <p>Activity Impact: LapDog devices led to a significant increase in average daily steps for dogs, while LapCat devices showed a decrease in feline activity. In 2020, dogs wearing the LapDog averaged <strong>14,667 steps per day</strong>, compared to only <strong>2,765 steps</strong> for cats.</p>
   </li>
   <li>
-    <p>User Satisfaction: LapDog received an average rating of 4.69, with 85.65% of users giving a perfect 5/5. In contrast, LapCat scored an average of 1.64, with 36.02% of users rating it just 1/5. This suggests widespread dissatisfaction with the LapCat experience.</p>
+    <p>User Satisfaction: LapDog received an average rating of <strong>4.69 stars</strong>, with <strong>85.65%</strong> of users giving a perfect <strong>5/5</strong>. In contrast, LapCat scored an average of <strong>1.64 stars</strong>, with <strong>36.02%</strong> of users rating it just <strong>1/5</strong>. This suggests widespread dissatisfaction with the LapCat experience.</p>
   </li>
 </ul>
 
@@ -443,13 +470,13 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <ul>
   <li>
-    <p>Population &amp; Breed Distribution: The dataset includes 10,161 dogs across 19 breeds, and 1,000 cats across 13 breeds. The most common dog breed is the Golden Retriever; for cats, it’s the American Shorthair.</p>
+    <p>Population &amp; Breed Distribution: The dataset includes <strong>10,161 dogs</strong> across <strong>19 breeds</strong>, and <strong>1,000 cats</strong> across <strong>13 breeds</strong>. The most common dog breed is the <strong>Golden Retriever</strong>; for cats, it’s the <strong>American Shorthair</strong>.</p>
   </li>
   <li>
     <p>Age &amp; Weight Trends:</p>
     <ul>
-      <li>Dogs are most commonly age 6, while cat ages are more evenly spread between 5–12 years. Heavier, mid-aged dogs (50–100 lbs, ages 3–10) exhibit the highest activity minutes. Interestingly, average daily steps among all dog age groups follow the same upward trend, from ~8,000 to ~15,000 steps over time.</li>
-      <li>Cat activity minutes remain relatively flat across all weight classes. Younger cats (under 3 years) have the least activity time, under 3,000 minutes, while older cats average between 3,000 and 10,000 minutes. Step count patterns are inconsistent and show no clear upward trend across cat age groups.</li>
+      <li>Dogs are most commonly <strong>age 6</strong>, while cat ages are more evenly spread between <strong>5–12 years</strong>. <strong>Heavier, mid-aged dogs (50–100 lbs, ages 3–10)</strong> exhibit the <strong>highest activity minutes</strong>. Interestingly, average daily steps among all dog age groups follow the same upward trend, from <strong>~8,000 to ~15,000 steps over time</strong>.</li>
+      <li>Cat <strong>activity minutes</strong> remain relatively <strong>flat across all weight classes</strong>. <strong>Younger cats (under 3 years)</strong> have the least activity time, <strong>under 3,000 minutes</strong>, while older cats average between <strong>3,000 and 10,000 minutes</strong>. <strong>Step count patterns are inconsistent</strong> and show no clear upward trend across cat age groups.</li>
     </ul>
   </li>
 </ul>
@@ -459,23 +486,18 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 <ul>
   <li>Key Averages:
     <ul>
-      <li>Average household income: $523,312</li>
-      <li>Average household size: 2.99</li>
-      <li>Average annual pet expenses: $7,883</li>
+      <li><strong>Average household income:</strong> $523,312</li>
+      <li><strong>Average household size:</strong> 2.99</li>
+      <li><strong>Average annual pet expenses:</strong> $7,883</li>
     </ul>
   </li>
   <li>Location &amp; Purchase Behavior:
     <ul>
-      <li>The majority of customers are located in California.</li>
-      <li>Waggle.com is the most common purchase channel.</li>
+      <li>The majority of customers are located in <strong>California</strong>.</li>
+      <li><strong>Waggle.com</strong> is the most common purchase channel.</li>
     </ul>
   </li>
-  <li>Household Composition:
-    <ul>
-      <li>Family sizes are fairly evenly distributed.</li>
-      <li>A majority of households own 3 pets (54.56%).</li>
-    </ul>
-  </li>
+  <li>Household Composition: <strong>54.56%</strong> of households own <strong>three pets</strong>, with fairly <strong>even household size distribution</strong>.</li>
 </ul>
 
 <h2 id="final-thoughts">Final Thoughts</h2>
