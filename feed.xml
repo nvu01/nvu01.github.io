@@ -1,5 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-09T20:02:39+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-09T20:02:20+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-17T05:52:21+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</title><link href="https://nvu01.github.io//2025-06-16-waggle-power-bi-dashboard/" rel="alternate" type="text/html" title="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-17T05:51:34+00:00</updated><id>https://nvu01.github.io//waggle-power-bi-dashboard</id><content type="html" xml:base="https://nvu01.github.io//2025-06-16-waggle-power-bi-dashboard/"><![CDATA[<p>In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the Lapdog fitness collar for dogs, Waggle launched a field test of its feline counterpart—the Lapcat. My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.</p>
+
+<p><a href="https://github.com/nvu01/Waggle-PowerBI-Report" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo
+</a></p>
+
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#datasets-overview" id="markdown-toc-datasets-overview">Datasets Overview</a></li>
+  <li><a href="#business-requirements" id="markdown-toc-business-requirements">Business Requirements</a></li>
+  <li><a href="#the-report" id="markdown-toc-the-report">The Report</a>    <ul>
+      <li><a href="#report-layout-overview" id="markdown-toc-report-layout-overview">Report Layout Overview</a></li>
+    </ul>
+  </li>
+  <li><a href="#key-findings" id="markdown-toc-key-findings">Key Findings</a></li>
+  <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
+</ul>
+
+<h2 id="datasets-overview">Datasets Overview</h2>
+
+<p>The data used in this project was provided by Udacity as part of their Data Analyst Nanodegree Program. The datasets were already cleaned and curated to simulate real-world business scenarios, allowing me to focus on analysis, visualization, and stakeholder communication.</p>
+
+<p><strong>Data Model</strong></p>
+
+<p><img src="/assets/img/posts/4/data-model.png" alt="description" width="900" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="business-requirements">Business Requirements</h2>
+
+<p>Waggle stakeholders are asking key questions to evaluate the impact and market potential of LapCat:</p>
+
+<p><strong>From the CEO:</strong></p>
+<ul>
+  <li>Did the average daily steps increase for cats wearing the device, as they did for dogs?</li>
+  <li>Were owners of Lapcat devices as satisfied with the product as Lapdog owners?</li>
+</ul>
+
+<p><strong>From the Product Team:</strong> They are especially interested in demographic insights related to pets and families.</p>
+
+<h2 id="the-report">The Report</h2>
+
+<iframe title="Waggle Report" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiYzdiYWYzMzQtMDI5NC00OGYxLWEyY2MtZGZkZjAzYWU2MzlmIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+
+<h3 id="report-layout-overview">Report Layout Overview</h3>
+<p>The Power BI report is organized into four interactive pages, with a consistent layout that includes a Waggle-branded header, slicer panel, and navigation buttons to enhance usability:</p>
+
+<p><strong>Page 1: LapDog vs LapCat (Home)</strong></p>
+
+<p>This page directly addresses the CEO’s questions.</p>
+
+<p>Visual comparisons:</p>
+
+<ul>
+  <li>Average daily step count by device type</li>
+  <li>Average satisfaction ratings</li>
+  <li>Step trends over time</li>
+</ul>
+
+<p><strong>Page 2: Pets Summary</strong></p>
+
+<ul>
+  <li>Demographics of Waggle pets: species, breed, age, weight.</li>
+  <li>Activity breakdown: steps and active minutes by age group.</li>
+</ul>
+
+<p><strong>Page 3: Family Summary</strong></p>
+
+<ul>
+  <li>Owner location, household size, and income demographics.</li>
+  <li>Visuals show patterns in household types and pet ownership.</li>
+</ul>
+
+<p><strong>Page 4: Family Details (Drill-Through)</strong></p>
+
+<ul>
+  <li>This is a detailed view of individual households and their pets. This page is accessed by right-clicking entries from the table visual on Page 3.</li>
+  <li>Supports deeper insights into user-level data.</li>
+</ul>
+
+<p><strong><em>Key Features</em></strong></p>
+
+<ul>
+  <li>All visuals use the Waggle-approved color palette.</li>
+  <li>Buttons for navigation, dynamic visuals swapping and filter reset to enhance interaction.</li>
+  <li>Built-in slicers and filters for stakeholder exploration.</li>
+  <li>Drill-through capability for detailed investigation.</li>
+</ul>
+
+<h2 id="key-findings">Key Findings</h2>
+
+<p><strong>LapDog vs LapCat Performance</strong></p>
+
+<ul>
+  <li>
+    <p>Activity Impact: LapDog devices led to a significant increase in average daily steps for dogs, while LapCat devices showed a decrease in feline activity. In 2020, dogs wearing the LapDog averaged 14,667 steps per day, compared to only 2,765 steps for cats.</p>
+  </li>
+  <li>
+    <p>User Satisfaction: LapDog received an average rating of 4.69, with 85.65% of users giving a perfect 5/5. In contrast, LapCat scored an average of 1.64, with 36.02% of users rating it just 1/5. This suggests widespread dissatisfaction with the LapCat experience.</p>
+  </li>
+</ul>
+
+<p><strong>Pets Summary</strong></p>
+
+<ul>
+  <li>
+    <p>Population &amp; Breed Distribution: The dataset includes 10,161 dogs across 19 breeds, and 1,000 cats across 13 breeds. The most common dog breed is the Golden Retriever; for cats, it’s the American Shorthair.</p>
+  </li>
+  <li>
+    <p>Age &amp; Weight Trends:</p>
+    <ul>
+      <li>Dogs are most commonly age 6, while cat ages are more evenly spread between 5–12 years. Heavier, mid-aged dogs (50–100 lbs, ages 3–10) exhibit the highest activity minutes. Interestingly, average daily steps among all dog age groups follow the same upward trend, from ~8,000 to ~15,000 steps over time.</li>
+      <li>Cat activity minutes remain relatively flat across all weight classes. Younger cats (under 3 years) have the least activity time, under 3,000 minutes, while older cats average between 3,000 and 10,000 minutes. Step count patterns are inconsistent and show no clear upward trend across cat age groups.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Family Summary</strong></p>
+
+<ul>
+  <li>Key Averages:
+    <ul>
+      <li>Average household income: $523,312</li>
+      <li>Average household size: 2.99</li>
+      <li>Average annual pet expenses: $7,883</li>
+    </ul>
+  </li>
+  <li>Location &amp; Purchase Behavior:
+    <ul>
+      <li>The majority of customers are located in California.</li>
+      <li>Waggle.com is the most common purchase channel.</li>
+    </ul>
+  </li>
+  <li>Household Composition:
+    <ul>
+      <li>Family sizes are fairly evenly distributed.</li>
+      <li>A majority of households own 3 pets (54.56%).</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>This Power BI project for Waggle was a valuable opportunity for me to focus on data modeling, stakeholder communication, and interactive dashboard design.</p>
+
+<p>While branding and layout help engage stakeholders and make the report approachable, my top priority was always data accuracy and delivering practical, business-relevant insights. A visually polished report earns attention, but clear, correct, and useful insights are what drive decisions.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[An interactive Power BI report that visualizes product performance and user data for Waggle.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-17T05:51:34+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
 
 <p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -192,7 +334,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>This project started with a shared curiosity and turned into a complete, repeatable workflow that saves hours and delivers clear insights. It was as much about collaboration as it was about technology. Working closely with my husband, a non-technical stakeholder, I used an informal agile approach by delivering in small chunks, gathering feedback, and adapting quickly. Clear communication and step-by-step guides I created helped my husband transition smoothly to the new process. I’m proud to have taken initiative, self-taught new skills ahead of coursework, and built a fully automated system that saves time and drives smarter investment decisions.</p>
 
-<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-09T20:02:20+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-17T05:51:34+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
 
 <p><a href="https://github.com/nvu01/BSDA-Capstone-Project" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -457,9 +599,9 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <h2 id="references">References</h2>
 <ul>
   <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
-</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-09T20:02:20+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
+</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-17T05:51:34+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
 
-<p><a href="https://github.com/nvu01/Tableau-Public-Dashboard/tree/main" target="_blank" rel="noopener">
+<p><a href="https://github.com/nvu01/Tableau-Public-Dashboard" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
 </a></p>
 
