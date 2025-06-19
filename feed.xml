@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-19T16:02:22+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</title><link href="https://nvu01.github.io//2025-06-16-waggle-power-bi-report/" rel="alternate" type="text/html" title="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-19T16:02:02+00:00</updated><id>https://nvu01.github.io//waggle-power-bi-report</id><content type="html" xml:base="https://nvu01.github.io//2025-06-16-waggle-power-bi-report/"><![CDATA[<p>In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the LapDog fitness collar for dogs, Waggle launched a field test of its feline counterpart called “LapCat”. My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-19T23:07:12+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Portfolio of Ngan Vu
+</subtitle><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><entry><title type="html">Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</title><link href="https://nvu01.github.io//2025-06-16-waggle-power-bi-report/" rel="alternate" type="text/html" title="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-19T23:06:52+00:00</updated><id>https://nvu01.github.io//waggle-power-bi-report</id><content type="html" xml:base="https://nvu01.github.io//2025-06-16-waggle-power-bi-report/"><![CDATA[<p>In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the LapDog fitness collar for dogs, Waggle launched a field test of its feline counterpart called “LapCat”. My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.</p>
 
 <p><a href="https://github.com/nvu01/Waggle-PowerBI-Report" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -165,7 +165,7 @@ The report also needed to meet Waggle’s design standards:</p>
 
 <p>This Power BI project for Waggle was a valuable opportunity for me to focus on data modeling, stakeholder communication, and interactive dashboard design.</p>
 
-<p>While branding and layout help engage stakeholders and make the report approachable, my top priority was always data accuracy and delivering practical, business-relevant insights. A visually polished report earns attention, but clear, correct, and useful insights are what drive decisions.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[An interactive Power BI report that visualizes product performance and user data for Waggle.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-19T16:02:02+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
+<p>While branding and layout help engage stakeholders and make the report approachable, my top priority was always data accuracy and delivering practical, business-relevant insights. A visually polished report earns attention, but clear, correct, and useful insights are what drive decisions.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[An interactive Power BI report that visualizes product performance and user data for Waggle.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-19T23:06:52+00:00</updated><id>https://nvu01.github.io//undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
 
 <p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -358,7 +358,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>This project started with a shared curiosity and turned into a complete, repeatable workflow that saves hours and delivers clear insights. It was as much about collaboration as it was about technology. Working closely with my husband, a non-technical stakeholder, I used an informal agile approach by delivering in small chunks, gathering feedback, and adapting quickly. Clear communication and step-by-step guides I created helped my husband transition smoothly to the new process. I’m proud to have taken initiative, self-taught new skills ahead of coursework, and built a fully automated system that saves time and drives smarter investment decisions.</p>
 
-<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-19T16:02:02+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties</title><link href="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-19T23:06:52+00:00</updated><id>https://nvu01.github.io//poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
 
 <p><a href="https://github.com/nvu01/BSDA-Capstone-Project" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -623,7 +623,368 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <h2 id="references">References</h2>
 <ul>
   <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
-</ul>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-19T16:02:02+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
+</ul>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Preparing Data for Reporting Using PostgreSQL</title><link href="https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/" rel="alternate" type="text/html" title="Preparing Data for Reporting Using PostgreSQL" /><published>2025-05-30T00:00:00+00:00</published><updated>2025-06-19T23:06:52+00:00</updated><id>https://nvu01.github.io//SQL-preparing-data-for-reporting</id><content type="html" xml:base="https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/"><![CDATA[<p>This project demonstrates how SQL and PostgreSQL can be used to transform raw transactional data into structured, analysis-ready tables. Using the DVD Rental Dataset, I built a structured workflow to extract, transform, and organize rental data for future insights and analysis.</p>
+
+<p><a href="https://github.com/nvu01/Advanced-Data-Management" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo
+</a></p>
+
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#project-overview" id="markdown-toc-project-overview">Project Overview</a>    <ul>
+      <li><a href="#database" id="markdown-toc-database">Database</a></li>
+      <li><a href="#business-use-cases" id="markdown-toc-business-use-cases">Business Use Cases</a></li>
+      <li><a href="#deliverables" id="markdown-toc-deliverables">Deliverables</a></li>
+      <li><a href="#tools--skills-used" id="markdown-toc-tools--skills-used">Tools &amp; Skills Used</a></li>
+    </ul>
+  </li>
+  <li><a href="#key-sql-components" id="markdown-toc-key-sql-components">Key SQL Components</a>    <ul>
+      <li><a href="#extracting-year-and-month-with-functions" id="markdown-toc-extracting-year-and-month-with-functions">Extracting Year and Month with Functions</a></li>
+      <li><a href="#creating-tables" id="markdown-toc-creating-tables">Creating Tables</a></li>
+      <li><a href="#trigger-for-summary-table-updates" id="markdown-toc-trigger-for-summary-table-updates">Trigger for Summary Table Updates</a></li>
+      <li><a href="#populating-tables" id="markdown-toc-populating-tables">Populating Tables</a></li>
+      <li><a href="#stored-procedure-to-refresh-all-data" id="markdown-toc-stored-procedure-to-refresh-all-data">Stored Procedure to Refresh All Data</a></li>
+    </ul>
+  </li>
+  <li><a href="#automation-with-pgagent" id="markdown-toc-automation-with-pgagent">Automation with pgAgent</a></li>
+  <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
+</ul>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<h3 id="database">Database</h3>
+
+<p><strong>Sample Database:</strong> dvdrental.zip containing the database is available for download in my <a href="https://github.com/nvu01/Advanced-Data-Management">GitHub repo</a>
+or from <a href="https://neon.tech/postgresql/postgresql-getting-started/postgresql-sample-database">neon.tech</a></p>
+
+<p><strong>Data Model (ERD):</strong> <a href="/assets/img/posts/5/dvdrental_data_model.png" target="_blank">View data model</a></p>
+
+<p><strong>Source Tables Used:</strong> I used two key tables from the DVD Rental sample database:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rental</code>: Contains information about each film rental.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rental_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_date</td>
+      <td>timestamp without time zone</td>
+    </tr>
+    <tr>
+      <td>inventory_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>customer_id</td>
+      <td>smallint</td>
+    </tr>
+    <tr>
+      <td>return_date</td>
+      <td>timestamp without time zone</td>
+    </tr>
+    <tr>
+      <td>staff_id</td>
+      <td>smallint</td>
+    </tr>
+    <tr>
+      <td>last_update</td>
+      <td>timestamp without time zone</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">category</code>: Provides the category_name for each film.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>category_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>character varying</td>
+    </tr>
+    <tr>
+      <td>last_update</td>
+      <td>timestamp without time zone</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Tables Created:</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">detailed_table</code>: A transactional table showing individual rental records with added time and category context.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rental_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_year</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_month</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>category_name</td>
+      <td>character varying</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">summary_table</code>: An aggregated table used for reporting the total number of rentals by genre per month.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rental_year</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_month</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>category_name</td>
+      <td>character varying</td>
+    </tr>
+    <tr>
+      <td>num_rentals</td>
+      <td>bigint</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="business-use-cases">Business Use Cases</h3>
+
+<p><strong>detailed_table:</strong></p>
+<ul>
+  <li>Useful for looking up individual rental instances by date and genre.</li>
+  <li>Helps analysts or support staff answer questions like:
+    <ul>
+      <li>“What genre was rented on a specific date?”</li>
+      <li>“How many horror movies were rented in a specific rental instance?”</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>summary_table:</strong></p>
+<ul>
+  <li>Supports trend and performance analysis across months.</li>
+  <li>Helps stakeholders understand:
+    <ul>
+      <li>Which genres are most popular over time</li>
+      <li>Seasonal rental trends</li>
+      <li>How genre preferences shift month-to-month</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The data is designed to be refreshed monthly, ensuring that reporting and insights remain current for ongoing business needs.</p>
+
+<h3 id="deliverables">Deliverables</h3>
+
+<ul>
+  <li>Create reusable <strong>user-defined functions</strong> to extract year and month from timestamps.</li>
+  <li>Build <strong>detailed and summary tables</strong> to structure rental data by film category and time.</li>
+  <li>Implement a <strong>trigger function</strong> to auto-update summary metrics when new data is inserted.</li>
+  <li>Use a <strong>stored procedure</strong> to fully refresh both tables on a monthly basis.</li>
+</ul>
+
+<h3 id="tools--skills-used">Tools &amp; Skills Used</h3>
+
+<p><strong>Tools:</strong> PostgreSQL</p>
+
+<p><strong>Skills:</strong></p>
+<ul>
+  <li>PL/pgSQL scripting</li>
+  <li>Data transformation (timestamp extraction)</li>
+  <li>Joins &amp; subqueries</li>
+  <li>Table creation &amp; triggers</li>
+  <li>Stored procedures</li>
+  <li>Workflow automation using pgAgent (PostgreSQL’s job scheduler)</li>
+</ul>
+
+<h2 id="key-sql-components">Key SQL Components</h2>
+
+<p><a href="https://github.com/nvu01/Advanced-Data-Management/blob/main/dvdrental%20project.sql" target="_blank">View full SQL script</a></p>
+
+<h3 id="extracting-year-and-month-with-functions">Extracting Year and Month with Functions</h3>
+
+<p>I began by creating creating two user-defined functions to extract month and year from <code class="language-plaintext highlighter-rouge">rental_date</code> column in <code class="language-plaintext highlighter-rouge">rental</code> table.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create a function that extracts month from the rental_date column</span>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="n">rental_month</span> <span class="p">(</span><span class="n">rental_date</span> <span class="nb">timestamp</span> <span class="k">without</span> <span class="nb">time</span> <span class="k">zone</span><span class="p">)</span>
+<span class="k">RETURNS</span> <span class="nb">int</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">DECLARE</span> <span class="n">month_value</span> <span class="nb">int</span><span class="p">;</span>
+<span class="k">BEGIN</span>
+    <span class="k">SELECT</span> <span class="k">EXTRACT</span> <span class="p">(</span><span class="k">MONTH</span> <span class="k">FROM</span> <span class="n">rental_date</span><span class="p">)</span> <span class="k">INTO</span> <span class="n">month_value</span><span class="p">;</span>
+    <span class="k">RETURN</span> <span class="n">month_value</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span> 
+<span class="err">$$</span><span class="p">;</span>
+
+<span class="c1">-- Create a function that extracts year from the rental_date column</span>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="n">rental_year</span> <span class="p">(</span><span class="n">rental_date</span> <span class="nb">timestamp</span> <span class="k">without</span> <span class="nb">time</span> <span class="k">zone</span><span class="p">)</span>
+<span class="k">RETURNS</span> <span class="nb">int</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">DECLARE</span> <span class="n">year_value</span> <span class="nb">int</span><span class="p">;</span>
+<span class="k">BEGIN</span>
+    <span class="k">SELECT</span> <span class="k">EXTRACT</span> <span class="p">(</span><span class="nb">YEAR</span> <span class="k">FROM</span> <span class="n">rental_date</span><span class="p">)</span> <span class="k">INTO</span> <span class="n">year_value</span><span class="p">;</span>
+    <span class="k">RETURN</span> <span class="n">year_value</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+<span class="err">$$</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="creating-tables">Creating Tables</h3>
+
+<p>Next, I created <code class="language-plaintext highlighter-rouge">detailed_table</code> and <code class="language-plaintext highlighter-rouge">summary_table</code>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create an empty detailed table</span>
+<span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">detailed_table</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">detailed_table</span> <span class="p">(</span>
+	<span class="n">rental_id</span> <span class="nb">int</span><span class="p">,</span>
+	<span class="n">rental_year</span> <span class="nb">int</span><span class="p">,</span>
+	<span class="n">rental_month</span> <span class="nb">int</span><span class="p">,</span>
+	<span class="n">category_name</span> <span class="nb">varchar</span> <span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">-- Create a summary table that extracts and aggregates data from the detailed table</span>
+<span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">summary_table</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">summary_table</span>
+<span class="k">AS</span> <span class="k">SELECT</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">num_rentals</span>
+<span class="k">FROM</span> <span class="n">detailed_table</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">num_rentals</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="trigger-for-summary-table-updates">Trigger for Summary Table Updates</h3>
+
+<p>Once the two tables were created, I could build a trigger that updates the <code class="language-plaintext highlighter-rouge">summary_table</code> when data is inserted into the <code class="language-plaintext highlighter-rouge">detailed_table</code>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create a function that updates the summary table</span>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="n">summary_table_update</span><span class="p">()</span>
+<span class="k">RETURNS</span> <span class="k">TRIGGER</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">BEGIN</span>
+	<span class="k">TRUNCATE</span> <span class="n">summary_table</span><span class="p">;</span>
+	<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">summary_table</span>
+		<span class="k">SELECT</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="k">COUNT</span> <span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">num_rentals</span>
+		<span class="k">FROM</span> <span class="n">detailed_table</span>
+		<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span>
+		<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">num_rentals</span> <span class="k">DESC</span><span class="p">;</span>
+<span class="k">RETURN</span> <span class="k">NEW</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span> 
+<span class="err">$$</span><span class="p">;</span>
+
+<span class="c1">-- Create a trigger that updates the summary table when data is inserted into the detailed table</span>
+<span class="k">DROP</span> <span class="k">TRIGGER</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">update_summary_on_insert</span> <span class="k">ON</span> <span class="n">detailed_table</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TRIGGER</span> <span class="n">update_summary_on_insert</span>
+<span class="k">AFTER</span> <span class="k">INSERT</span>
+<span class="k">ON</span> <span class="n">detailed_table</span>
+<span class="k">FOR</span> <span class="k">EACH</span> <span class="k">STATEMENT</span>
+<span class="k">EXECUTE</span> <span class="k">PROCEDURE</span> <span class="n">summary_table_update</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h3 id="populating-tables">Populating Tables</h3>
+
+<p>Raw data was then extracted and inserted into the <code class="language-plaintext highlighter-rouge">detailed_table</code>. This would also trigger update to <code class="language-plaintext highlighter-rouge">summary_table</code>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Add raw data to the detailed table</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">detailed_table</span>
+<span class="k">SELECT</span> <span class="n">r</span><span class="p">.</span><span class="n">rental_id</span><span class="p">,</span> <span class="n">rental_year</span> <span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="n">rental_month</span> <span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="k">c</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="n">category_name</span>
+<span class="k">FROM</span> <span class="n">rental</span> <span class="n">r</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">inventory</span> <span class="n">i</span> <span class="k">ON</span> <span class="n">r</span><span class="p">.</span><span class="n">inventory_id</span> <span class="o">=</span> <span class="n">i</span><span class="p">.</span><span class="n">inventory_id</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">film_category</span> <span class="n">fc</span> <span class="k">ON</span> <span class="n">i</span><span class="p">.</span><span class="n">film_id</span> <span class="o">=</span> <span class="n">fc</span><span class="p">.</span><span class="n">film_id</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">category</span> <span class="k">c</span> <span class="k">ON</span> <span class="n">fc</span><span class="p">.</span><span class="n">category_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">category_id</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="stored-procedure-to-refresh-all-data">Stored Procedure to Refresh All Data</h3>
+
+<p>Finally, I created a procedure that refreshes data in both detailed and summary tables.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create a procedure that re-populates the 2 tables with raw data from the database</span>
+<span class="c1">-- Any test data that was manually inserted to the detailed table won't be included</span>
+<span class="k">DROP</span> <span class="k">PROCEDURE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">refresh_tables</span><span class="p">();</span>
+<span class="k">CREATE</span> <span class="k">PROCEDURE</span> <span class="n">refresh_tables</span> <span class="p">()</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">BEGIN</span>
+	<span class="k">TRUNCATE</span> <span class="n">detailed_table</span><span class="p">;</span>
+	<span class="k">TRUNCATE</span> <span class="n">summary_table</span><span class="p">;</span>
+	<span class="c1">-- Temporarily disable trigger</span>
+    <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">detailed_table</span> <span class="n">DISABLE</span> <span class="k">TRIGGER</span> <span class="n">update_summary_on_insert</span><span class="p">;</span>
+	<span class="c1">-- Update detailed_table</span>
+	<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">detailed_table</span>
+		<span class="k">SELECT</span> <span class="n">r</span><span class="p">.</span><span class="n">rental_id</span><span class="p">,</span> <span class="n">rental_year</span> <span class="p">(</span><span class="n">ym</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="n">rental_month</span> <span class="p">(</span><span class="n">ym</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="k">c</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="n">category_name</span>
+		<span class="k">FROM</span> <span class="n">rental</span> <span class="n">r</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">inventory</span> <span class="n">i</span> <span class="k">ON</span> <span class="n">r</span><span class="p">.</span><span class="n">inventory_id</span> <span class="o">=</span> <span class="n">i</span><span class="p">.</span><span class="n">inventory_id</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">film_category</span> <span class="n">fc</span> <span class="k">ON</span> <span class="n">i</span><span class="p">.</span><span class="n">film_id</span> <span class="o">=</span> <span class="n">fc</span><span class="p">.</span><span class="n">film_id</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">category</span> <span class="k">c</span> <span class="k">ON</span> <span class="n">fc</span><span class="p">.</span><span class="n">category_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">category_id</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">rental</span> <span class="n">ym</span> <span class="k">ON</span> <span class="n">r</span><span class="p">.</span><span class="n">rental_id</span> <span class="o">=</span> <span class="n">ym</span><span class="p">.</span><span class="n">rental_id</span>
+		<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">;</span>
+	<span class="c1">-- Update summary_table</span>
+	<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">summary_table</span>
+		<span class="k">SELECT</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">num_rentals</span>
+		<span class="k">FROM</span> <span class="n">detailed_table</span>
+		<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span>
+		<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">num_rentals</span> <span class="k">DESC</span><span class="p">;</span>
+	<span class="c1">-- Re-enable trigger</span>
+    <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">detailed_table</span> <span class="n">ENABLE</span> <span class="k">TRIGGER</span> <span class="n">update_summary_on_insert</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+<span class="err">$$</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="automation-with-pgagent">Automation with pgAgent</h2>
+
+<p>To keep the data fresh for reporting, the stored procedure can be scheduled to run monthly using pgAgent, PostgreSQL’s built-in job scheduler. This ensures the summary reflects the most recent rental data without manual intervention.</p>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>This project highlights the power of SQL and PostgreSQL for preparing data in a way that supports scalable and automated business intelligence workflows. By creating a clean, transformed layer of data ready for analysis, I can bridge the gap between raw transactions and valuable insights. These structured tables can now be easily integrated with tools like Power BI or Tableau for dashboarding, trend analysis, and storytelling with data.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/5/PostgreSQL.png" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/5/PostgreSQL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-19T23:06:52+00:00</updated><id>https://nvu01.github.io//youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
 
 <p><a href="https://github.com/nvu01/Tableau-Public-Dashboard" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -718,4 +1079,4 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 
 <h2 id="final-thoughts">Final Thoughts</h2>
 
-<p>With Tableau, I turned a complex dataset into an accessible, interactive tool that surfaces insights through design and exploration. But this project was more than just building a dashboard. It was an exercise in turning raw data into narrative. Beyond the technical skills, this project pushed me to think like a storyteller, to guide users through the data, not just analyze it.</p>]]></content><author><name>Ngan Vu</name><email>&lt;mail@domain.tld&gt;</email></author><category term="youtube" /><category term="tableau dashboard" /><category term="tableau story" /><category term="data visualization" /><category term="storytelling" /><summary type="html"><![CDATA[An interactive Tableau dashboard that visualizes U.S. YouTube trending data to reveal viewer sentiment, top channels, and regional content preferences.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>With Tableau, I turned a complex dataset into an accessible, interactive tool that surfaces insights through design and exploration. But this project was more than just building a dashboard. It was an exercise in turning raw data into narrative. Beyond the technical skills, this project pushed me to think like a storyteller, to guide users through the data, not just analyze it.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="youtube" /><category term="tableau dashboard" /><category term="tableau story" /><category term="data visualization" /><category term="storytelling" /><summary type="html"><![CDATA[An interactive Tableau dashboard that visualizes U.S. YouTube trending data to reveal viewer sentiment, top channels, and regional content preferences.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.2.1 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Preparing Data for Reporting Using PostgreSQL | Ngan Vu</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Preparing Data for Reporting Using PostgreSQL" />
+<meta name="author" content="Ngan Vu" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures." />
+<meta property="og:description" content="This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures." />
+<link rel="canonical" href="https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/" />
+<meta property="og:url" content="https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/" />
+<meta property="og:site_name" content="Ngan Vu" />
+<meta property="og:image" content="https://nvu01.github.io//assets/img/posts/5/PostgreSQL.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-30T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/5/PostgreSQL.png" />
+<meta property="twitter:title" content="Preparing Data for Reporting Using PostgreSQL" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-19T23:06:52+00:00","datePublished":"2025-05-30T00:00:00+00:00","description":"This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.","headline":"Preparing Data for Reporting Using PostgreSQL","image":"https://nvu01.github.io//assets/img/posts/5/PostgreSQL.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="color-scheme" content="dark light">
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ngan Vu">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Ngan Vu">
+
+<meta name="generator" content="Hydejack v9.2.1" />
+
+
+<link rel="alternate" href="https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="https://nvu01.github.io//feed.xml" title="Ngan Vu" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+  
+  <link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css" id="_katexPreload">
+  <noscript><link rel="stylesheet" href="/assets/bower_components/katex/dist/katex.min.css"></noscript>
+
+
+
+
+
+<script>((r,a)=>{function d(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=a.createElement("script"),e=(n.src=e,t&&d(n,"load",t,{once:!0}),a.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=a.createElement("script");function o(){r._loaded=!0,t&&d(n,"load",t,{once:!0});var e=a.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():d(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){d(a.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}})(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2025-06-19T23:07:12+00:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.2.1.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 0.5);--accent-color-highlight: rgba(245, 245, 245, 0.1);--accent-color-darkened: rgb(225.875, 225.875, 225.875);--theme-color: rgb(25,55,71);--dark-mode-body-bg: hsl(200.8695652174, 5.9895833333%, 17.5%);--dark-mode-border-color: hsl(200.8695652174, 5.9895833333%, 22.5%)}
+</style>
+
+
+<!--<![endif]-->
+
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/img/logo/favicon_white_bg.ico" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/assets/img/logo/favicon_black_bg.ico" media="(prefers-color-scheme: dark)">
+
+<!-- Open Graph tags for social sharing -->
+<meta property="og:title" content="Preparing Data for Reporting Using PostgreSQL">
+<meta property="og:description" content="This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.
+">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nvu01.github.io//2025-05-30-SQL-preparing-data-for-reporting/">
+<meta property="og:image" content="/assets/img/thumbnail.png">
+
+<!-- Add HTML tags here to be included in the head. You can delete the below: -->
+<link rel="dns-prefetch" href="https://assets.gumroad.com">
+<script type="module">
+  const loadJS = x => new Promise(r => window.loadJS(x).addEventListener('load', r));
+
+  let p1, p2, io1, io2, embedCreated, overlayCreated;
+  document.querySelector('hy-push-state').addEventListener('load', () => {
+    io1 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p1 = p1 || loadJS('https://gumroad.com/js/gumroad-embed.js');
+        await p1;
+        !embedCreated && await new Promise(function check1(res) {
+          if (typeof createGumroadEmbed !== 'undefined')  {
+            embedCreated = 1;
+            res(createGumroadEmbed());
+          }
+          else setTimeout(() => check1(res), 200);
+        });
+        await new Promise(function check2(res) {
+          if (typeof GumroadEmbed !== 'undefined') res(GumroadEmbed.reload());
+          else setTimeout(() => check2(res), 200);
+        });
+      }
+    }, { rootMargin: '1440px' });
+
+    io2 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p2 = p2 || loadJS('https://gumroad.com/js/gumroad.js');
+        await p2;
+        !overlayCreated && await new Promise(function check(res) {
+          if (typeof createGumroadOverlay !== 'undefined') {
+            overlayCreated = 1;
+            res(createGumroadOverlay());
+          }
+          else setTimeout(() => check(res), 200);
+        });
+      }
+    }, { rootMargin: '300px' });
+
+    document.querySelectorAll('.gumroad-product-embed').forEach(el => io1.observe(el));
+    document.querySelectorAll('.gumroad-button').forEach(el => io2.observe(el));
+  });
+</script>
+
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  ((e,s)=>{var d="light-mode",a="dark-mode",o=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(e=(o=o<=e._sunrise||o>=e._sunset?a:d)==a?d:a,s.body.classList.add(o),s.body.classList.remove(e))})(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2025-05-30-SQL-preparing-data-for-reporting</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-SQL-preparing-data-for-reporting" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        Preparing Data for Reporting Using PostgreSQL
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2025-05-30T00:00:00+00:00">30 May 2025</time>  on <span>Waggle</span>, <span>Power bi report</span>, <span>Data visualization</span>, <span>Storytelling</span>, <span>Lapdog</span>, <span>Lapcat</span>
+      </span>
+      
+        
+          
+          
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 19 Jun 2025">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2025-06-19T23:06:52+00:00">2025-06-19</time>
+            </span>
+          
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/posts/5/PostgreSQL.png"
+  
+  alt="Preparing Data for Reporting Using PostgreSQL"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p>This project demonstrates how SQL and PostgreSQL can be used to transform raw transactional data into structured, analysis-ready tables. Using the DVD Rental Dataset, I built a structured workflow to extract, transform, and organize rental data for future insights and analysis.</p>
+
+<p><a href="https://github.com/nvu01/Advanced-Data-Management" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo
+</a></p>
+
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#project-overview" id="markdown-toc-project-overview">Project Overview</a>    <ul>
+      <li><a href="#database" id="markdown-toc-database">Database</a></li>
+      <li><a href="#business-use-cases" id="markdown-toc-business-use-cases">Business Use Cases</a></li>
+      <li><a href="#deliverables" id="markdown-toc-deliverables">Deliverables</a></li>
+      <li><a href="#tools--skills-used" id="markdown-toc-tools--skills-used">Tools &amp; Skills Used</a></li>
+    </ul>
+  </li>
+  <li><a href="#key-sql-components" id="markdown-toc-key-sql-components">Key SQL Components</a>    <ul>
+      <li><a href="#extracting-year-and-month-with-functions" id="markdown-toc-extracting-year-and-month-with-functions">Extracting Year and Month with Functions</a></li>
+      <li><a href="#creating-tables" id="markdown-toc-creating-tables">Creating Tables</a></li>
+      <li><a href="#trigger-for-summary-table-updates" id="markdown-toc-trigger-for-summary-table-updates">Trigger for Summary Table Updates</a></li>
+      <li><a href="#populating-tables" id="markdown-toc-populating-tables">Populating Tables</a></li>
+      <li><a href="#stored-procedure-to-refresh-all-data" id="markdown-toc-stored-procedure-to-refresh-all-data">Stored Procedure to Refresh All Data</a></li>
+    </ul>
+  </li>
+  <li><a href="#automation-with-pgagent" id="markdown-toc-automation-with-pgagent">Automation with pgAgent</a></li>
+  <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
+</ul>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<h3 id="database">Database</h3>
+
+<p><strong>Sample Database:</strong> dvdrental.zip containing the database is available for download in my <a href="https://github.com/nvu01/Advanced-Data-Management">GitHub repo</a>
+or from <a href="https://neon.tech/postgresql/postgresql-getting-started/postgresql-sample-database">neon.tech</a></p>
+
+<p><strong>Data Model (ERD):</strong> <a href="/assets/img/posts/5/dvdrental_data_model.png" target="_blank">View data model</a></p>
+
+<p><strong>Source Tables Used:</strong> I used two key tables from the DVD Rental sample database:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rental</code>: Contains information about each film rental.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rental_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_date</td>
+      <td>timestamp without time zone</td>
+    </tr>
+    <tr>
+      <td>inventory_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>customer_id</td>
+      <td>smallint</td>
+    </tr>
+    <tr>
+      <td>return_date</td>
+      <td>timestamp without time zone</td>
+    </tr>
+    <tr>
+      <td>staff_id</td>
+      <td>smallint</td>
+    </tr>
+    <tr>
+      <td>last_update</td>
+      <td>timestamp without time zone</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">category</code>: Provides the category_name for each film.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>category_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>character varying</td>
+    </tr>
+    <tr>
+      <td>last_update</td>
+      <td>timestamp without time zone</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Tables Created:</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">detailed_table</code>: A transactional table showing individual rental records with added time and category context.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rental_id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_year</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_month</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>category_name</td>
+      <td>character varying</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">summary_table</code>: An aggregated table used for reporting the total number of rentals by genre per month.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>column_name</th>
+      <th>data_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rental_year</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>rental_month</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>category_name</td>
+      <td>character varying</td>
+    </tr>
+    <tr>
+      <td>num_rentals</td>
+      <td>bigint</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="business-use-cases">Business Use Cases</h3>
+
+<p><strong>detailed_table:</strong></p>
+<ul>
+  <li>Useful for looking up individual rental instances by date and genre.</li>
+  <li>Helps analysts or support staff answer questions like:
+    <ul>
+      <li>“What genre was rented on a specific date?”</li>
+      <li>“How many horror movies were rented in a specific rental instance?”</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>summary_table:</strong></p>
+<ul>
+  <li>Supports trend and performance analysis across months.</li>
+  <li>Helps stakeholders understand:
+    <ul>
+      <li>Which genres are most popular over time</li>
+      <li>Seasonal rental trends</li>
+      <li>How genre preferences shift month-to-month</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The data is designed to be refreshed monthly, ensuring that reporting and insights remain current for ongoing business needs.</p>
+
+<h3 id="deliverables">Deliverables</h3>
+
+<ul>
+  <li>Create reusable <strong>user-defined functions</strong> to extract year and month from timestamps.</li>
+  <li>Build <strong>detailed and summary tables</strong> to structure rental data by film category and time.</li>
+  <li>Implement a <strong>trigger function</strong> to auto-update summary metrics when new data is inserted.</li>
+  <li>Use a <strong>stored procedure</strong> to fully refresh both tables on a monthly basis.</li>
+</ul>
+
+<h3 id="tools--skills-used">Tools &amp; Skills Used</h3>
+
+<p><strong>Tools:</strong> PostgreSQL</p>
+
+<p><strong>Skills:</strong></p>
+<ul>
+  <li>PL/pgSQL scripting</li>
+  <li>Data transformation (timestamp extraction)</li>
+  <li>Joins &amp; subqueries</li>
+  <li>Table creation &amp; triggers</li>
+  <li>Stored procedures</li>
+  <li>Workflow automation using pgAgent (PostgreSQL’s job scheduler)</li>
+</ul>
+
+<h2 id="key-sql-components">Key SQL Components</h2>
+
+<p><a href="https://github.com/nvu01/Advanced-Data-Management/blob/main/dvdrental%20project.sql" target="_blank">View full SQL script</a></p>
+
+<h3 id="extracting-year-and-month-with-functions">Extracting Year and Month with Functions</h3>
+
+<p>I began by creating creating two user-defined functions to extract month and year from <code class="language-plaintext highlighter-rouge">rental_date</code> column in <code class="language-plaintext highlighter-rouge">rental</code> table.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create a function that extracts month from the rental_date column</span>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="n">rental_month</span> <span class="p">(</span><span class="n">rental_date</span> <span class="nb">timestamp</span> <span class="k">without</span> <span class="nb">time</span> <span class="k">zone</span><span class="p">)</span>
+<span class="k">RETURNS</span> <span class="nb">int</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">DECLARE</span> <span class="n">month_value</span> <span class="nb">int</span><span class="p">;</span>
+<span class="k">BEGIN</span>
+    <span class="k">SELECT</span> <span class="k">EXTRACT</span> <span class="p">(</span><span class="k">MONTH</span> <span class="k">FROM</span> <span class="n">rental_date</span><span class="p">)</span> <span class="k">INTO</span> <span class="n">month_value</span><span class="p">;</span>
+    <span class="k">RETURN</span> <span class="n">month_value</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span> 
+<span class="err">$$</span><span class="p">;</span>
+
+<span class="c1">-- Create a function that extracts year from the rental_date column</span>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="n">rental_year</span> <span class="p">(</span><span class="n">rental_date</span> <span class="nb">timestamp</span> <span class="k">without</span> <span class="nb">time</span> <span class="k">zone</span><span class="p">)</span>
+<span class="k">RETURNS</span> <span class="nb">int</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">DECLARE</span> <span class="n">year_value</span> <span class="nb">int</span><span class="p">;</span>
+<span class="k">BEGIN</span>
+    <span class="k">SELECT</span> <span class="k">EXTRACT</span> <span class="p">(</span><span class="nb">YEAR</span> <span class="k">FROM</span> <span class="n">rental_date</span><span class="p">)</span> <span class="k">INTO</span> <span class="n">year_value</span><span class="p">;</span>
+    <span class="k">RETURN</span> <span class="n">year_value</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+<span class="err">$$</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="creating-tables">Creating Tables</h3>
+
+<p>Next, I created <code class="language-plaintext highlighter-rouge">detailed_table</code> and <code class="language-plaintext highlighter-rouge">summary_table</code>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create an empty detailed table</span>
+<span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">detailed_table</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">detailed_table</span> <span class="p">(</span>
+	<span class="n">rental_id</span> <span class="nb">int</span><span class="p">,</span>
+	<span class="n">rental_year</span> <span class="nb">int</span><span class="p">,</span>
+	<span class="n">rental_month</span> <span class="nb">int</span><span class="p">,</span>
+	<span class="n">category_name</span> <span class="nb">varchar</span> <span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">-- Create a summary table that extracts and aggregates data from the detailed table</span>
+<span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">summary_table</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">summary_table</span>
+<span class="k">AS</span> <span class="k">SELECT</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">num_rentals</span>
+<span class="k">FROM</span> <span class="n">detailed_table</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">num_rentals</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="trigger-for-summary-table-updates">Trigger for Summary Table Updates</h3>
+
+<p>Once the two tables were created, I could build a trigger that updates the <code class="language-plaintext highlighter-rouge">summary_table</code> when data is inserted into the <code class="language-plaintext highlighter-rouge">detailed_table</code>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create a function that updates the summary table</span>
+<span class="k">CREATE</span> <span class="k">OR</span> <span class="k">REPLACE</span> <span class="k">FUNCTION</span> <span class="n">summary_table_update</span><span class="p">()</span>
+<span class="k">RETURNS</span> <span class="k">TRIGGER</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">BEGIN</span>
+	<span class="k">TRUNCATE</span> <span class="n">summary_table</span><span class="p">;</span>
+	<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">summary_table</span>
+		<span class="k">SELECT</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="k">COUNT</span> <span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">num_rentals</span>
+		<span class="k">FROM</span> <span class="n">detailed_table</span>
+		<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span>
+		<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">num_rentals</span> <span class="k">DESC</span><span class="p">;</span>
+<span class="k">RETURN</span> <span class="k">NEW</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span> 
+<span class="err">$$</span><span class="p">;</span>
+
+<span class="c1">-- Create a trigger that updates the summary table when data is inserted into the detailed table</span>
+<span class="k">DROP</span> <span class="k">TRIGGER</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">update_summary_on_insert</span> <span class="k">ON</span> <span class="n">detailed_table</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TRIGGER</span> <span class="n">update_summary_on_insert</span>
+<span class="k">AFTER</span> <span class="k">INSERT</span>
+<span class="k">ON</span> <span class="n">detailed_table</span>
+<span class="k">FOR</span> <span class="k">EACH</span> <span class="k">STATEMENT</span>
+<span class="k">EXECUTE</span> <span class="k">PROCEDURE</span> <span class="n">summary_table_update</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h3 id="populating-tables">Populating Tables</h3>
+
+<p>Raw data was then extracted and inserted into the <code class="language-plaintext highlighter-rouge">detailed_table</code>. This would also trigger update to <code class="language-plaintext highlighter-rouge">summary_table</code>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Add raw data to the detailed table</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">detailed_table</span>
+<span class="k">SELECT</span> <span class="n">r</span><span class="p">.</span><span class="n">rental_id</span><span class="p">,</span> <span class="n">rental_year</span> <span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="n">rental_month</span> <span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="k">c</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="n">category_name</span>
+<span class="k">FROM</span> <span class="n">rental</span> <span class="n">r</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">inventory</span> <span class="n">i</span> <span class="k">ON</span> <span class="n">r</span><span class="p">.</span><span class="n">inventory_id</span> <span class="o">=</span> <span class="n">i</span><span class="p">.</span><span class="n">inventory_id</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">film_category</span> <span class="n">fc</span> <span class="k">ON</span> <span class="n">i</span><span class="p">.</span><span class="n">film_id</span> <span class="o">=</span> <span class="n">fc</span><span class="p">.</span><span class="n">film_id</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">category</span> <span class="k">c</span> <span class="k">ON</span> <span class="n">fc</span><span class="p">.</span><span class="n">category_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">category_id</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="stored-procedure-to-refresh-all-data">Stored Procedure to Refresh All Data</h3>
+
+<p>Finally, I created a procedure that refreshes data in both detailed and summary tables.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Create a procedure that re-populates the 2 tables with raw data from the database</span>
+<span class="c1">-- Any test data that was manually inserted to the detailed table won't be included</span>
+<span class="k">DROP</span> <span class="k">PROCEDURE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">refresh_tables</span><span class="p">();</span>
+<span class="k">CREATE</span> <span class="k">PROCEDURE</span> <span class="n">refresh_tables</span> <span class="p">()</span>
+<span class="k">LANGUAGE</span> <span class="n">plpgsql</span>
+<span class="k">AS</span> <span class="err">$$</span>
+<span class="k">BEGIN</span>
+	<span class="k">TRUNCATE</span> <span class="n">detailed_table</span><span class="p">;</span>
+	<span class="k">TRUNCATE</span> <span class="n">summary_table</span><span class="p">;</span>
+	<span class="c1">-- Temporarily disable trigger</span>
+    <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">detailed_table</span> <span class="n">DISABLE</span> <span class="k">TRIGGER</span> <span class="n">update_summary_on_insert</span><span class="p">;</span>
+	<span class="c1">-- Update detailed_table</span>
+	<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">detailed_table</span>
+		<span class="k">SELECT</span> <span class="n">r</span><span class="p">.</span><span class="n">rental_id</span><span class="p">,</span> <span class="n">rental_year</span> <span class="p">(</span><span class="n">ym</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="n">rental_month</span> <span class="p">(</span><span class="n">ym</span><span class="p">.</span><span class="n">rental_date</span><span class="p">),</span> <span class="k">c</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="n">category_name</span>
+		<span class="k">FROM</span> <span class="n">rental</span> <span class="n">r</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">inventory</span> <span class="n">i</span> <span class="k">ON</span> <span class="n">r</span><span class="p">.</span><span class="n">inventory_id</span> <span class="o">=</span> <span class="n">i</span><span class="p">.</span><span class="n">inventory_id</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">film_category</span> <span class="n">fc</span> <span class="k">ON</span> <span class="n">i</span><span class="p">.</span><span class="n">film_id</span> <span class="o">=</span> <span class="n">fc</span><span class="p">.</span><span class="n">film_id</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">category</span> <span class="k">c</span> <span class="k">ON</span> <span class="n">fc</span><span class="p">.</span><span class="n">category_id</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">category_id</span>
+		<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">rental</span> <span class="n">ym</span> <span class="k">ON</span> <span class="n">r</span><span class="p">.</span><span class="n">rental_id</span> <span class="o">=</span> <span class="n">ym</span><span class="p">.</span><span class="n">rental_id</span>
+		<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">;</span>
+	<span class="c1">-- Update summary_table</span>
+	<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">summary_table</span>
+		<span class="k">SELECT</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">num_rentals</span>
+		<span class="k">FROM</span> <span class="n">detailed_table</span>
+		<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">rental_year</span><span class="p">,</span> <span class="n">rental_month</span><span class="p">,</span> <span class="n">category_name</span>
+		<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">rental_year</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">rental_month</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">num_rentals</span> <span class="k">DESC</span><span class="p">;</span>
+	<span class="c1">-- Re-enable trigger</span>
+    <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">detailed_table</span> <span class="n">ENABLE</span> <span class="k">TRIGGER</span> <span class="n">update_summary_on_insert</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+<span class="err">$$</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="automation-with-pgagent">Automation with pgAgent</h2>
+
+<p>To keep the data fresh for reporting, the stored procedure can be scheduled to run monthly using pgAgent, PostgreSQL’s built-in job scheduler. This ensures the summary reflects the most recent rental data without manual intervention.</p>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>This project highlights the power of SQL and PostgreSQL for preparing data in a way that supports scalable and automated business intelligence workflows. By creating a clean, transformed layer of data ready for analysis, I can bridge the gap between raw transactions and valuable insights. These structured tables can now be easily integrated with tools like Power BI or Tableau for dashboarding, trend analysis, and storytelling with data.</p>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/about/grey-dress.jpg"
+    srcset="/assets/img/about/grey-dress.jpg 1x,https://via.placeholder.com/256x256 2x"
+    
+  
+  alt="Ngan Vu"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>Hey there! I’m Ngan Vu, a data analyst powered by curiosity, iced coffee, and the occasional over-engineered Excel spreadsheet.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/ngan-vu-719896328" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/nvu01" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/2025-06-16-waggle-power-bi-report/" class="flip-title"><span>Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</span></a>  <time class="faded fine" datetime="2025-06-16T00:00:00+00:00">16 Jun 2025</time></li>                        <li class="h4">  <a href="/2025-06-04-undervalued-stock-scanner/" class="flip-title"><span>Undervalued Stock Scanner: From Raw Data to Smart Insights</span></a>  <time class="faded fine" datetime="2025-06-04T00:00:00+00:00">04 Jun 2025</time></li>                        <li class="h4">  <a href="/2025-06-01-poverty-regression-analysis/" class="flip-title"><span>Socioeconomic Factors Impacting Poverty in U.S. Counties</span></a>  <time class="faded fine" datetime="2025-06-01T00:00:00+00:00">01 Jun 2025</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2024. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/steve-johnson-SZvTWuTR1XM-unsplash.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo/logo_black_bg.png" class="avatar" alt="Ngan Vu" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Ngan Vu</h2></a>
+    
+    
+      <p class="">
+        The Curious Analyst
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About Me
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/ngan-vu-719896328" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/nvu01" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>(()=>{var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())})();
+</script>
+  <script src="/assets/js/hydejack-9.2.1.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.2.1.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+</div>
+
+
+</body>
+</html>
