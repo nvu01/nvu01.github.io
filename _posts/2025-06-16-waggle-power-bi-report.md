@@ -7,7 +7,7 @@ image: /assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg
 tags: [Waggle, Power BI report, data visualization, storytelling, LapDog, LapCat]
 ---
 
-In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the Lapdog fitness collar for dogs, Waggle launched a field test of its feline counterpart called "Lapcat". My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.
+In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the LapDog fitness collar for dogs, Waggle launched a field test of its feline counterpart called "LapCat". My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.
 
 <a href="https://github.com/nvu01/Waggle-PowerBI-Report" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
