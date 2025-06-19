@@ -25,8 +25,7 @@ title:                 Ngan Vu
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Portfolio of Ngan Vu
 
 # A shorter description for the sidebar.
 tagline:               The Curious Analyst
@@ -43,7 +42,7 @@ logo:                  /assets/img/logo/logo_black_bg.png
 author:
   # Used by `jekyll-feed`:
   name:                Ngan Vu
-  email:               <mail@domain.tld>
+  email:               <nganvu2601@gmail.com>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
