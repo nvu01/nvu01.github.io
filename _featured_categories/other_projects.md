@@ -142,3 +142,9 @@ This project analyzes the results of an A/B test run by an e-commerce company to
 |                  |              | statmodels               |
 |                  |              | scipy                    |
 
+**Skills:**
+- **A/B Testing**: Designed and interpreted an A/B test using bootstrapping and p-value analysis.
+- **Hypothesis Testing**: Simulated control/treatment outcomes to assess statistical significance of conversion differences.
+- **Logistic Regression Modeling**: Built and interpreted a logistic model to analyze the impact of page version and country on conversion.
+- **Data Wrangling & Validation**: Verified group assignments and cleaned mismatched records to ensure experiment integrity.
+- **Insight Communication**: Presented evidence-based recommendations about whether to deploy the new page or conduct further testing.
