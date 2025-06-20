@@ -3,7 +3,7 @@ layout: post
 title: "Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle"
 description: >
   An interactive Power BI report that visualizes product performance and user data for Waggle.
-image: /assets/img/posts/4/andrew-s-ouo1hbizWwo-unsplash.jpg
+image: /assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg
 tags: [Waggle, Power BI report, data visualization, storytelling, LapDog, LapCat]
 ---
 
@@ -22,7 +22,7 @@ The data used in this project was provided by Udacity as part of their Data Anal
 
 **Data Model**
 
-<img src="/assets/img/posts/4/data-model.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/5/data-model.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
 
 ## Business Requirements
 
@@ -45,7 +45,7 @@ The report also needed to meet Waggle’s design standards:
 - One reset button per page to clear filters
 - Buttons for page-to-page navigation
 
-<img src="/assets/img/posts/4/color_palette.png" alt="description" width="600" style="display: block; margin: 1rem 0; text-align: left;"/>
+<img src="/assets/img/posts/5/color_palette.png" alt="description" width="600" style="display: block; margin: 1rem 0; text-align: left;"/>
 
 
 ## The Report

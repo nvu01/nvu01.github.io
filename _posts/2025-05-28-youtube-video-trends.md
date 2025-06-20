@@ -3,7 +3,8 @@ layout: post
 title: "U.S. YouTube Video Trends: A Tableau Dashboard & Story"
 description: >
   An interactive Tableau dashboard that visualizes U.S. YouTube trending data to reveal viewer sentiment, top channels, and regional content preferences.
-image: /assets/img/posts/3/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg
+image: /assets/img/posts/1/eyestetix-studio-Bm-5o5M2mAI-unsplash.jpg
+image_source: "Image from Eyestetix Studio - Unsplash"
 tags: [youtube, tableau dashboard, tableau story, data visualization, storytelling]
 ---
 

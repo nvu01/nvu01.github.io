@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Socioeconomic Factors Impacting Poverty in U.S. Counties
+title: "Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach"
 description: >
   A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.
-image: /assets/img/posts/1/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg
+image: /assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg
 tags: [regression, socioeconomic data, poverty, census data, public policy]
 ---
 
@@ -86,7 +86,7 @@ Finally, to address issues identified in model diagnostics, I applied several **
 - **Square root transformation** was applied to the **response variable** to reduce heteroscedasticity and improve linearity. The baseline model uses the raw poverty rate as the dependent variable. That may distort relationships, especially when poverty is skewed.  
 - An **interaction term** was added to improve model accuracy when the effect of one variable depends on another. A potential interaction term can be identified by asking this question: Do any predictors influence each other’s effects on the dependent variable? In the baseline model, I'm assuming that household income has the same effect everywhere, regardless of house values. But what if counties with medium to high income have housing affordability issues? The impact of household income on poverty may differ based on local housing cost.
 
-<img src="/assets/img/posts/1/interaction_term.png" alt="description" width="550" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/interaction_term.png" alt="description" width="550" style="display: block; margin: 0 auto;"/>
 
 The drop in poverty rate with increasing income appears steeper for counties with lower house value (blue cluster) than ones with higher house value (orange cluster). This means that the effect of income on poverty varies depending on house values.
 
@@ -141,25 +141,25 @@ Mean Squared Error: 0.07192225315999502
 
 **Residual vs fitted plot:** Was used to evaluate model fit and assumption validity, such as linearity and homoscedasticity.
 
-<img src="/assets/img/posts/1/final_residuals_fitted.png" alt="description" width="500" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/final_residuals_fitted.png" alt="description" width="500" style="display: block; margin: 0 auto;"/>
 
 Residuals are randomly scattered around zero with consistent spread across fitted values. This means there is no major heteroscedasticity. A few mild outliers are present.
 
 **Residuals vs predictors plots:** Were used to detect potential non-linear relationships or predictors that could benefit from transformations.
 
-<img src="/assets/img/posts/1/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
 
 No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.
 
 **Histogram and boxplot:** Were used to assess whether residuals are normally distributed.
 
-<img src="/assets/img/posts/1/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
 
 - Histogram and boxplot of residuals: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.
 
 **Q-Q plot:** Was used to assess normality of residuals by comparing their distribution to a theoretical normal distribution.
 
-<img src="/assets/img/posts/1/final_qq.png" alt="description" width="500" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/final_qq.png" alt="description" width="500" style="display: block; margin: 0 auto;"/>
 
 - Q-Q plot: Residuals closely follow the normal line with a slight deviation in the upper tail, which is acceptable.
 
@@ -198,7 +198,7 @@ It is important to note that unlike SPM, the OPM does not include non-cash publi
 >Counties with higher home values and incomes tend to have lower poverty rates, but each factor’s impact weakens as the other increases.
 {:.lead}
 
-<img src="/assets/img/posts/1/tornado_diagram.png" alt="description" width="650" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/tornado_diagram.png" alt="description" width="650" style="display: block; margin: 0 auto;"/>
 
 - The interaction between income and house value had the largest impact. A positive coefficient for the interaction term suggests that **as income increases, the negative effect of house value on poverty becomes less strong**, or **as house value increases, the negative effect of income on poverty rate weakens**.
 - The most impactful predictors of poverty rates are **median house value** and **median household income** as they both show strong negative relationships. **Counties with higher home values and incomes tend to have lower poverty rates.**
@@ -207,7 +207,7 @@ It is important to note that unlike SPM, the OPM does not include non-cash publi
   - Greater health insurance coverage comes with lower poverty
   - More public transit use relates to higher poverty (possibly reflecting urban conditions)
 - Another interesting finding is that **median household income** in the **base model** had a **positive coefficient** (4.7) (see the <a href="/assets/other/base_OLS Regression Results.txt" target="_blank" rel="noopener">base model summary</a>), which was unexpected because a 
-<a href="/assets/img/posts/1/scatter_poverty_house-value.png" target="_blank" rel="noopener">regression plot between poverty rate and median household income</a> suggests otherwise. However, in the **refined model**, the sign of this coefficient flipped due to the interaction term (see [predictors' metrics](#predictors-metrics)). The **negative coefficient** means that higher housing values are associated with lower poverty rates. This adjusted effect of median house values in the final model aligns more with general economic assumptions.
+<a href="/assets/img/posts/3/scatter_poverty_house-value.png" target="_blank" rel="noopener">regression plot between poverty rate and median household income</a> suggests otherwise. However, in the **refined model**, the sign of this coefficient flipped due to the interaction term (see [predictors' metrics](#predictors-metrics)). The **negative coefficient** means that higher housing values are associated with lower poverty rates. This adjusted effect of median house values in the final model aligns more with general economic assumptions.
 
 
 ## Recommended Courses of Action

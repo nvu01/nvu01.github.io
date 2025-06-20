@@ -3,7 +3,7 @@ layout: post
 title: "Undervalued Stock Scanner: From Raw Data to Smart Insights"
 description: >
   A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.
-image: /assets/img/posts/2/adam-smigielski-K5mPtONmpHM-unsplash.jpg
+image: /assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg
 tags: [dashboard, stock market, financial market]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Preparing Data for Reporting Using PostgreSQL"
 description: >
   This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.
-image: /assets/img/posts/5/PostgreSQL.png
+image: /assets/img/posts/2/PostgreSQL.png
 tags: [Waggle, Power BI report, data visualization, storytelling, LapDog, LapCat]
 ---
 
@@ -23,7 +23,7 @@ This project demonstrates how SQL and PostgreSQL can be used to transform raw tr
 **Sample Database:** dvdrental.zip containing the database is available for download in my [GitHub repo](https://github.com/nvu01/Advanced-Data-Management)
 or from [neon.tech](https://neon.tech/postgresql/postgresql-getting-started/postgresql-sample-database)
 
-**Data Model (ERD):** <a href="/assets/img/posts/5/dvdrental_data_model.png" target="_blank">View data model</a>
+**Data Model (ERD):** <a href="/assets/img/posts/2/dvdrental_data_model.png" target="_blank">View data model</a>
 
 **Source Tables Used:** I used two key tables from the DVD Rental sample database:
 
@@ -246,9 +246,11 @@ END;
 $$;
 ```
 
+
 ## Automation with pgAgent
 
 To keep the data fresh for reporting, the stored procedure can be scheduled to run monthly using pgAgent, PostgreSQL’s built-in job scheduler. This ensures the summary reflects the most recent rental data without manual intervention. 
+
 
 ## Final Thoughts
 
