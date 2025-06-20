@@ -43,11 +43,11 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="og:url" content="https://nvu01.github.io//other_projects/" />
 <meta property="og:site_name" content="Ngan Vu" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-06-20T05:14:55+00:00" />
+<meta property="article:published_time" content="2025-06-20T20:12:55+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Other Projects" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-20T05:14:35+00:00","datePublished":"2025-06-20T05:14:55+00:00","description":"Here are some of the projects I’ve worked on that aren’t covered in my blog posts. You can find the code and more details in the GitHub repositories.","headline":"Other Projects","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//other_projects/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-06-20T20:12:31+00:00","datePublished":"2025-06-20T20:12:55+00:00","description":"Here are some of the projects I’ve worked on that aren’t covered in my blog posts. You can find the code and more details in the GitHub repositories.","headline":"Other Projects","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//other_projects/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -120,7 +120,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-20T05:14:55+00:00',
+    INDEX_KEY: 'index--2025-06-20T20:12:55+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -270,18 +270,212 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 
   
-    <p class="note-sm" >
-      Here are some of the projects I’ve worked on that aren’t covered in my blog posts. You can find the code and more details in the GitHub repositories.
-
-    </p>
+    <div class="hr pb0"></div>
   
 
 
   </header>
 
-  <p><a href="/other_projects/project-1/" class="heading flip-title">SQLite Database for Weather Data</a></p>
+  <p>Here are some of the projects I’ve worked on that aren’t covered in my blog posts. You can find the code and more details in the GitHub repositories.</p>
 
-<p><a href="/other_projects/project-2/" class="heading flip-title">ETL Pipeline &amp; Data Modeling for Music Streaming Data</a></p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#etl-pipeline--data-modeling-for-music-streaming-data" id="markdown-toc-etl-pipeline--data-modeling-for-music-streaming-data">ETL Pipeline &amp; Data Modeling for Music Streaming Data</a></li>
+  <li><a href="#supervised-learning-predicting-donors-for-charityml" id="markdown-toc-supervised-learning-predicting-donors-for-charityml">Supervised Learning: Predicting Donors for CharityML</a></li>
+  <li><a href="#unsupervised-learning-customer-segmentation-with-pca--k-means-clustering" id="markdown-toc-unsupervised-learning-customer-segmentation-with-pca--k-means-clustering">Unsupervised Learning: Customer Segmentation with PCA &amp; K-Means Clustering</a></li>
+  <li><a href="#sqlite-database-for-weather-data" id="markdown-toc-sqlite-database-for-weather-data">SQLite Database for Weather Data</a></li>
+</ul>
+
+<hr />
+
+<h3 id="etl-pipeline--data-modeling-for-music-streaming-data">ETL Pipeline &amp; Data Modeling for Music Streaming Data</h3>
+
+<p>This project focuses on building an ETL pipeline and designing a star schema for analyzing song play data. Using Python and SQL, data is extracted from JSON-formatted song and user activity logs, transformed, and loaded into a PostgreSQL database structured with one fact table and multiple dimension tables. The resulting schema supports efficient querying of song play events for the fictional music streaming service Sparkify. The pipeline can be executed via scripts or notebooks, and includes data validation to ensure accuracy.</p>
+
+<p><a href="https://github.com/nvu01/ETL-Pipeline-and-Data-Modeling" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Tools</strong></th>
+      <th><strong>Language</strong></th>
+      <th><strong>Frameworks/Libraries</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jupyter Notebook</td>
+      <td>Python</td>
+      <td>psycopg2</td>
+    </tr>
+    <tr>
+      <td>PostgreSQL</td>
+      <td>SQl</td>
+      <td>pandas</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>os &amp; glob</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Skills:</strong></p>
+<ul>
+  <li><strong>Data Modeling</strong>: Designing and implementing a star schema with fact and dimension tables.</li>
+  <li><strong>ETL Development</strong>: Building an Extract, Transform, Load pipeline for structured data ingestion.</li>
+  <li><strong>SQL &amp; Relational Databases</strong>: Writing SQL queries for table creation, data insertion, and validation in PostgreSQL.</li>
+  <li><strong>Python Scripting</strong>: Automating data processing and database interaction using Python scripts.</li>
+  <li><strong>Data Cleaning &amp; Transformation</strong>: Processing raw JSON files to extract relevant information.</li>
+  <li><strong>Testing &amp; Validation</strong>: Verifying data integrity through queries and checks in notebooks</li>
+</ul>
+
+<hr />
+
+<h3 id="supervised-learning-predicting-donors-for-charityml">Supervised Learning: Predicting Donors for CharityML</h3>
+
+<p>This project applies supervised machine learning to U.S. census data to help the fictional non-profit CharityML identify potential donors. Using Python and scikit-learn, I preprocessed and transformed the raw data, evaluated and compared multiple classifiers, including <strong>Random Forest</strong>, <strong>AdaBoost</strong>, and <strong>Logistic Regression</strong>. I selected the best-performing model through cross-validation and optimization. I also investigated model performance, feature importance, and algorithm trade-offs to support business decisions.</p>
+
+<p><a href="https://github.com/nvu01/Supervised-Learning" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Tools</strong></th>
+      <th><strong>Language</strong></th>
+      <th><strong>Frameworks/Libraries</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jupyter Notebook</td>
+      <td>Python</td>
+      <td>pandas</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>NumPy</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>scikit-learn</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>matplotlib</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Skills:</strong></p>
+<ul>
+  <li><strong>Supervised Learning</strong>: Training and comparing classification models to identify optimal performance.</li>
+  <li><strong>Data Preprocessing</strong>: Cleaning, transforming, and encoding categorical census data.</li>
+  <li><strong>Model Evaluation</strong>: Using accuracy, precision, recall, and F-beta score to benchmark models.</li>
+  <li><strong>Hyperparameter Tuning</strong>: Optimizing selected models via grid search and cross-validation.</li>
+  <li><strong>Feature Importance Analysis</strong>: Interpreting model predictions and understanding key drivers of donor likelihood.</li>
+  <li><strong>Python Scripting</strong>: Writing modular, reusable code for reproducible ML pipelines.</li>
+</ul>
+
+<hr />
+
+<h3 id="unsupervised-learning-customer-segmentation-with-pca--k-means-clustering">Unsupervised Learning: Customer Segmentation with PCA &amp; K-Means Clustering</h3>
+
+<p>In this project, I performed unsupervised learning to identify distinct customer segments for a German mail-order company using large-scale demographic data. The pipeline includes extensive preprocessing, feature transformation with PCA, and customer segmentation using K-means clustering. The final analysis compares customer groups to the general population, revealing patterns in consumer behavior that support targeted marketing strategies.</p>
+
+<p><a href="https://github.com/nvu01/Unsupervised-Learning" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Tools</strong></th>
+      <th><strong>Language</strong></th>
+      <th><strong>Frameworks/Libraries</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jupyter Notebook</td>
+      <td>Python</td>
+      <td>pandas</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>NumPy</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>scikit-learn</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>matplotlib</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Skills:</strong></p>
+<ul>
+  <li><strong>Unsupervised Learning</strong>: Applied K-means clustering to uncover latent segments within high-dimensional demographic data.</li>
+  <li><strong>Dimensionality Reduction</strong>: Used PCA to visualize structure, reduce noise, and streamline clustering performance.</li>
+  <li><strong>Data Preprocessing</strong>: Addressed extensive missing and encoded values, and scaled features for consistency.</li>
+  <li><strong>Customer Analysis</strong>: Mapped clusters from general population data to customer records to highlight key consumer profiles.</li>
+  <li><strong>Scalable Analysis</strong>: MDesigned a repeatable end-to-end process for transforming, reducing, and clustering large datasets with nearly a million entries and 85 features.</li>
+</ul>
+
+<hr />
+
+<h3 id="sqlite-database-for-weather-data">SQLite Database for Weather Data</h3>
+
+<p>This project involves building a Python program to retrieve and store historical weather data from the Open Meteo API for specific locations and dates within the past five years. The program collects key weather metrics such as mean temperature, maximum wind speed, and total precipitation for each year and aggregates them. The data is stored in a local SQLite database (my_database.db), and the program offers functions to add, query, and delete records from this database. Additionally, the project includes unit test to check the functionality of the core components.</p>
+
+<p><a href="https://github.com/nvu01/SQLite-Database-for-Weather-Data" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Tools</strong></th>
+      <th><strong>Language</strong></th>
+      <th><strong>Frameworks/Libraries</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PyCharm</td>
+      <td>Python</td>
+      <td>SQLAlchemy</td>
+    </tr>
+    <tr>
+      <td>Open Meteo API</td>
+      <td> </td>
+      <td>unittest</td>
+    </tr>
+    <tr>
+      <td>SQLite</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Skills:</strong></p>
+<ul>
+  <li><strong>API Integration</strong>: Consuming and integrating external APIs to retrieve weather data.</li>
+  <li><strong>Database Management</strong>: Creating, modifying, and querying a SQLite database.</li>
+  <li><strong>Data Aggregation</strong>: Aggregating and processing weather data across multiple years.</li>
+  <li><strong>Python Scripting</strong>: Writing Python scripts to interact with APIs and databases.</li>
+  <li><strong>Unit Testing</strong>: Writing and running tests using the unittest framework.</li>
+</ul>
 
 </article>
 
