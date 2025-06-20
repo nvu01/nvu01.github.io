@@ -124,10 +124,21 @@ This project involves building a Python program to retrieve and store historical
 - **Python Scripting**: Writing Python scripts to interact with APIs and databases.
 - **Unit Testing**: Writing and running tests using the unittest framework.
 
+---
 
+### A/B Test Analysis for E-Commerce Conversion Optimization
 
+This project analyzes the results of an A/B test run by an e-commerce company to evaluate whether a new webpage version improves user conversion. Using Python and statistical modeling, I conducted an end-to-end analysis covering descriptive statistics, hypothesis testing, and regression analysis to determine whether the new design should be implemented.
 
+<a href="https://github.com/nvu01/AB-Test-Analysis" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo</a>
 
-
-
+| **Tools**        | **Language** | **Frameworks/Libraries** |
+|------------------|--------------|--------------------------|
+| Jupyter Notebook | Python       | pandas                   |
+|                  |              | NumPy                    |
+|                  |              | scikit-learn             |
+|                  |              | matplotlib, seaborn      |
+|                  |              | statmodels               |
+|                  |              | scipy                    |
 
