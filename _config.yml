@@ -31,7 +31,7 @@ description:           >
 tagline:               The Curious Analyst
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [Data Analyst, Portfolio, Data Analytics Blog, Ngan Vu]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -50,6 +50,10 @@ author:
 menu:
   - title:             About Me
     url:               /about/
+  - title:             Featured Projects
+    url:               /featured_projects/
+  - title:             Other Projects
+    url:               /other_projects/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
