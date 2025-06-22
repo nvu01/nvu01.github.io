@@ -29,7 +29,7 @@ or from [neon.tech](https://neon.tech/postgresql/postgresql-getting-started/post
 
 - `rental`: Contains information about each film rental.
 
-|column_name|data_type                  |
+|Column Name|Data Type                |
 |-----------|---------------------------|
 |rental_id  |integer                    |
 |rental_date|timestamp without time zone|
@@ -41,7 +41,7 @@ or from [neon.tech](https://neon.tech/postgresql/postgresql-getting-started/post
 
 - `category`: Provides the category_name for each film.
 
-|column_name|data_type                  |
+|Column Name|Data Type                  |
 |-----------|---------------------------|
 |category_id|integer                    |
 |name       |character varying          |
@@ -51,7 +51,7 @@ or from [neon.tech](https://neon.tech/postgresql/postgresql-getting-started/post
 
 - `detailed_table`: A transactional table showing individual rental records with added time and category context.
 
-|column_name  |data_type                  |
+|Column Name  |Data Type                  |
 |-------------|---------------------------|
 |rental_id    |integer                    |
 |rental_year  |integer                    |
@@ -60,7 +60,7 @@ or from [neon.tech](https://neon.tech/postgresql/postgresql-getting-started/post
 
 - `summary_table`: An aggregated table used for reporting the total number of rentals by genre per month.
 
-|column_name  |data_type                  |
+|Column Name  |Data Type                  |
 |-------------|---------------------------|
 |rental_year  |integer                    |
 |rental_month |integer                    |
@@ -109,7 +109,7 @@ The data is designed to be refreshed monthly, ensuring that reporting and insigh
 
 ### Extracting Year and Month with Functions
 
-I began by creating creating two user-defined functions to extract month and year from `rental_date` column in `rental` table.
+I began by creating two user-defined functions to extract month and year from `rental_date` column in `rental` table.
 
 ```sql
 -- Create a function that extracts month from the rental_date column
