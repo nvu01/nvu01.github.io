@@ -15,7 +15,7 @@ hide_description: true
 
 ## The Curious Analyst
 
-I’m a **curious and driven data analyst** who loves digging into data, asking a million “why’s,” and figuring out how to turn chaos into clarity. While my technical foundation lies in Python, SQL, and data visualization tools like Tableau and Power BI, what truly sets me apart is **how I think** critically, creatively, and always looking for ways to make things better.
+I’m a **curious and driven data analyst** who loves digging into data, asking a million “why’s,” and figuring out how to turn messy data into clear insights. While my technical foundation lies in Python, SQL, and data visualization tools like Tableau and Power BI, what truly sets me apart is **how I think** critically, creatively, and always looking for ways to make things better.
 
 In just one year, I completed a full 4-year bachelor’s degree in Data Analytics from [Western Governors University](https://www.wgu.edu/). No, I didn’t time travel! I just really like learning, figuring things out fast, and getting stuff done. 
 
