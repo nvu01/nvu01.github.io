@@ -58,7 +58,7 @@ The report also needed to meet Waggle’s design standards:
 
 <div style="max-width: 900px; margin: 0 auto;">
   <video width="100%" controls>
-    <source src="/assets/other/Post 4 demo vid.mp4" type="video/mp4">
+    <source src="/assets/other/Waggle.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
