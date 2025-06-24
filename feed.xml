@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-22T21:14:08+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Portfolio of Ngan Vu
-</subtitle><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><entry><title type="html">Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</title><link href="https://nvu01.github.io//featured_projects/2025-06-16-waggle-power-bi-report/" rel="alternate" type="text/html" title="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-22T21:13:48+00:00</updated><id>https://nvu01.github.io//featured_projects/waggle-power-bi-report</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-16-waggle-power-bi-report/"><![CDATA[<p>In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the LapDog fitness collar for dogs, Waggle launched a field test of its feline counterpart called “LapCat”. My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-24T21:59:28+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Portfolio of Ngan Vu
+</subtitle><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><entry><title type="html">Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</title><link href="https://nvu01.github.io//featured_projects/2025-06-16-waggle-power-bi-report/" rel="alternate" type="text/html" title="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-24T21:59:09+00:00</updated><id>https://nvu01.github.io//featured_projects/waggle-power-bi-report</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-16-waggle-power-bi-report/"><![CDATA[<p>In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the LapDog fitness collar for dogs, Waggle launched a field test of its feline counterpart called “LapCat”. My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.</p>
 
 <p><a href="https://github.com/nvu01/Waggle-PowerBI-Report" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -165,7 +165,7 @@ The report also needed to meet Waggle’s design standards:</p>
 
 <p>This Power BI project for Waggle was a valuable opportunity for me to focus on data modeling, stakeholder communication, and interactive dashboard design.</p>
 
-<p>While branding and layout help engage stakeholders and make the report approachable, my top priority was always data accuracy and delivering practical, business-relevant insights. A visually polished report earns attention, but clear, correct, and useful insights are what drive decisions.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[An interactive Power BI report that visualizes product performance and user data for Waggle.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//featured_projects/2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-22T21:13:48+00:00</updated><id>https://nvu01.github.io//featured_projects/undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
+<p>While branding and layout help engage stakeholders and make the report approachable, my top priority was always data accuracy and delivering practical, business-relevant insights. A visually polished report earns attention, but clear, correct, and useful insights are what drive decisions.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[An interactive Power BI report that visualizes product performance and user data for Waggle.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//featured_projects/2025-06-04-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-24T21:59:09+00:00</updated><id>https://nvu01.github.io//featured_projects/undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-04-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
 
 <p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -181,15 +181,8 @@ The report also needed to meet Waggle’s design standards:</p>
       <li><a href="#how-we-evaluate-stocks-using-these-metrics" id="markdown-toc-how-we-evaluate-stocks-using-these-metrics">How We Evaluate Stocks Using These Metrics</a></li>
     </ul>
   </li>
-  <li><a href="#dashboards-that-tell-a-story" id="markdown-toc-dashboards-that-tell-a-story">Dashboards that Tell a Story</a>    <ul>
-      <li><a href="#dashboard-1-undervalued-stocks" id="markdown-toc-dashboard-1-undervalued-stocks">Dashboard 1: Undervalued Stocks</a>        <ul>
-          <li><a href="#key-features--how-to-use-them" id="markdown-toc-key-features--how-to-use-them">Key Features &amp; How to Use Them</a></li>
-        </ul>
-      </li>
-      <li><a href="#dashboard-2-industry-averages" id="markdown-toc-dashboard-2-industry-averages">Dashboard 2: Industry Averages</a>        <ul>
-          <li><a href="#key-features--how-to-use-them-1" id="markdown-toc-key-features--how-to-use-them-1">Key Features &amp; How to Use Them</a></li>
-        </ul>
-      </li>
+  <li><a href="#dashboard-that-tells-a-story" id="markdown-toc-dashboard-that-tells-a-story">Dashboard that Tells a Story</a>    <ul>
+      <li><a href="#key-features--how-to-use-them" id="markdown-toc-key-features--how-to-use-them">Key Features &amp; How to Use Them</a></li>
     </ul>
   </li>
   <li><a href="#automating-the-mess-turning-chaos-into-clean-data" id="markdown-toc-automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</a></li>
@@ -270,23 +263,25 @@ To make industry comparisons fair and statistically sound, we calculate the mean
 
 <p>For each criterion met, a stock gets 1 point. The highest score a stock can get is 5 points.</p>
 
-<h2 id="dashboards-that-tell-a-story">Dashboards that Tell a Story</h2>
+<h2 id="dashboard-that-tells-a-story">Dashboard that Tells a Story</h2>
 
-<h3 id="dashboard-1-undervalued-stocks">Dashboard 1: Undervalued Stocks</h3>
-
-<p>I created this interactive dashboard to help users explore the top-scoring undervalued stocks across sectors based on the criteria in our framework.</p>
+<p>To make the analysis more accessible, I created an interactive Power BI dashboard that allows users to explore top-ranking undervalued stocks across sectors and market cap categories. The dashboard also shows industry averages for key financial metrics, giving context for what’s “normal” within each industry.</p>
 
 <iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiNzUyMmMxOTctMzM4Mi00YTRjLTkyNjEtNDVlNzBlZWE0NzhjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9&amp;pageName=6e69fbbbad14ed7e6c39" frameborder="0" allowfullscreen="true"></iframe>
 
-<h4 id="key-features--how-to-use-them">Key Features &amp; How to Use Them</h4>
+<h3 id="key-features--how-to-use-them">Key Features &amp; How to Use Them</h3>
 
 <p>This dashboard showcases stocks that meet preliminary undervaluation criteria, then scores and ranks them to help users identify top opportunities.</p>
 
-<p><strong>1. Filter by Sector and Market Cap:</strong> You can use the filters at the right corner to select a sector (e.g., Communication Services) and market cap (Large, Mid, or Small). This tailors the view to peer groups for fair comparison.</p>
+<p><strong>1. Filter by Sector and Market Cap:</strong> You can use the filters at the right corner to select a sector (e.g., Communication Services) and market cap (Large, Mid, or Small).</p>
 
-<p><strong>2. Score-Based Stock Evaluation:</strong> All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5)is shown as a horizontal stacked bar with one color-coded block per point.</p>
+<p><strong>2. Dynamic Title:</strong> Each page title updates dynamically based on your filter selections, so you always know which group of stocks you’re viewing.</p>
 
-<p><strong>3. Z-Score Matrix:</strong> Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.</p>
+<p><strong>3. Buttons:</strong> Navigate between pages, applying filters, or view help instructions using intuitive buttons built into the dashboard layout.</p>
+
+<p><strong>4. Score-Based Stock Evaluation:</strong> All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5) is shown as a horizontal stacked bar with one color-coded block per point.</p>
+
+<p><strong>5. Z-Score Matrix:</strong> Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.</p>
 
 <p>Undervalued metrics:</p>
 <ul>
@@ -295,37 +290,17 @@ To make industry comparisons fair and statistically sound, we calculate the mean
 </ul>
 
 <p>Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
-Z-scores further from 0 (stronger deviations) are shaded in darker green, making standout values easy to spot.</p>
+Z-scores further from 0 (stronger deviations) are shaded in darker greenor easy scanning.</p>
 
-<p><strong>4. Summary Cards:</strong> In the dashboard, you’ll find 6 cards showing the top 3 stocks for each fundamental metric (based on z-score). These cards help users quickly identify leaders in: P/FCF, P/B, ROE, ROA, A/E, P/E</p>
+<p><strong>6. Pie chart:</strong> Visualizes how many stocks earned each possible score (0–5), giving a sense of the dataset’s overall quality.</p>
 
-<p><strong>5. Metric Breakdown Table:</strong> Scrollable table with detailed financial metrics for each stock.</p>
+<p><strong>7. Summary Cards:</strong> Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in P/FCF, P/B, ROE, ROA, A/E, and P/E.</p>
 
-<p><strong>6. Tooltips for Context:</strong> Hover over the visuals to get deeper insight. Tooltips show a stock’s industry, market cap, current price and score for additional criteria.</p>
+<p><strong>8. Metric Breakdown Table:</strong> Scrollable table with detailed financial metrics for each stock.</p>
 
-<h3 id="dashboard-2-industry-averages">Dashboard 2: Industry Averages</h3>
+<p><strong>9. Industry Averages Bar Charts:</strong> The second page of the dashboard provides a high-level view of how financial fundamentals vary across sectors and industries. Users can use these bar charts to identify which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).</p>
 
-<p>I also created a dashboard showing industry averages of individual metrics to help users understand the financial “norms” for each industry and market cap group.</p>
-
-<iframe title="Industry Averages Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiZjBkYTRjNjUtYzQ2Yy00ZTNmLWFkNzMtY2Y0ZGVlMjdjNTQ0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
-
-<h4 id="key-features--how-to-use-them-1">Key Features &amp; How to Use Them</h4>
-
-<p>This dashboard provides a high-level view of how financial fundamentals vary across sectors and industries. You can use the slicers to narrow the view to the industry and market cap in you’re interested in.</p>
-
-<p>Each visual displays industry-level averages for six core financial metrics, broken down by sector and market cap group (Large, Mid, Small):</p>
-<ul>
-  <li>Average P/FCF</li>
-  <li>Average P/B</li>
-  <li>Average ROE</li>
-  <li>Average ROA</li>
-  <li>Average A/E</li>
-  <li>Average P/E</li>
-</ul>
-
-<p>These averages are calculated after filtering out outliers using the interquartile range method.</p>
-
-<p>Users can use this dashboard to identify which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).</p>
+<p><strong>10. Tooltips for Context:</strong> Hover over the visuals to get deeper insight, including industry name, market cap, price, score and key financial metrics.</p>
 
 <h2 id="automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</h2>
 
@@ -333,13 +308,13 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
 
 <p>I completely re-engineered the process to be fast, accurate, and user-friendly by implementing a set of tools:</p>
 <ul>
-  <li>Power Query (20+ custom functions): For automatic cleaning and transformation.</li>
-  <li>Advanced Excel formulas: For metric calculation across all datasets.</li>
-  <li>VBA Macros: To refresh all data and recalculate results with a single click.</li>
-  <li>Pivot tables: To calculate industry averages while filtering outliers.</li>
-  <li>Dynamic file paths: So the project works across any machine without broken links.</li>
-  <li>RTD function for real-time stock prices: the RTD (Real-Time Data) function integrates with the Thinkorswim platform to pull real-time stock prices directly into the workbooks.</li>
-  <li>Conditional formatting: To surface strong candidates visually, making stock analysis easier for non-technical users.</li>
+  <li><strong>Power Query</strong> (20+ custom functions): For automatic cleaning and transformation.</li>
+  <li><strong>Advanced Excel formulas</strong>: For metric calculation across all datasets.</li>
+  <li><strong>VBA Macros</strong>: To refresh all data and recalculate results with a single click.</li>
+  <li><strong>Pivot tables</strong>: To calculate industry averages while filtering outliers.</li>
+  <li><strong>Dynamic file paths</strong>: So the project works across any machine without broken links.</li>
+  <li><strong>RTD function for real-time stock prices</strong>: the RTD (Real-Time Data) function integrates with the Thinkorswim platform to pull real-time stock prices directly into the workbooks.</li>
+  <li><strong>Conditional formatting</strong>: To surface strong candidates visually, making stock analysis easier for non-technical users.</li>
 </ul>
 
 <iframe title="Industry Averages Dashboard" width="1280" height="720" src="/assets/other/data_refresh_automation.gif" frameborder="0" allowfullscreen="true"></iframe>
@@ -352,13 +327,13 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green, making
   <li>Enable non-technical users to explore insights without needing to touch the raw data</li>
 </ul>
 
-<p>All DAX measures were designed to align with the logic used in Excel, ensuring consistency between platforms.</p>
+<p>The resulting Excel files form the backbone of this project, serving as the primary platform for data processing. They can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that’s more accessible and engaging for non-technical users.</p>
 
 <h2 id="final-thoughts">Final Thoughts</h2>
 
 <p>This project started with a shared curiosity and turned into a complete, repeatable workflow that saves hours and delivers clear insights. It was as much about collaboration as it was about technology. Working closely with my husband, a non-technical stakeholder, I used an informal agile approach by delivering in small chunks, gathering feedback, and adapting quickly. Clear communication and step-by-step guides I created helped my husband transition smoothly to the new process. I’m proud to have taken initiative, self-taught new skills ahead of coursework, and built a fully automated system that saves time and drives smarter investment decisions.</p>
 
-<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach</title><link href="https://nvu01.github.io//featured_projects/2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-22T21:13:48+00:00</updated><id>https://nvu01.github.io//featured_projects/poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+<p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn messy data into clear insights and help people make better, faster decisions. That’s what I aim to build, every time.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach</title><link href="https://nvu01.github.io//featured_projects/2025-06-01-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach" /><published>2025-06-01T00:00:00+00:00</published><updated>2025-06-24T21:59:09+00:00</updated><id>https://nvu01.github.io//featured_projects/poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-01-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
 
 <p><a href="https://github.com/nvu01/BSDA-Capstone-Project" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -623,7 +598,7 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <h2 id="references">References</h2>
 <ul>
   <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
-</ul>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Preparing Data for Reporting Using PostgreSQL</title><link href="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/" rel="alternate" type="text/html" title="Preparing Data for Reporting Using PostgreSQL" /><published>2025-05-30T00:00:00+00:00</published><updated>2025-06-22T21:13:48+00:00</updated><id>https://nvu01.github.io//featured_projects/SQL-preparing-data-for-reporting</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"><![CDATA[<p>This project demonstrates how SQL and PostgreSQL can be used to transform raw transactional data into structured, analysis-ready tables. Using the DVD Rental Dataset, I built a structured workflow to extract, transform, and organize rental data for future insights and analysis.</p>
+</ul>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Preparing Data for Reporting Using PostgreSQL</title><link href="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/" rel="alternate" type="text/html" title="Preparing Data for Reporting Using PostgreSQL" /><published>2025-05-30T00:00:00+00:00</published><updated>2025-06-24T21:59:09+00:00</updated><id>https://nvu01.github.io//featured_projects/SQL-preparing-data-for-reporting</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"><![CDATA[<p>This project demonstrates how SQL and PostgreSQL can be used to transform raw transactional data into structured, analysis-ready tables. Using the DVD Rental Dataset, I built a structured workflow to extract, transform, and organize rental data for future insights and analysis.</p>
 
 <p><a href="https://github.com/nvu01/Advanced-Data-Management" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -984,7 +959,7 @@ or from <a href="https://neon.tech/postgresql/postgresql-getting-started/postgre
 
 <h2 id="final-thoughts">Final Thoughts</h2>
 
-<p>This project highlights the power of SQL and PostgreSQL for preparing data in a way that supports scalable and automated business intelligence workflows. By creating a clean, transformed layer of data ready for analysis, I can bridge the gap between raw transactions and valuable insights. These structured tables can now be easily integrated with tools like Power BI or Tableau for dashboarding, trend analysis, and storytelling with data.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-22T21:13:48+00:00</updated><id>https://nvu01.github.io//featured_projects/youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
+<p>This project highlights the power of SQL and PostgreSQL for preparing data in a way that supports scalable and automated business intelligence workflows. By creating a clean, transformed layer of data ready for analysis, I can bridge the gap between raw transactions and valuable insights. These structured tables can now be easily integrated with tools like Power BI or Tableau for dashboarding, trend analysis, and storytelling with data.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2025-06-24T21:59:09+00:00</updated><id>https://nvu01.github.io//featured_projects/youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
 
 <p><a href="https://github.com/nvu01/Tableau-Public-Dashboard" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
