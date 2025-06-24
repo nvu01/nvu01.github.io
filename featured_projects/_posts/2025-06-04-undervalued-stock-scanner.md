@@ -87,58 +87,42 @@ We further rank stocks based on these bonus signals:
 
 For each criterion met, a stock gets 1 point. The highest score a stock can get is 5 points.
 
-## Dashboards that Tell a Story
+## Dashboard that Tells a Story
 
-### Dashboard 1: Undervalued Stocks
-
-I created this interactive dashboard to help users explore the top-scoring undervalued stocks across sectors based on the criteria in our framework.
+To make the analysis more accessible, I created an interactive Power BI dashboard that allows users to explore top-ranking undervalued stocks across sectors and market cap categories. The dashboard also shows industry averages for key financial metrics, giving context for what’s “normal” within each industry.
 
 <iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiNzUyMmMxOTctMzM4Mi00YTRjLTkyNjEtNDVlNzBlZWE0NzhjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9&pageName=6e69fbbbad14ed7e6c39" frameborder="0" allowFullScreen="true"></iframe>
 
-#### Key Features & How to Use Them
+### Key Features & How to Use Them
 
 This dashboard showcases stocks that meet preliminary undervaluation criteria, then scores and ranks them to help users identify top opportunities.
 
-**1. Filter by Sector and Market Cap:** You can use the filters at the right corner to select a sector (e.g., Communication Services) and market cap (Large, Mid, or Small). This tailors the view to peer groups for fair comparison.
+**1. Filter by Sector and Market Cap:** You can use the filters at the right corner to select a sector (e.g., Communication Services) and market cap (Large, Mid, or Small). 
 
-**2. Score-Based Stock Evaluation:** All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5)is shown as a horizontal stacked bar with one color-coded block per point.
+**2. Dynamic Title:** Each page title updates dynamically based on your filter selections, so you always know which group of stocks you’re viewing.
 
-**3. Z-Score Matrix:** Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.
+**3. Buttons:** Navigate between pages, applying filters, or view help instructions using intuitive buttons built into the dashboard layout.
+
+**4. Score-Based Stock Evaluation:** All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5) is shown as a horizontal stacked bar with one color-coded block per point.
+
+**5. Z-Score Matrix:** Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.
 
 Undervalued metrics:
 - P/FCF, P/B, A/E, P/E → negative z-score is better  
 - ROE, ROA → positive z-score is better
 
 Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
-Z-scores further from 0 (stronger deviations) are shaded in darker green, making standout values easy to spot.
+Z-scores further from 0 (stronger deviations) are shaded in darker greenor easy scanning.
 
-**4. Summary Cards:** In the dashboard, you’ll find 6 cards showing the top 3 stocks for each fundamental metric (based on z-score). These cards help users quickly identify leaders in: P/FCF, P/B, ROE, ROA, A/E, P/E
+**6. Pie chart:** Visualizes how many stocks earned each possible score (0–5), giving a sense of the dataset's overall quality.
 
-**5. Metric Breakdown Table:** Scrollable table with detailed financial metrics for each stock.
+**7. Summary Cards:** Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in P/FCF, P/B, ROE, ROA, A/E, and P/E.
 
-**6. Tooltips for Context:** Hover over the visuals to get deeper insight. Tooltips show a stock's industry, market cap, current price and score for additional criteria.
+**8. Metric Breakdown Table:** Scrollable table with detailed financial metrics for each stock. 
 
-### Dashboard 2: Industry Averages
+**9. Industry Averages Bar Charts:** The second page of the dashboard provides a high-level view of how financial fundamentals vary across sectors and industries. Users can use these bar charts to identify which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
 
-I also created a dashboard showing industry averages of individual metrics to help users understand the financial “norms” for each industry and market cap group.
-
-<iframe title="Industry Averages Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiZjBkYTRjNjUtYzQ2Yy00ZTNmLWFkNzMtY2Y0ZGVlMjdjNTQ0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-
-#### Key Features & How to Use Them
-
-This dashboard provides a high-level view of how financial fundamentals vary across sectors and industries. You can use the slicers to narrow the view to the industry and market cap in you're interested in.
-
-Each visual displays industry-level averages for six core financial metrics, broken down by sector and market cap group (Large, Mid, Small):
-- Average P/FCF
-- Average P/B
-- Average ROE
-- Average ROA
-- Average A/E
-- Average P/E
-
-These averages are calculated after filtering out outliers using the interquartile range method. 
-
-Users can use this dashboard to identify which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
+**10. Tooltips for Context:** Hover over the visuals to get deeper insight, including industry name, market cap, price, score and key financial metrics.
 
 
 ## Automating the Mess: Turning Chaos into Clean Data
@@ -146,15 +130,16 @@ Users can use this dashboard to identify which industries are overhyped with low
 Initially, my husband manually cleaned and analyzed the raw stock data in Excel. But with 11 sector-specific datasets and dozens of formulas, the process quickly became time-consuming, repetitive, and prone to error. Especially with frequent data updates, each refresh could take hours.
 
 I completely re-engineered the process to be fast, accurate, and user-friendly by implementing a set of tools:
-- Power Query (20+ custom functions): For automatic cleaning and transformation.
-- Advanced Excel formulas: For metric calculation across all datasets.
-- VBA Macros: To refresh all data and recalculate results with a single click.
-- Pivot tables: To calculate industry averages while filtering outliers.
-- Dynamic file paths: So the project works across any machine without broken links.
-- RTD function for real-time stock prices: the RTD (Real-Time Data) function integrates with the Thinkorswim platform to pull real-time stock prices directly into the workbooks.
-- Conditional formatting: To surface strong candidates visually, making stock analysis easier for non-technical users.
+- **Power Query** (20+ custom functions): For automatic cleaning and transformation.
+- **Advanced Excel formulas**: For metric calculation across all datasets.
+- **VBA Macros**: To refresh all data and recalculate results with a single click.
+- **Pivot tables**: To calculate industry averages while filtering outliers.
+- **Dynamic file paths**: So the project works across any machine without broken links.
+- **RTD function for real-time stock prices**: the RTD (Real-Time Data) function integrates with the Thinkorswim platform to pull real-time stock prices directly into the workbooks.
+- **Conditional formatting**: To surface strong candidates visually, making stock analysis easier for non-technical users.
 
 <iframe title="Industry Averages Dashboard" width="1280" height="720" src="/assets/other/data_refresh_automation.gif" frameborder="0" allowFullScreen="true"></iframe>
+
 
 After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that:
 - Compare metrics across sectors and industries
@@ -162,10 +147,11 @@ After processing the data in Excel, I brought the results into Power BI, where I
 - Visualize trends in P/E, ROE, ROA, and other key indicators
 - Enable non-technical users to explore insights without needing to touch the raw data
 
-All DAX measures were designed to align with the logic used in Excel, ensuring consistency between platforms.
+The resulting Excel files form the backbone of this project, serving as the primary platform for data processing. They can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
+
 
 ## Final Thoughts
 
 This project started with a shared curiosity and turned into a complete, repeatable workflow that saves hours and delivers clear insights. It was as much about collaboration as it was about technology. Working closely with my husband, a non-technical stakeholder, I used an informal agile approach by delivering in small chunks, gathering feedback, and adapting quickly. Clear communication and step-by-step guides I created helped my husband transition smoothly to the new process. I’m proud to have taken initiative, self-taught new skills ahead of coursework, and built a fully automated system that saves time and drives smarter investment decisions.
 
-The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn mess into clarity and help people make better, faster decisions. That’s what I aim to build, every time.
+The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn messy data into clear insights and help people make better, faster decisions. That’s what I aim to build, every time.
