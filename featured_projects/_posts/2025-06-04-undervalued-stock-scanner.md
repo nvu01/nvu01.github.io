@@ -93,15 +93,18 @@ To make the analysis more accessible, I created an interactive Power BI dashboar
 
 <iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiNzUyMmMxOTctMzM4Mi00YTRjLTkyNjEtNDVlNzBlZWE0NzhjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9&pageName=6e69fbbbad14ed7e6c39" frameborder="0" allowFullScreen="true"></iframe>
 
+>The dashboard functions as a scanner, not a recommendation engine or curated report. While the dashboard  highlights stocks that meet certain criteria and includes Summary Cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.
+{:.lead}
+
 ### Key Features & How to Use Them
 
 This dashboard showcases stocks that meet preliminary undervaluation criteria, then scores and ranks them to help users identify top opportunities.
 
-**1. Filter by Sector and Market Cap:** You can use the filters at the right corner to select a sector (e.g., Communication Services) and market cap (Large, Mid, or Small). 
+**1. Filter by Sector and Market Cap:** Use the filters (top-right) to select a sector (e.g., Communication Services) and market cap group (Large, Mid, Small). 
 
-**2. Dynamic Title:** Each page title updates dynamically based on your filter selections, so you always know which group of stocks you’re viewing.
+**2. Dynamic Title:** Page headers update automatically based on your selections, so you always know which stock group you're viewing.
 
-**3. Buttons:** Navigate between pages, applying filters, or view help instructions using intuitive buttons built into the dashboard layout.
+**3. Buttons:** Move between pages, apply filters, or view instructions using built-in buttons.
 
 **4. Score-Based Stock Evaluation:** All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5) is shown as a horizontal stacked bar with one color-coded block per point.
 
@@ -112,7 +115,7 @@ Undervalued metrics:
 - ROE, ROA → positive z-score is better
 
 Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
-Z-scores further from 0 (stronger deviations) are shaded in darker greenor easy scanning.
+Z-scores further from 0 (stronger deviations) are shaded in darker green for easy scanning.
 
 **6. Pie chart:** Visualizes how many stocks earned each possible score (0–5), giving a sense of the dataset's overall quality.
 
@@ -136,18 +139,19 @@ I completely re-engineered the process to be fast, accurate, and user-friendly b
 - **Pivot tables**: To calculate industry averages while filtering outliers.
 - **Dynamic file paths**: So the project works across any machine without broken links.
 - **RTD function for real-time stock prices**: the RTD (Real-Time Data) function integrates with the Thinkorswim platform to pull real-time stock prices directly into the workbooks.
-- **Conditional formatting**: To surface strong candidates visually, making stock analysis easier for non-technical users.
+- **Conditional formatting**: To surface strong candidates visually, making stock analysis easier for users.
 
 <iframe title="Industry Averages Dashboard" width="1280" height="720" src="/assets/other/data_refresh_automation.gif" frameborder="0" allowFullScreen="true"></iframe>
 
 
 After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that:
-- Compare metrics across sectors and industries
 - Highlight top-ranking undervalued stocks
+- Compare metrics across sectors and industries
 - Visualize trends in P/E, ROE, ROA, and other key indicators
 - Enable non-technical users to explore insights without needing to touch the raw data
 
-The resulting Excel files form the backbone of this project, serving as the primary platform for data processing. They can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
+>The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
+{:.lead}
 
 
 ## Final Thoughts
