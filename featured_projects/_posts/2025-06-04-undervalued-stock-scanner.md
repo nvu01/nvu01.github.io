@@ -89,7 +89,7 @@ For each criterion met, a stock gets 1 point. The highest score a stock can get 
 
 ## Dashboard that Tells a Story
 
-To make the analysis more accessible, I created an interactive Power BI dashboard that allows users to explore top-ranking undervalued stocks across sectors and market cap categories. The dashboard also shows industry averages for key financial metrics, giving context for what’s “normal” within each industry.
+To make the analysis more accessible, I created an interactive Power BI dashboard where users can explore top-scoring undervalued stocks by sector and market cap, alongside industry averages for key financial metrics.
 
 <iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiNzUyMmMxOTctMzM4Mi00YTRjLTkyNjEtNDVlNzBlZWE0NzhjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9&pageName=6e69fbbbad14ed7e6c39" frameborder="0" allowFullScreen="true"></iframe>
 
@@ -117,15 +117,15 @@ Undervalued metrics:
 Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
 Z-scores further from 0 (stronger deviations) are shaded in darker green for easy scanning.
 
-**6. Pie chart:** Visualizes how many stocks earned each possible score (0–5), giving a sense of the dataset's overall quality.
+**6. Score Distribution Pie Chart:** See how many stocks earned each possible score (0–5), giving a sense of the dataset's overall quality.
 
-**7. Summary Cards:** Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in P/FCF, P/B, ROE, ROA, A/E, and P/E.
+**7. Summary Cards:** Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in specific financial categories.
 
 **8. Metric Breakdown Table:** Scrollable table with detailed financial metrics for each stock. 
 
-**9. Industry Averages Bar Charts:** The second page of the dashboard provides a high-level view of how financial fundamentals vary across sectors and industries. Users can use these bar charts to identify which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
+**9. Industry Bar Charts (Page 2):** Compare average fundamentals across sectors and industries to spot which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
 
-**10. Tooltips for Context:** Hover over the visuals to get deeper insight, including industry name, market cap, price, score and key financial metrics.
+**10. Tooltips for Context:** Hover over any visual to see context like industry name, market cap, price, score, and financials.
 
 
 ## Automating the Mess: Turning Chaos into Clean Data
@@ -143,15 +143,14 @@ I completely re-engineered the process to be fast, accurate, and user-friendly b
 
 <iframe title="Industry Averages Dashboard" width="1280" height="720" src="/assets/other/data_refresh_automation.gif" frameborder="0" allowFullScreen="true"></iframe>
 
+>The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
+{:.lead}
 
 After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that:
 - Highlight top-ranking undervalued stocks
 - Compare metrics across sectors and industries
 - Visualize trends in P/E, ROE, ROA, and other key indicators
 - Enable non-technical users to explore insights without needing to touch the raw data
-
->The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
-{:.lead}
 
 
 ## Final Thoughts
