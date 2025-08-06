@@ -91,7 +91,7 @@ For each criterion met, a stock gets 1 point. The highest score a stock can get 
 
 To make the analysis more accessible, I created an interactive Power BI dashboard where users can explore top-scoring undervalued stocks by sector and market cap, alongside industry averages for key financial metrics.
 
-<iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.powerbi.com/view?r=eyJrIjoiNzUyMmMxOTctMzM4Mi00YTRjLTkyNjEtNDVlNzBlZWE0NzhjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9&pageName=6e69fbbbad14ed7e6c39" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="Undervalued Stocks Dashboard" width="1280" height="780" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
 >The dashboard functions as a scanner, not a recommendation engine or curated report. While the dashboard  highlights stocks that meet certain criteria and includes summary cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.
 {:.lead}
