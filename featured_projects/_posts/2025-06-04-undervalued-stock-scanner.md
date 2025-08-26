@@ -93,7 +93,7 @@ To make the analysis more accessible, I created an interactive Power BI dashboar
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
-<iframe title="Undervalued Stocks Dashboard" width="736" height="474" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="Waggle Report" style="width: 100%; height: 55vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
 
 >The dashboard functions as a scanner, not a recommendation engine or curated report. While the dashboard  highlights stocks that meet certain criteria and includes summary cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.
 {:.lead}
@@ -145,7 +145,7 @@ I completely re-engineered the process to be fast, accurate, and user-friendly b
 
 👉 Demo: <a href="/assets/other/data_refresh_automation.gif" target="_blank" rel="noopener">Excel workbook for Consumer Discretionary sector</a>.
 
-<img src="/assets/other/data_refresh_automation.gif" alt="description" width="736" style="display: block; margin: 1rem 0; text-align: left;"/>
+<img src="/assets/other/data_refresh_automation.gif" alt="description" style="width: 100%; display: block; margin: 1rem 0; text-align: left;"/>
 
 >The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
 {:.lead}

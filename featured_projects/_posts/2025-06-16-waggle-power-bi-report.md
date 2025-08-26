@@ -22,7 +22,7 @@ The data used in this project was provided by Udacity as part of their Data Anal
 
 **Data Model**
 
-<img src="/assets/img/posts/5/data-model.png" alt="description" width="736" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/5/data-model.png" alt="description" style="width: 100%; display: block; margin: 1rem 0; text-align: left;"/>
 
 ## Business Requirements
 
@@ -54,12 +54,11 @@ The report also needed to meet Waggle’s design standards:
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiN2ZiNThiMGYtNWQxOC00NTliLWFkYTgtYjc5ZDdhOWY3NTVjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
-<iframe title="Waggle Report" width="736" height="474" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiN2ZiNThiMGYtNWQxOC00NTliLWFkYTgtYjc5ZDdhOWY3NTVjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-
+<iframe title="Waggle Report" style="width: 100%; height: 55vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiN2ZiNThiMGYtNWQxOC00NTliLWFkYTgtYjc5ZDdhOWY3NTVjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
 
 ### Demo Video
 
-<div style="max-width: 736px; margin: 0 auto;">
+<div style="width: 100%; margin: 0 auto;">
   <video width="100%" controls>
     <source src="/assets/other/Waggle.mp4" type="video/mp4">
     Your browser does not support the video tag.
