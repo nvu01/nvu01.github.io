@@ -147,13 +147,13 @@ Residuals are randomly scattered around zero with consistent spread across fitte
 
 **Residuals vs predictors plots:** Were used to detect potential non-linear relationships or predictors that could benefit from transformations.
 
-<img src="/assets/img/posts/3/final_residuals_predictors.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/final_residuals_predictors.png" alt="description" style="width: 100%; display: block; margin: 0 auto;"/>
 
 No strong patterns or funnel shapes. This supports the assumption of constant variance and linearity across predictors.
 
 **Histogram and boxplot:** Were used to assess whether residuals are normally distributed.
 
-<img src="/assets/img/posts/3/final_residuals_normality.png" alt="description" width="900" style="display: block; margin: 0 auto;"/>
+<img src="/assets/img/posts/3/final_residuals_normality.png" alt="description" style="width: 100%; display: block; margin: 0 auto;"/>
 
 - Histogram and boxplot of residuals: Distribution is roughly normal, bell-shaped, and symmetrical. The median is near zero, with a few mild upper-end outliers.
 

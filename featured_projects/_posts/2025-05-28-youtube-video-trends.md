@@ -37,7 +37,8 @@ I designed four interactive visualizations to tell a story and answer deeper que
 
 Let’s explore the full dashboard here! Filter by category, hover over the charts for tooltips, and uncover deeper insights as you interact with the data.
 
-{% raw %}
+👉 <a href="https://public.tableau.com/views/U_S_YouTubeVideoTrends/U_S_YouTubeVideoTrends?:showVizHome=no&:embed=true" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
+
 <iframe 
   src="https://public.tableau.com/views/U_S_YouTubeVideoTrends/U_S_YouTubeVideoTrends?:showVizHome=no&:embed=true" 
   width="1280" 
@@ -45,14 +46,14 @@ Let’s explore the full dashboard here! Filter by category, hover over the char
   frameborder="0" 
   allowfullscreen>
 </iframe>
-{% endraw %}
 
 
 ## Guided Story: A Walkthrough of Insights
 
 This Tableau Story walks you through the key findings, one insight at a time.
 
-{% raw %}
+👉 <a href="https://public.tableau.com/views/StoryU_S_YouTubeVideoTrends/Story?:showVizHome=no&:embed=true" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
+
 <iframe 
   src="https://public.tableau.com/views/StoryU_S_YouTubeVideoTrends/Story?:showVizHome=no&:embed=true" 
   width="1000" 
@@ -60,7 +61,6 @@ This Tableau Story walks you through the key findings, one insight at a time.
   frameborder="0" 
   allowfullscreen>
 </iframe>
-{% endraw %}
 
 
 ## Key Takeaways
