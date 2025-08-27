@@ -93,7 +93,7 @@ To make the analysis more accessible, I created an interactive Power BI dashboar
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
-<iframe title="Waggle Report" style="width: 100%; height: 55vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
+<iframe title="Waggle Report" style="width: 100%; height: 65vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
 
 >The dashboard functions as a scanner, not a recommendation engine or curated report. While the dashboard  highlights stocks that meet certain criteria and includes summary cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.
 {:.lead}

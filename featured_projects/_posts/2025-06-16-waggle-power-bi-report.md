@@ -54,7 +54,7 @@ The report also needed to meet Waggle’s design standards:
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiN2ZiNThiMGYtNWQxOC00NTliLWFkYTgtYjc5ZDdhOWY3NTVjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
-<iframe title="Waggle Report" style="width: 100%; height: 55vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiN2ZiNThiMGYtNWQxOC00NTliLWFkYTgtYjc5ZDdhOWY3NTVjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
+<iframe title="Waggle Report" style="width: 100%; height: 65vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiN2ZiNThiMGYtNWQxOC00NTliLWFkYTgtYjc5ZDdhOWY3NTVjIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
 
 ### Demo Video
 
