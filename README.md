@@ -16,7 +16,7 @@ Make sure Ruby, RubyGems, and Bundler are correctly installed before continuing.
 
 Go to the template repository:
 
-- Click **"Use this template"** (recommended)  
+- Click `Use this template` (recommended)  
   _or_  
 - Fork the repository
 
@@ -60,8 +60,8 @@ git push origin main
 
 ### 7. Enable GitHub Pages
 
-- Go to Settings → Pages
-- Set Source to gh-pages → / (root)
-- Click Save
+- In your repom go to `Settings` → `Pages`
+- Set `Source` to **gh-pages** → **/ (root)**
+- Click `Save`
 - Wait about 1 minute — your site will be live at: 
 **https://\<your-username>.github.io/\<your-repo-name>/**
