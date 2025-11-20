@@ -137,15 +137,11 @@ Initially, my husband manually cleaned and analyzed the raw stock data in Excel.
 I completely re-engineered the process to be fast, accurate, and user-friendly by implementing a set of tools:
 - **Power Query** (20+ custom functions): For automatic cleaning and transformation.
 - **Advanced Excel formulas**: For metric calculation across all datasets.
-- **VBA Macros**: To refresh all data and recalculate results with a single click.
-- **Pivot tables**: To calculate industry averages while filtering outliers.
-- **Dynamic file paths**: So the project works across any machine without broken links.
 - **RTD function for real-time stock prices**: the RTD (Real-Time Data) function integrates with the Thinkorswim platform to pull real-time stock prices directly into the workbooks.
+- **Pivot tables**: To calculate industry averages while filtering outliers.
+- **VBA Macros**: To refresh all data and recalculate results with a single click.
 - **Conditional formatting**: To surface strong candidates visually, making stock analysis easier for users.
-
-👉 Demo: <a href="/assets/other/data_refresh_automation.gif" target="_blank" rel="noopener">Excel workbook for Consumer Discretionary sector</a>.
-
-<img src="/assets/other/data_refresh_automation.gif" alt="description" style="width: 100%; display: block; margin: 1rem 0; text-align: left;"/>
+- **Dynamic file paths**: So the project works across any machine without broken links.
 
 >The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
 {:.lead}
