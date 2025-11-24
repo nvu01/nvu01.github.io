@@ -43,11 +43,11 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="og:url" content="https://nvu01.github.io//other_projects/" />
 <meta property="og:site_name" content="Ngan Vu" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-11-20T23:52:30+00:00" />
+<meta property="article:published_time" content="2025-11-24T03:22:14+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Other Projects" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-11-20T23:52:05+00:00","datePublished":"2025-11-20T23:52:30+00:00","description":"Here are some of the projects I’ve worked on that aren’t covered in my blog posts. You can find the code and more details in the GitHub repositories.","headline":"Other Projects","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//other_projects/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2025-11-24T03:21:52+00:00","datePublished":"2025-11-24T03:22:14+00:00","description":"Here are some of the projects I’ve worked on that aren’t covered in my blog posts. You can find the code and more details in the GitHub repositories.","headline":"Other Projects","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//other_projects/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -120,7 +120,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-11-20T23:52:30+00:00',
+    INDEX_KEY: 'index--2025-11-24T03:22:14+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -284,6 +284,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li><a href="#-unsupervised-learning-customer-segmentation-with-pca--k-means-clustering" id="markdown-toc--unsupervised-learning-customer-segmentation-with-pca--k-means-clustering">📌 Unsupervised Learning: Customer Segmentation with PCA &amp; K-Means Clustering</a></li>
   <li><a href="#-sqlite-database-for-weather-data" id="markdown-toc--sqlite-database-for-weather-data">📌 SQLite Database for Weather Data</a></li>
   <li><a href="#-ab-test-analysis-for-e-commerce-conversion-optimization" id="markdown-toc--ab-test-analysis-for-e-commerce-conversion-optimization">📌 A/B Test Analysis for E-Commerce Conversion Optimization</a></li>
+  <li><a href="#-undervalued-stock-trade-tracking" id="markdown-toc--undervalued-stock-trade-tracking">📌 Undervalued Stock Trade Tracking</a></li>
 </ul>
 
 <hr />
@@ -461,6 +462,41 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li><strong>Logistic Regression Modeling</strong>: Built and interpreted a logistic model to analyze the impact of page version and country on conversion.</li>
   <li><strong>Data Wrangling &amp; Validation</strong>: Verified group assignments and cleaned mismatched records to ensure experiment integrity.</li>
   <li><strong>Insight Communication</strong>: Presented evidence-based recommendations about whether to deploy the new page or conduct further testing.</li>
+</ul>
+
+<hr />
+
+<h2 id="-undervalued-stock-trade-tracking">📌 Undervalued Stock Trade Tracking</h2>
+
+<p>This project automates the tracking and analysis of undervalued stock trades using a Python-based ETL pipeline integrated with Power Query and Excel for real-time reporting. The system retrieves monthly account and position statements exported from Thinkorswim, extracts relevant trading activity from CSV files, processes new undervalued trades, and updates a historical dataset used for portfolio analysis. The final Excel report incorporates live market data and visualizations to provide an up-to-date view of performance and portfolio composition.</p>
+
+<p><a href="https://github.com/nvu01/Undervalued-Stock-Trade-Tracking" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Tools:</strong></td>
+      <td>Jupyter Notebook, VSCode, Excel, Power Query</td>
+    </tr>
+    <tr>
+      <td><strong>Language:</strong></td>
+      <td>Python</td>
+    </tr>
+    <tr>
+      <td><strong>Frameworks/Libraries:</strong></td>
+      <td>pandas, glob, os, io, argparse</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Skills:</strong></p>
+<ul>
+  <li><strong>ETL Development</strong>: Automating monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.</li>
+  <li><strong>Data Masking</strong>: Protecting personal and financial information by masking sensitive data before publishing or sharing.</li>
+  <li><strong>Data Manipulation (Datetime-Heavy)</strong>: Converting and aligning timestamps, extracting dates, filtering trade history by execution time, and performing time-based merges between datasets.</li>
+  <li><strong>Excel Reporting</strong>: Building dynamic reports with real-time stock prices, treemaps, and waterfall charts.</li>
+  <li><strong>Financial Analysis</strong>: Generating performance metrics such as ROI, P&amp;L, investment totals, and portfolio weight.</li>
 </ul>
 
 </article>
