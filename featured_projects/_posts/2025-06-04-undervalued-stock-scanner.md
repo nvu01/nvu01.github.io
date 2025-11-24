@@ -148,11 +148,7 @@ I completely re-engineered the process to be fast, accurate, and user-friendly b
 >The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
 {:.lead}
 
-After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that:
-- Highlight top-ranking undervalued stocks
-- Compare metrics across sectors and industries
-- Visualize trends in P/E, ROE, ROA, and other key indicators
-- Enable non-technical users to explore insights without needing to touch the raw data
+After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that enable non-technical users to explore insights without needing to touch the raw data.
 
 
 ## Final Thoughts
