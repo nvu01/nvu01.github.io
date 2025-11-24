@@ -160,3 +160,13 @@ After processing the data in Excel, I brought the results into Power BI, where I
 This project started with a shared curiosity and turned into a complete, repeatable workflow that saves hours and delivers clear insights. It was as much about collaboration as it was about technology. Working closely with my husband, a non-technical stakeholder, I used an informal agile approach by delivering in small chunks, gathering feedback, and adapting quickly. Clear communication and step-by-step guides I created helped my husband transition smoothly to the new process. I’m proud to have taken initiative, self-taught new skills ahead of coursework, and built a fully automated system that saves time and drives smarter investment decisions.
 
 The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze — they simplify. They turn messy data into clear insights and help people make better, faster decisions. That’s what I aim to build, every time.
+
+## 🔗 Related Project
+
+I also built an Undervalued Stock Trade Tracking system that automates the entire process of tracking and analyzing undervalued stock trades. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.
+
+Feel free to check it out for more details on how I handle trade history, ETL, and real-time Excel reporting.
+
+👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a>
+
+
