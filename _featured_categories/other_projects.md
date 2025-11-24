@@ -139,3 +139,23 @@ This project analyzes the results of an A/B test run by an e-commerce company to
 - **Logistic Regression Modeling**: Built and interpreted a logistic model to analyze the impact of page version and country on conversion.
 - **Data Wrangling & Validation**: Verified group assignments and cleaned mismatched records to ensure experiment integrity.
 - **Insight Communication**: Presented evidence-based recommendations about whether to deploy the new page or conduct further testing.
+
+---
+
+## 📌 Undervalued Stock Trade Tracking
+
+This project automates the tracking and analysis of undervalued stock trades using a Python-based ETL pipeline integrated with Power Query and Excel for real-time reporting. The system retrieves monthly account and position statements exported from Thinkorswim, extracts relevant trading activity from CSV files, processes new undervalued trades, and updates a historical dataset used for portfolio analysis. The final Excel report incorporates live market data and visualizations to provide an up-to-date view of performance and portfolio composition.
+
+<a href="https://github.com/nvu01/Undervalued-Stock-Trade-Tracking" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo</a>
+
+| **Tools:**                | Jupyter Notebook, VSCode, Excel, Power Query |
+| **Language:**             | Python                                       |
+| **Frameworks/Libraries:** | pandas, glob, os, io, argparse               |
+
+**Skills:**
+- **ETL Development**: Automating monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.
+- **Data Masking**: Protecting personal and financial information by masking sensitive data before publishing or sharing.
+- **Data Manipulation (Datetime-Heavy)**: Converting and aligning timestamps, extracting dates, filtering trade history by execution time, and performing time-based merges between datasets.
+- **Excel Reporting**: Building dynamic reports with real-time stock prices, treemaps, and waterfall charts.
+- **Financial Analysis**: Generating performance metrics such as ROI, P&L, investment totals, and portfolio weight.
