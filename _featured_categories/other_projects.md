@@ -150,12 +150,12 @@ This project automates the tracking and analysis of undervalued stock trades usi
   <i class="icon-github"></i> GitHub Repo</a>
 
 | **Tools:**                | Jupyter Notebook, VSCode, Excel, Power Query |
-| **Language:**             | Python                                       |
+| **Language:**             | Python, VBA                                  |
 | **Frameworks/Libraries:** | pandas, glob, os, io, argparse               |
 
 **Skills:**
 - **ETL Development**: Automating monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.
-- **Data Masking**: Protecting personal and financial information by masking sensitive data before publishing or sharing.
 - **Data Manipulation (Datetime-Heavy)**: Converting and aligning timestamps, extracting dates, filtering trade history by execution time, and performing time-based merges between datasets.
 - **Excel Reporting**: Building dynamic reports with real-time stock prices, treemaps, and waterfall charts.
 - **Financial Analysis**: Generating performance metrics such as ROI, P&L, investment totals, and portfolio weight.
+- **Data Masking**: Protecting personal and financial information by masking sensitive data before publishing or sharing.
