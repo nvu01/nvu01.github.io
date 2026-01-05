@@ -106,11 +106,9 @@ This dashboard showcases stocks that meet preliminary undervaluation criteria, t
 
 **2. Dynamic Title:** Page headers update automatically based on your selections, so you always know which stock group you're viewing.
 
-**3. Buttons:** Move between pages, apply filters, or view instructions using built-in buttons.
+**3. Score-Based Stock Evaluation:** All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5) is shown as a horizontal stacked bar with one color-coded block per point.
 
-**4. Score-Based Stock Evaluation:** All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5) is shown as a horizontal stacked bar with one color-coded block per point.
-
-**5. Z-Score Matrix:** Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.
+**4. Z-Score Matrix:** Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.
 
 Undervalued metrics:
 - P/FCF, P/B, A/E, P/E → negative z-score is better  
@@ -119,15 +117,13 @@ Undervalued metrics:
 Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
 Z-scores further from 0 (stronger deviations) are shaded in darker green for easy scanning.
 
-**6. Score Distribution Pie Chart:** See how many stocks earned each possible score (0–5), giving a sense of the dataset's overall quality.
+**5. Score Distribution Pie Chart:** See how many stocks earned each possible score (0–5), giving a sense of the dataset's overall quality.
 
-**7. Summary Cards:** Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in specific financial categories.
+**6. Summary Cards:** Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in specific financial categories.
 
-**8. Metric Breakdown Table:** Scrollable table with detailed financial metrics for each stock. 
+**7. Metric Breakdown Table:** Scrollable table with detailed financial metrics for each stock. 
 
-**9. Industry Bar Charts (Page 2):** Compare average fundamentals across sectors and industries to spot which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
-
-**10. Tooltips for Context:** Hover over any visual to see context like industry name, market cap, price, score, and financials.
+**8. Industry Bar Charts (Page 2):** Compare average fundamentals across sectors and industries to spot which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
 
 
 ## Automating the Mess: Turning Chaos into Clean Data
