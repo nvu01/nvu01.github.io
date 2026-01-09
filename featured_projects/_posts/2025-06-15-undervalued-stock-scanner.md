@@ -20,8 +20,7 @@ Like many aspiring investors, my husband and I were drawn to the challenge of id
 
 ## Project at a Glance
 
-The idea started with my husband’s interest in value investing and my curiosity for building smarter, faster workflows. He defined the investment logic and I built the engine. Our goal? Identifying potentially undervalued stocks by analyzing key financial metrics across various sectors. The project focuses on three market cap categories (Large Cap, Mid Cap, and Small Cap) and applies statistical methods to assess stock fundamentals.
-
+The idea started with my husband’s interest in value investing and my curiosity for building smarter, faster workflows. He defined the investment logic and I built the engine. Our goal? Identifying potentially undervalued stocks by applying statistical methods to assess key financial metrics across various sectors and three market cap categories (Large Cap, Mid Cap, and Small Cap).
 
 ## Datasets
 
@@ -141,7 +140,7 @@ I completely re-engineered the process to be fast, accurate, and user-friendly b
 
 <iframe title="Undervalued Stock Scanner" style="width: 100%; height: 65vh;" src="https://1drv.ms/v/c/e518921fe1a64d0f/IQQelq_cXxVqRJOBlh08dsrjASQvfprWOkeOTJz0MzTxsoc?width=1920&height=1070" frameborder="0" allowfullscreen="true" ></iframe>
 
->The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
+>The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners for individual sectors, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
 {:.lead}
 
 After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that enable non-technical users to explore insights without needing to touch the raw data.
