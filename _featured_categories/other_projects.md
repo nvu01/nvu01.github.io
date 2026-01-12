@@ -94,7 +94,7 @@ In this project, I performed unsupervised learning to identify distinct customer
 - **Dimensionality Reduction**: Used PCA to visualize structure, reduce noise, and streamline clustering performance.
 - **Data Preprocessing**: Addressed extensive missing and encoded values, and scaled features for consistency.
 - **Customer Analysis**: Mapped clusters from general population data to customer records to highlight key consumer profiles.
-- **Scalable Analysis**: MDesigned a repeatable end-to-end process for transforming, reducing, and clustering large datasets with nearly a million entries and 85 features.
+- **Scalable Analysis**: Created a repeatable end-to-end process for transforming, reducing, and clustering large datasets with nearly a million entries and 85 features.
 
 ---
 
