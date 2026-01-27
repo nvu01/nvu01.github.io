@@ -46,12 +46,12 @@ This project focuses on building an ETL pipeline and designing a star schema for
 
 
 **Skills:**
-- **Data Modeling**: Designing and implementing a star schema with fact and dimension tables.
-- **ETL Development**: Building an Extract, Transform, Load pipeline for structured data ingestion.
-- **SQL & Relational Databases**: Writing SQL queries for table creation, data insertion, and validation in PostgreSQL.
-- **Python Scripting**: Automating data processing and database interaction using Python scripts.
-- **Data Cleaning & Transformation**: Processing raw JSON files to extract relevant information.
-- **Testing & Validation**: Verifying data integrity through queries and checks in notebooks
+- **Data modeling**: Designing and implementing a star schema with fact and dimension tables.
+- **ETL development**: Building an Extract, Transform, Load pipeline for structured data ingestion.
+- **SQL & relational Databases**: Writing SQL queries for table creation, data insertion, and validation in PostgreSQL.
+- **Python scripting**: Automating data processing and database interaction using Python scripts.
+- **Data cleaning & transformation**: Processing raw JSON files to extract relevant information.
+- **Testing & validation**: Verifying data integrity through queries and checks in notebooks
 
 ---
 
@@ -69,12 +69,12 @@ This project applies supervised machine learning to U.S. census data to help the
 
 
 **Skills:**
-- **Supervised Learning**: Training and comparing classification models to identify optimal performance.
-- **Data Preprocessing**: Cleaning, transforming, and encoding categorical census data.
-- **Model Evaluation**: Using accuracy, precision, recall, and F-beta score to benchmark models.
-- **Hyperparameter Tuning**: Optimizing selected models via grid search and cross-validation.
-- **Feature Importance Analysis**: Interpreting model predictions and understanding key drivers of donor likelihood.
-- **Python Scripting**: Writing modular, reusable code for reproducible ML pipelines.
+- **Supervised learning**: Training and comparing classification models to identify optimal performance.
+- **Data preprocessing**: Cleaning, transforming, and encoding categorical census data.
+- **Model evaluation**: Using accuracy, precision, recall, and F-beta score to benchmark models.
+- **Hyperparameter tuning**: Optimizing selected models via grid search and cross-validation.
+- **Feature importance analysis**: Interpreting model predictions and understanding key drivers of donor likelihood.
+- **Python scripting**: Writing modular, reusable code for reproducible ML pipelines.
 
 ---
 
@@ -90,11 +90,11 @@ In this project, I performed unsupervised learning to identify distinct customer
 | **Frameworks/Libraries:** | pandas, NumPy, scikit-learn, matplotlib |
 
 **Skills:** 
-- **Unsupervised Learning**: Applied K-means clustering to uncover latent segments within high-dimensional demographic data.
-- **Dimensionality Reduction**: Used PCA to visualize structure, reduce noise, and streamline clustering performance.
-- **Data Preprocessing**: Addressed extensive missing and encoded values, and scaled features for consistency.
-- **Customer Analysis**: Mapped clusters from general population data to customer records to highlight key consumer profiles.
-- **Scalable Analysis**: Created a repeatable end-to-end process for transforming, reducing, and clustering large datasets with nearly a million entries and 85 features.
+- **Unsupervised learning**: Applied K-means clustering to uncover latent segments within high-dimensional demographic data.
+- **Dimensionality reduction**: Used PCA to visualize structure, reduce noise, and streamline clustering performance.
+- **Data preprocessing**: Addressed extensive missing and encoded values, and scaled features for consistency.
+- **Customer analysis**: Mapped clusters from general population data to customer records to highlight key consumer profiles.
+- **Scalable analysis**: Created a repeatable end-to-end process for transforming, reducing, and clustering large datasets with nearly a million entries and 85 features.
 
 ---
 
@@ -112,11 +112,11 @@ This project involves building a Python program to retrieve and store historical
 
 
 **Skills:**
-- **API Integration**: Consuming and integrating external APIs to retrieve weather data.
-- **Database Management**: Creating, modifying, and querying a SQLite database.
-- **Data Aggregation**: Aggregating and processing weather data across multiple years.
-- **Python Scripting**: Writing Python scripts to interact with APIs and databases.
-- **Unit Testing**: Writing and running tests using the unittest framework.
+- **API integration**: Consuming and integrating external APIs to retrieve weather data.
+- **Database management**: Creating, modifying, and querying a SQLite database.
+- **Data aggregation**: Aggregating and processing weather data across multiple years.
+- **Python scripting**: Writing Python scripts to interact with APIs and databases.
+- **Unit testing**: Writing and running tests using the unittest framework.
 
 ---
 
@@ -135,10 +135,10 @@ This project analyzes the results of an A/B test run by an e-commerce company to
 
 **Skills:**
 - **A/B Testing**: Designed and interpreted an A/B test using bootstrapping and p-value analysis.
-- **Hypothesis Testing**: Simulated control/treatment outcomes to assess statistical significance of conversion differences.
-- **Logistic Regression Modeling**: Built and interpreted a logistic model to analyze the impact of page version and country on conversion.
-- **Data Wrangling & Validation**: Verified group assignments and cleaned mismatched records to ensure experiment integrity.
-- **Insight Communication**: Presented evidence-based recommendations about whether to deploy the new page or conduct further testing.
+- **Hypothesis testing**: Simulated control/treatment outcomes to assess statistical significance of conversion differences.
+- **Logistic regression modeling**: Built and interpreted a logistic model to analyze the impact of page version and country on conversion.
+- **Data wrangling & validation**: Verified group assignments and cleaned mismatched records to ensure experiment integrity.
+- **Insight communication**: Presented evidence-based recommendations about whether to deploy the new page or conduct further testing.
 
 ---
 
@@ -154,8 +154,8 @@ This project automates the tracking and analysis of undervalued stock trades usi
 | **Frameworks/Libraries:** | pandas, glob, os, io, argparse               |
 
 **Skills:**
-- **ETL Development**: Automating monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.
-- **Data Manipulation (datetime-heavy)**: Converting and aligning timestamps, filtering trade history, and performing time-based merges between datasets.
-- **Excel Reporting**: Building dynamic reports with real-time stock prices, treemaps, and waterfall charts.
-- **Financial Analysis**: Generating performance metrics such as ROI, P&L, investment totals, and portfolio weight.
+- **ETL development**: Automating monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.
+- **Data manipulation (datetime-heavy)**: Converting and aligning timestamps, filtering trade history, and performing time-based merges between datasets.
+- **Excel reporting**: Building dynamic reports with real-time stock prices, treemaps, and waterfall charts.
+- **Financial analysis**: Generating performance metrics such as ROI, P&L, investment totals, and portfolio weight.
 - **Applying best practices for data confidentiality**: Protecting personal and financial information by masking and concealing sensitive data before publishing or sharing.
