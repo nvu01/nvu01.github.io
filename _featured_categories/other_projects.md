@@ -155,7 +155,7 @@ This project automates the tracking and analysis of undervalued stock trades usi
 
 **Skills:**
 - **ETL Development**: Automating monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.
-- **Data Manipulation (datetime-heavy)**: Converting and aligning timestamps, extracting dates, filtering trade history by execution time, and performing time-based merges between datasets.
+- **Data Manipulation (datetime-heavy)**: Converting and aligning timestamps, filtering trade history, and performing time-based merges between datasets.
 - **Excel Reporting**: Building dynamic reports with real-time stock prices, treemaps, and waterfall charts.
 - **Financial Analysis**: Generating performance metrics such as ROI, P&L, investment totals, and portfolio weight.
 - **Applying best practices for data confidentiality**: Protecting personal and financial information by masking and concealing sensitive data before publishing or sharing.
