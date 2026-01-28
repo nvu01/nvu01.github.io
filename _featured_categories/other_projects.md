@@ -48,7 +48,7 @@ This project focuses on building an ETL pipeline and designing a star schema for
 **Skills:**
 - **Data modeling**: Designing and implementing a star schema with fact and dimension tables.
 - **ETL development**: Building an Extract, Transform, Load pipeline for structured data ingestion.
-- **SQL & relational Databases**: Writing SQL queries for table creation, data insertion, and validation in PostgreSQL.
+- **SQL & relational databases**: Writing SQL queries for table creation, data insertion, and validation in PostgreSQL.
 - **Python scripting**: Automating data processing and database interaction using Python scripts.
 - **Data cleaning & transformation**: Processing raw JSON files to extract relevant information.
 - **Testing & validation**: Verifying data integrity through queries and checks in notebooks
@@ -134,7 +134,7 @@ This project analyzes the results of an A/B test run by an e-commerce company to
 
 
 **Skills:**
-- **A/B Testing**: Designed and interpreted an A/B test using bootstrapping and p-value analysis.
+- **A/B testing**: Designed and interpreted an A/B test using bootstrapping and p-value analysis.
 - **Hypothesis testing**: Simulated control/treatment outcomes to assess statistical significance of conversion differences.
 - **Logistic regression modeling**: Built and interpreted a logistic model to analyze the impact of page version and country on conversion.
 - **Data wrangling & validation**: Verified group assignments and cleaned mismatched records to ensure experiment integrity.
