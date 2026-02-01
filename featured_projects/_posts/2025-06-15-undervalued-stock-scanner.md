@@ -152,7 +152,7 @@ The real win? Building something that works for both analysts and non-technical 
 
 ## 🔗 Related Project
 
-I also built an Undervalued Stock Trade Tracking system that automates the entire process of tracking and analyzing undervalued stock trades. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.
+I also built an **Undervalued Stock Trade Tracking** system that automates the entire process of tracking and analyzing trade history of the Undervalued Stock strategy. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.
 
 Feel free to check it out for more details on how I handle trade history, ETL, and real-time Excel reporting.
 
