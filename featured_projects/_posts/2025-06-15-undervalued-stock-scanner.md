@@ -86,9 +86,9 @@ We further rank stocks based on these bonus signals:
 
 For each criterion met, a stock gets 1 point. The highest score a stock can get is 5 points.
 
-## Dashboard that Tells a Story
+## Scanner Dashboard
 
-To make the analysis more accessible, I created an interactive Power BI dashboard where users can explore top-scoring undervalued stocks by sector and market cap, alongside industry averages for key financial metrics.
+To make the analysis more engaging, I created an interactive Power BI dashboard where users can explore top-scoring undervalued stocks by sector and market cap, alongside industry averages for key financial metrics.
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
@@ -120,9 +120,7 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green for eas
 
 **6. Summary Cards:** Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in specific financial categories.
 
-**7. Metric Breakdown Table:** Scrollable table with detailed financial metrics for each stock. 
-
-**8. Industry Bar Charts (Page 2):** Compare average fundamentals across sectors and industries to spot which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
+**7. Industry Bar Charts (Page 2):** Compare average fundamentals across sectors and industries to spot which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
 
 
 ## Automating the Mess: Turning Chaos into Clean Data
