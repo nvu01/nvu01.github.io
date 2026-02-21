@@ -4,7 +4,7 @@ title: "Undervalued Stock Scanner: From Raw Data to Smart Insights"
 description: >
   A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.
 image: /assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg
-tags: [dashboard, stock market, financial market]
+tags: [excel, vba macros, dashboard, stock market, financial market]
 ---
 
 Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn't caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards. 
@@ -13,7 +13,7 @@ Like many aspiring investors, my husband and I were drawn to the challenge of id
   <i class="icon-github"></i> GitHub Repo
 </a>
 
-**Disclaimer: This project is for educational purposes only. The analysis, models, and methods used here are not financial advice. Investing carries risk. Always do your own research or consult with a financial advisor before making investment decisions.**
+**Disclaimer: This project is for educational purposes only. The analysis, models, and methods used here are not financial advice. Investing carries risk, and any decisions based on this analysis are your responsibility. Always do your own research or consult with a qualified financial advisor before making investment decisions.**
 
 * toc
 {:toc .large-only}
@@ -150,12 +150,20 @@ This project started with a shared curiosity and turned into a complete, repeata
 
 The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze, they simplify. They turn messy data into clear insights and help people make better, faster decisions. That’s what I aim to build, every time.
 
-## 🔗 Related Project
 
-I also built an **Undervalued Stock Trade Tracking** system that automates the entire process of tracking and analyzing trade history of the Undervalued Stock strategy. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.
+## 🔗 Related Projects
+
+### Undervalued Stock Trade Tracking
+
+I also built an Undervalued Stock Trade Tracking system that automates the entire process of tracking and analyzing trade history of the Undervalued Stock strategy. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.
 
 Feel free to check it out for more details on how I handle trade history, ETL, and real-time Excel reporting.
 
 👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a>
 
+### Undervalued Stock Scanner 1.0
+
+A new version of Undervalued Stock Scanner has been released. Unlike the original, this version moves all data processing and automation from Excel, Power Query, and VBA into modular Python scripts that enable fully automated ETL pipelines, batch processing of sector files, and clean outputs ready for Power BI dashboards.
+
+👉 <a href="https://nvu01.github.io/2026-02-20-undervalued-stock-scanner-2" target="_blank" rel="noopener">See Undervalued Stock Scanner 2.0</a>
 
