@@ -43,7 +43,7 @@ Raw sector CSV exports are placed into predefined input folders. From there, the
 
 The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.
 
-The scripts use Python’s os and glob libraries to automatically locate and retrieve all relevant files and export structured outputs into designated destination folders. The system maintains consistent naming conventions and directory organization. This design reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors.
+The scripts use Python’s *os* and *glob* libraries to automatically locate and retrieve all relevant files and export structured outputs into designated destination folders. The system maintains consistent naming conventions and directory organization. This design reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors.
 
 Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.
 
