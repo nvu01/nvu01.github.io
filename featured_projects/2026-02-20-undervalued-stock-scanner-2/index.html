@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.2.1 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines | Ngan Vu</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines" />
+<meta name="author" content="Ngan Vu" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies structured financial logic to detect undervalued opportunities and monitor exit risks." />
+<meta property="og:description" content="This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies structured financial logic to detect undervalued opportunities and monitor exit risks." />
+<link rel="canonical" href="https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/" />
+<meta property="og:url" content="https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/" />
+<meta property="og:site_name" content="Ngan Vu" />
+<meta property="og:image" content="https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-02-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg" />
+<meta property="twitter:title" content="Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-02-21T03:51:58+00:00","datePublished":"2026-02-20T00:00:00+00:00","description":"This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies structured financial logic to detect undervalued opportunities and monitor exit risks.","headline":"Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines","image":"https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+    <meta name="keywords" content="Data Analyst,Portfolio,Data Analytics Blog,Ngan Vu">
+  
+
+
+
+  <meta name="color-scheme" content="dark light">
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ngan Vu">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Ngan Vu">
+
+<meta name="generator" content="Hydejack v9.2.1" />
+
+
+<link rel="alternate" href="https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="https://nvu01.github.io//feed.xml" title="Ngan Vu" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+  
+  <link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css" id="_katexPreload">
+  <noscript><link rel="stylesheet" href="/assets/bower_components/katex/dist/katex.min.css"></noscript>
+
+
+
+
+
+<script>((r,a)=>{function d(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=a.createElement("script"),e=(n.src=e,t&&d(n,"load",t,{once:!0}),a.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=a.createElement("script");function o(){r._loaded=!0,t&&d(n,"load",t,{once:!0});var e=a.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():d(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){d(a.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}})(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2026-02-21T03:52:28+00:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.2.1.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 0.5);--accent-color-highlight: rgba(245, 245, 245, 0.1);--accent-color-darkened: rgb(225.875, 225.875, 225.875);--theme-color: rgb(25,55,71);--dark-mode-body-bg: hsl(200.8695652174, 5.9895833333%, 17.5%);--dark-mode-border-color: hsl(200.8695652174, 5.9895833333%, 22.5%)}
+</style>
+
+
+<!--<![endif]-->
+
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/img/logo/favicon_white_bg.ico" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/assets/img/logo/favicon_black_bg.ico" media="(prefers-color-scheme: dark)">
+
+<!-- Open Graph tags for social sharing -->
+<meta property="og:title" content="Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines">
+<meta property="og:description" content="This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies structured financial logic to detect undervalued opportunities and monitor exit risks.
+">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/">
+<meta property="og:image" content="/assets/img/thumbnail.png">
+
+<!-- Add HTML tags here to be included in the head. You can delete the below: -->
+<link rel="dns-prefetch" href="https://assets.gumroad.com">
+<script type="module">
+  const loadJS = x => new Promise(r => window.loadJS(x).addEventListener('load', r));
+
+  let p1, p2, io1, io2, embedCreated, overlayCreated;
+  document.querySelector('hy-push-state').addEventListener('load', () => {
+    io1 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p1 = p1 || loadJS('https://gumroad.com/js/gumroad-embed.js');
+        await p1;
+        !embedCreated && await new Promise(function check1(res) {
+          if (typeof createGumroadEmbed !== 'undefined')  {
+            embedCreated = 1;
+            res(createGumroadEmbed());
+          }
+          else setTimeout(() => check1(res), 200);
+        });
+        await new Promise(function check2(res) {
+          if (typeof GumroadEmbed !== 'undefined') res(GumroadEmbed.reload());
+          else setTimeout(() => check2(res), 200);
+        });
+      }
+    }, { rootMargin: '1440px' });
+
+    io2 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p2 = p2 || loadJS('https://gumroad.com/js/gumroad.js');
+        await p2;
+        !overlayCreated && await new Promise(function check(res) {
+          if (typeof createGumroadOverlay !== 'undefined') {
+            overlayCreated = 1;
+            res(createGumroadOverlay());
+          }
+          else setTimeout(() => check(res), 200);
+        });
+      }
+    }, { rootMargin: '300px' });
+
+    document.querySelectorAll('.gumroad-product-embed').forEach(el => io1.observe(el));
+    document.querySelectorAll('.gumroad-button').forEach(el => io2.observe(el));
+  });
+</script>
+
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  ((e,s)=>{var d="light-mode",a="dark-mode",o=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(e=(o=o<=e._sunrise||o>=e._sunset?a:d)==a?d:a,s.body.classList.add(o),s.body.classList.remove(e))})(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/featured_projects/">featured_projects</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2026-02-20-undervalued-stock-scanner-2</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-featured_projects-undervalued-stock-scanner-2" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2026-02-20T00:00:00+00:00">20 Feb 2026</time> in <a href="/featured_projects/" class="flip-title">Featured Projects</a> on <span>Python</span>, <span>Dashboard</span>, <span>Stock market</span>, <span>Financial market</span>
+      </span>
+      
+        
+          
+          
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 21 Feb 2026">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2026-02-21T03:51:58+00:00">2026-02-21</time>
+            </span>
+          
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/posts/6/Untitled%20design%202.jpg"
+  
+  alt="Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies structured financial logic to detect undervalued opportunities and monitor exit risks.
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p>This new version of Undervalued Stock Scanner is a complete architectural shift from my original system. What began as financial spreadsheet modeling has evolved into a modular Python pipeline that automates data ingestion, statistical processing, valuation screening, and exit monitoring.</p>
+
+<p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner-2.0" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo
+</a></p>
+
+<p><strong>Disclaimer: This project is for educational purposes only. The analysis, models, and methods used here are not financial advice. Investing carries risk, and any decisions based on this analysis are your responsibility. Always do your own research or consult with a qualified financial advisor before making investment decisions.</strong></p>
+
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#why-rebuild-it" id="markdown-toc-why-rebuild-it">Why Rebuild It?</a></li>
+  <li><a href="#re-engineering-the-pipeline" id="markdown-toc-re-engineering-the-pipeline">Re-Engineering the Pipeline</a></li>
+  <li><a href="#conceptual-framework-summary" id="markdown-toc-conceptual-framework-summary">Conceptual Framework Summary</a></li>
+  <li><a href="#explore-the-dashboards" id="markdown-toc-explore-the-dashboards">Explore the Dashboards</a>    <ul>
+      <li><a href="#undervalued-stock-scanner-dashboard" id="markdown-toc-undervalued-stock-scanner-dashboard">Undervalued Stock Scanner Dashboard</a></li>
+      <li><a href="#exit-signals-dashboard" id="markdown-toc-exit-signals-dashboard">Exit Signals Dashboard</a></li>
+    </ul>
+  </li>
+  <li><a href="#final-reflection" id="markdown-toc-final-reflection">Final Reflection</a></li>
+  <li><a href="#-related-projects" id="markdown-toc--related-projects">🔗 Related Projects</a>    <ul>
+      <li><a href="#undervalued-stock-trade-tracking" id="markdown-toc-undervalued-stock-trade-tracking">Undervalued Stock Trade Tracking</a></li>
+      <li><a href="#undervalued-stock-scanner-20" id="markdown-toc-undervalued-stock-scanner-20">Undervalued Stock Scanner 2.0</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="why-rebuild-it">Why Rebuild It?</h2>
+
+<p>The original <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">Undervalued Stock Scanner</a> was built using Excel, Power Query, and VBA. Excel is powerful. Power Query is flexible. VBA automates well within its environment. Everything worked well for structured analysis and dashboarding, but data processing was tied to a desktop workflow: manual refreshes, layered query dependencies, and logic embedded inside spreadsheet environments.</p>
+
+<p>I wanted:</p>
+
+<ul>
+  <li>Clear separation between data processing and presentation</li>
+  <li>Reproducible pipelines independent of UI tools</li>
+  <li>Modular scripts instead of layered query chains</li>
+  <li>Better statistical handling of outliers</li>
+  <li>A system that could scale without becoming fragile</li>
+</ul>
+
+<p>So I rebuilt the entire system in Python, all outside the constraints of Excel.</p>
+
+<h2 id="re-engineering-the-pipeline">Re-Engineering the Pipeline</h2>
+
+<p>Instead of relying on workbook refresh cycles, the new system uses Python scripts that:</p>
+<ul>
+  <li>Process raw sector CSV files and applies valuation logic</li>
+  <li>Monitor held positions for red flags</li>
+  <li>Generate on-demand fundamental snapshots</li>
+</ul>
+
+<p>Raw sector CSV exports are placed into predefined input folders. From there, the scripts automatically retrieve all relevant files, process them in batch, apply screening and statistical logic, and export formatted Excel outputs into designated destination folders. Those outputs then serve as clean, structured data sources for the Power BI dashboards.</p>
+
+<p>The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.</p>
+
+<p>The scripts use Python’s os and glob libraries to automatically locate and retrieve all relevant files and export structured outputs into designated destination folders. The system maintains consistent naming conventions and directory organization. This design reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors.</p>
+
+<p>Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.</p>
+
+<h2 id="conceptual-framework-summary">Conceptual Framework Summary</h2>
+
+<p>The scanner evaluates key fundamentals like P/FCF, P/B, P/E, ROE, ROA, and A/E. To make comparisons fair, it assesses stocks relative to industry peers in the same market cap groups rather than across the entire market. Outliers are filtered using quartile bounds, and z-scores standardize each metric to allow consistent comparison between stocks.</p>
+
+<p>A stock passes the preliminary scan only if it meets all baseline conditions. Stocks that pass are then ranked using bonus signals.</p>
+
+<p>A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering and processing these specialized metrics would require additional resources. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.</p>
+
+<p>One of the biggest upgrades is the Exit Signals Framework. The original project only identified undervalued stocks. Now, it also flags overvaluation, quality deterioration, and severe financial red flags for held positions. These are review triggers, not automatic sell signals. My goal was to design a system that helps me manage the full lifecycle of an investment decision.</p>
+
+<p>For a deeper dive into the original methodology and screening logic, see <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/#what-makes-a-stock-undervalued" target="_blank" rel="noopener">What Makes a Stock Undervalued?</a></p>
+
+<h2 id="explore-the-dashboards">Explore the Dashboards</h2>
+
+<p>Below are the interactive dashboards that bring this system to life.</p>
+
+<h4 id="undervalued-stock-scanner-dashboard">Undervalued Stock Scanner Dashboard</h4>
+
+<p>👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.</p>
+
+<iframe title="Undervalued Stock Scanner" style="width: 100%; height: 60vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+
+<blockquote class="lead">
+  <p>In this version, I added a drill-through page that allows users to right-click on any stock and navigate to a detailed profile view. This page displays all available fundamentals for the selected company, including its full company name, valuation and scoring signals. To bridge analytics with real-world research, the drill-through page also includes a direct link to the company’s profile on Yahoo Finance.</p>
+</blockquote>
+
+<h4 id="exit-signals-dashboard">Exit Signals Dashboard</h4>
+
+<p>👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.</p>
+
+<iframe title="Exit Signals" style="width: 100%; height: 60vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+
+<blockquote class="lead">
+  <p>The Exit Signals dashboard uses conditional formatting to highlight valuation and quality signals that classify stocks into red flag types. Its simple layout, combined with dynamic filtering, allows for focused risk review.</p>
+</blockquote>
+
+<h2 id="final-reflection">Final Reflection</h2>
+
+<p>Rebuilding this project forced me to rethink more than just code. It required restructuring assumptions about where logic should live, how data should flow, how automation should scale, and how analytics should be engineered.</p>
+
+<p>It also meant moving on from a system I had invested significant time and effort building. The original Excel, Power Query, and VBA framework worked, and I was proud of it. But improvement sometimes requires letting go of what already works in order to build something more robust. The result is an example of how I approach data and workflow problems. I actively look for ways to streamline processes, even when that means redesigning them from the ground up. To me, improving systems is not about chasing new tools; it is about prioritizing accuracy, consistency, and long-term maintainability.</p>
+
+<h2 id="-related-projects">🔗 Related Projects</h2>
+
+<h3 id="undervalued-stock-trade-tracking">Undervalued Stock Trade Tracking</h3>
+
+<p>I also built an Undervalued Stock Trade Tracking system that automates the entire process of tracking and analyzing trade history of the Undervalued Stock strategy. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.</p>
+
+<p>Feel free to check it out for more details on how I handle trade history, ETL, and real-time Excel reporting.</p>
+
+<p>👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a></p>
+
+<h3 id="undervalued-stock-scanner-20">Undervalued Stock Scanner 2.0</h3>
+
+<p>The original Undervalued Stock Scanner used Excel, Power Query, VBA and Power BI to screen stocks based on structured valuation rules. It established the financial framework later rebuilt into the new version 2.0.</p>
+
+<p>Explore it to learn more about the original conceptual framework and legacy pipeline.</p>
+
+<p>👉 <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">See Original Undervalued Stock Scanner</a></p>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/about/grey-dress.jpg"
+    srcset="/assets/img/about/grey-dress.jpg 1x,/assets/img/about/grey-dress.jpg 2x"
+    
+  
+  alt="Ngan Vu"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>Hey there! I’m Ngan Vu, a data analyst powered by curiosity, iced coffee, and the occasional over-engineered Excel spreadsheet.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/ngan-vu-719896328" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/nvu01" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/featured_projects/2025-06-15-undervalued-stock-scanner/" class="flip-title"><span>Undervalued Stock Scanner: From Raw Data to Smart Insights</span></a>  <time class="faded fine" datetime="2025-06-15T00:00:00+00:00">15 Jun 2025</time></li>                        <li class="h4">  <a href="/featured_projects/2025-06-10-poverty-regression-analysis/" class="flip-title"><span>Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach</span></a>  <time class="faded fine" datetime="2025-06-10T00:00:00+00:00">10 Jun 2025</time></li>                        <li class="h4">  <a href="/featured_projects/2025-06-01-waggle-power-bi-report/" class="flip-title"><span>Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</span></a>  <time class="faded fine" datetime="2025-06-01T00:00:00+00:00">01 Jun 2025</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2024. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/steve-johnson-SZvTWuTR1XM-unsplash.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo/logo_black_bg.png" class="avatar" alt="Ngan Vu" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Ngan Vu</h2></a>
+    
+    
+      <p class="">
+        The Curious Analyst
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About Me
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/featured_projects/"
+          class="sidebar-nav-item "
+          
+        >
+          Featured Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/other_projects/"
+          class="sidebar-nav-item "
+          
+        >
+          Other Projects
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/ngan-vu-719896328" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/nvu01" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>(()=>{var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())})();
+</script>
+  <script src="/assets/js/hydejack-9.2.1.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.2.1.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+</div>
+
+
+</body>
+</html>

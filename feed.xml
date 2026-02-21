@@ -1,11 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-01T23:41:29+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Portfolio of Ngan Vu
-</subtitle><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-15T00:00:00+00:00</published><updated>2026-02-01T23:41:09+00:00</updated><id>https://nvu01.github.io//featured_projects/undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://nvu01.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://nvu01.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-21T03:52:28+00:00</updated><id>https://nvu01.github.io//feed.xml</id><title type="html">Ngan Vu</title><subtitle>Portfolio of Ngan Vu
+</subtitle><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><entry><title type="html">Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines</title><link href="https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/" rel="alternate" type="text/html" title="Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines" /><published>2026-02-20T00:00:00+00:00</published><updated>2026-02-21T03:51:58+00:00</updated><id>https://nvu01.github.io//featured_projects/undervalued-stock-scanner-2</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"><![CDATA[<p>This new version of Undervalued Stock Scanner is a complete architectural shift from my original system. What began as financial spreadsheet modeling has evolved into a modular Python pipeline that automates data ingestion, statistical processing, valuation screening, and exit monitoring.</p>
+
+<p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner-2.0" target="_blank" rel="noopener">
+  <i class="icon-github"></i> GitHub Repo
+</a></p>
+
+<p><strong>Disclaimer: This project is for educational purposes only. The analysis, models, and methods used here are not financial advice. Investing carries risk, and any decisions based on this analysis are your responsibility. Always do your own research or consult with a qualified financial advisor before making investment decisions.</strong></p>
+
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#why-rebuild-it" id="markdown-toc-why-rebuild-it">Why Rebuild It?</a></li>
+  <li><a href="#re-engineering-the-pipeline" id="markdown-toc-re-engineering-the-pipeline">Re-Engineering the Pipeline</a></li>
+  <li><a href="#conceptual-framework-summary" id="markdown-toc-conceptual-framework-summary">Conceptual Framework Summary</a></li>
+  <li><a href="#explore-the-dashboards" id="markdown-toc-explore-the-dashboards">Explore the Dashboards</a>    <ul>
+      <li><a href="#undervalued-stock-scanner-dashboard" id="markdown-toc-undervalued-stock-scanner-dashboard">Undervalued Stock Scanner Dashboard</a></li>
+      <li><a href="#exit-signals-dashboard" id="markdown-toc-exit-signals-dashboard">Exit Signals Dashboard</a></li>
+    </ul>
+  </li>
+  <li><a href="#final-reflection" id="markdown-toc-final-reflection">Final Reflection</a></li>
+  <li><a href="#-related-projects" id="markdown-toc--related-projects">🔗 Related Projects</a>    <ul>
+      <li><a href="#undervalued-stock-trade-tracking" id="markdown-toc-undervalued-stock-trade-tracking">Undervalued Stock Trade Tracking</a></li>
+      <li><a href="#undervalued-stock-scanner-20" id="markdown-toc-undervalued-stock-scanner-20">Undervalued Stock Scanner 2.0</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="why-rebuild-it">Why Rebuild It?</h2>
+
+<p>The original <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">Undervalued Stock Scanner</a> was built using Excel, Power Query, and VBA. Excel is powerful. Power Query is flexible. VBA automates well within its environment. Everything worked well for structured analysis and dashboarding, but data processing was tied to a desktop workflow: manual refreshes, layered query dependencies, and logic embedded inside spreadsheet environments.</p>
+
+<p>I wanted:</p>
+
+<ul>
+  <li>Clear separation between data processing and presentation</li>
+  <li>Reproducible pipelines independent of UI tools</li>
+  <li>Modular scripts instead of layered query chains</li>
+  <li>Better statistical handling of outliers</li>
+  <li>A system that could scale without becoming fragile</li>
+</ul>
+
+<p>So I rebuilt the entire system in Python, all outside the constraints of Excel.</p>
+
+<h2 id="re-engineering-the-pipeline">Re-Engineering the Pipeline</h2>
+
+<p>Instead of relying on workbook refresh cycles, the new system uses Python scripts that:</p>
+<ul>
+  <li>Process raw sector CSV files and applies valuation logic</li>
+  <li>Monitor held positions for red flags</li>
+  <li>Generate on-demand fundamental snapshots</li>
+</ul>
+
+<p>Raw sector CSV exports are placed into predefined input folders. From there, the scripts automatically retrieve all relevant files, process them in batch, apply screening and statistical logic, and export formatted Excel outputs into designated destination folders. Those outputs then serve as clean, structured data sources for the Power BI dashboards.</p>
+
+<p>The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.</p>
+
+<p>The scripts use Python’s os and glob libraries to automatically locate and retrieve all relevant files and export structured outputs into designated destination folders. The system maintains consistent naming conventions and directory organization. This design reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors.</p>
+
+<p>Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.</p>
+
+<h2 id="conceptual-framework-summary">Conceptual Framework Summary</h2>
+
+<p>The scanner evaluates key fundamentals like P/FCF, P/B, P/E, ROE, ROA, and A/E. To make comparisons fair, it assesses stocks relative to industry peers in the same market cap groups rather than across the entire market. Outliers are filtered using quartile bounds, and z-scores standardize each metric to allow consistent comparison between stocks.</p>
+
+<p>A stock passes the preliminary scan only if it meets all baseline conditions. Stocks that pass are then ranked using bonus signals.</p>
+
+<p>A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering and processing these specialized metrics would require additional resources. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.</p>
+
+<p>One of the biggest upgrades is the Exit Signals Framework. The original project only identified undervalued stocks. Now, it also flags overvaluation, quality deterioration, and severe financial red flags for held positions. These are review triggers, not automatic sell signals. My goal was to design a system that helps me manage the full lifecycle of an investment decision.</p>
+
+<p>For a deeper dive into the original methodology and screening logic, see <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/#what-makes-a-stock-undervalued" target="_blank" rel="noopener">What Makes a Stock Undervalued?</a></p>
+
+<h2 id="explore-the-dashboards">Explore the Dashboards</h2>
+
+<p>Below are the interactive dashboards that bring this system to life.</p>
+
+<h4 id="undervalued-stock-scanner-dashboard">Undervalued Stock Scanner Dashboard</h4>
+
+<p>👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.</p>
+
+<iframe title="Undervalued Stock Scanner" style="width: 100%; height: 60vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+
+<blockquote class="lead">
+  <p>In this version, I added a drill-through page that allows users to right-click on any stock and navigate to a detailed profile view. This page displays all available fundamentals for the selected company, including its full company name, valuation and scoring signals. To bridge analytics with real-world research, the drill-through page also includes a direct link to the company’s profile on Yahoo Finance.</p>
+</blockquote>
+
+<h4 id="exit-signals-dashboard">Exit Signals Dashboard</h4>
+
+<p>👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.</p>
+
+<iframe title="Exit Signals" style="width: 100%; height: 60vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+
+<blockquote class="lead">
+  <p>The Exit Signals dashboard uses conditional formatting to highlight valuation and quality signals that classify stocks into red flag types. Its simple layout, combined with dynamic filtering, allows for focused risk review.</p>
+</blockquote>
+
+<h2 id="final-reflection">Final Reflection</h2>
+
+<p>Rebuilding this project forced me to rethink more than just code. It required restructuring assumptions about where logic should live, how data should flow, how automation should scale, and how analytics should be engineered.</p>
+
+<p>It also meant moving on from a system I had invested significant time and effort building. The original Excel, Power Query, and VBA framework worked, and I was proud of it. But improvement sometimes requires letting go of what already works in order to build something more robust. The result is an example of how I approach data and workflow problems. I actively look for ways to streamline processes, even when that means redesigning them from the ground up. To me, improving systems is not about chasing new tools; it is about prioritizing accuracy, consistency, and long-term maintainability.</p>
+
+<h2 id="-related-projects">🔗 Related Projects</h2>
+
+<h3 id="undervalued-stock-trade-tracking">Undervalued Stock Trade Tracking</h3>
+
+<p>I also built an Undervalued Stock Trade Tracking system that automates the entire process of tracking and analyzing trade history of the Undervalued Stock strategy. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.</p>
+
+<p>Feel free to check it out for more details on how I handle trade history, ETL, and real-time Excel reporting.</p>
+
+<p>👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a></p>
+
+<h3 id="undervalued-stock-scanner-20">Undervalued Stock Scanner 2.0</h3>
+
+<p>The original Undervalued Stock Scanner used Excel, Power Query, VBA and Power BI to screen stocks based on structured valuation rules. It established the financial framework later rebuilt into the new version 2.0.</p>
+
+<p>Explore it to learn more about the original conceptual framework and legacy pipeline.</p>
+
+<p>👉 <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">See Original Undervalued Stock Scanner</a></p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="python" /><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies structured financial logic to detect undervalued opportunities and monitor exit risks.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Undervalued Stock Scanner: From Raw Data to Smart Insights</title><link href="https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/" rel="alternate" type="text/html" title="Undervalued Stock Scanner: From Raw Data to Smart Insights" /><published>2025-06-15T00:00:00+00:00</published><updated>2026-02-21T03:51:58+00:00</updated><id>https://nvu01.github.io//featured_projects/undervalued-stock-scanner</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/"><![CDATA[<p>Like many aspiring investors, my husband and I were drawn to the challenge of identifying undervalued stocks because they are like hidden gems with solid fundamentals that the market hasn’t caught up with yet. What started as a weekend project in Excel became a fully automated pipeline combining Power Query, VBA, and Power BI dashboards.</p>
 
 <p><a href="https://github.com/nvu01/Undervalued-Stock-Scanner" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
 </a></p>
 
-<p><strong>Disclaimer: This project is for educational purposes only. The analysis, models, and methods used here are not financial advice. Investing carries risk. Always do your own research or consult with a financial advisor before making investment decisions.</strong></p>
+<p><strong>Disclaimer: This project is for educational purposes only. The analysis, models, and methods used here are not financial advice. Investing carries risk, and any decisions based on this analysis are your responsibility. Always do your own research or consult with a qualified financial advisor before making investment decisions.</strong></p>
 
 <ul class="large-only" id="markdown-toc">
   <li><a href="#project-at-a-glance" id="markdown-toc-project-at-a-glance">Project at a Glance</a></li>
@@ -21,7 +137,11 @@
   </li>
   <li><a href="#automating-the-mess-turning-chaos-into-clean-data" id="markdown-toc-automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</a></li>
   <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
-  <li><a href="#-related-project" id="markdown-toc--related-project">🔗 Related Project</a></li>
+  <li><a href="#-related-projects" id="markdown-toc--related-projects">🔗 Related Projects</a>    <ul>
+      <li><a href="#undervalued-stock-trade-tracking" id="markdown-toc-undervalued-stock-trade-tracking">Undervalued Stock Trade Tracking</a></li>
+      <li><a href="#undervalued-stock-scanner-10" id="markdown-toc-undervalued-stock-scanner-10">Undervalued Stock Scanner 1.0</a></li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="project-at-a-glance">Project at a Glance</h2>
@@ -166,13 +286,21 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green for eas
 
 <p>The real win? Building something that works for both analysts and non-technical users alike. It reminded me that the best data projects don’t just analyze, they simplify. They turn messy data into clear insights and help people make better, faster decisions. That’s what I aim to build, every time.</p>
 
-<h2 id="-related-project">🔗 Related Project</h2>
+<h2 id="-related-projects">🔗 Related Projects</h2>
 
-<p>I also built an <strong>Undervalued Stock Trade Tracking</strong> system that automates the entire process of tracking and analyzing trade history of the Undervalued Stock strategy. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.</p>
+<h3 id="undervalued-stock-trade-tracking">Undervalued Stock Trade Tracking</h3>
+
+<p>I also built an Undervalued Stock Trade Tracking system that automates the entire process of tracking and analyzing trade history of the Undervalued Stock strategy. Its Python-based ETL pipeline automatically accesses the file system to locate and retrieve the latest Thinkorswim statements, processes new trade history, and updates a clean dataset used for real-time Excel reporting.</p>
 
 <p>Feel free to check it out for more details on how I handle trade history, ETL, and real-time Excel reporting.</p>
 
-<p>👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a></p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach</title><link href="https://nvu01.github.io//featured_projects/2025-06-10-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach" /><published>2025-06-10T00:00:00+00:00</published><updated>2026-02-01T23:41:09+00:00</updated><id>https://nvu01.github.io//featured_projects/poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-10-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
+<p>👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a></p>
+
+<h3 id="undervalued-stock-scanner-10">Undervalued Stock Scanner 1.0</h3>
+
+<p>A new version of Undervalued Stock Scanner has been released. Unlike the original, this version moves all data processing and automation from Excel, Power Query, and VBA into modular Python scripts that enable fully automated ETL pipelines, batch processing of sector files, and clean outputs ready for Power BI dashboards.</p>
+
+<p>👉 <a href="https://nvu01.github.io/2026-02-20-undervalued-stock-scanner-2" target="_blank" rel="noopener">See Undervalued Stock Scanner 2.0</a></p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="excel" /><category term="vba macros" /><category term="dashboard" /><category term="stock market" /><category term="financial market" /><summary type="html"><![CDATA[A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach</title><link href="https://nvu01.github.io//featured_projects/2025-06-10-poverty-regression-analysis/" rel="alternate" type="text/html" title="Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach" /><published>2025-06-10T00:00:00+00:00</published><updated>2026-02-21T03:51:58+00:00</updated><id>https://nvu01.github.io//featured_projects/poverty-regression-analysis</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-10-poverty-regression-analysis/"><![CDATA[<p>This post summarizes my capstone project for my program in Data Analytics at WGU. I used <strong>multiple linear regression</strong> to investigate how socioeconomic factors influence poverty rates across U.S. counties.</p>
 
 <p><a href="https://github.com/nvu01/BSDA-Capstone-Project" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -437,7 +565,7 @@ income_x_house_value       20.4523      3.399      6.018      0.000      13.791 
 <h2 id="references">References</h2>
 <ul>
   <li>Creamer, J., &amp; King, M. D. (2024, November 14). <a href="https://www.census.gov/library/stories/2024/11/supplemental-poverty-measure-visualization.html">How Do Policies and Expenses Affect Supplemental Poverty Rates?</a></li>
-</ul>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</title><link href="https://nvu01.github.io//featured_projects/2025-06-01-waggle-power-bi-report/" rel="alternate" type="text/html" title="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" /><published>2025-06-01T00:00:00+00:00</published><updated>2026-02-01T23:41:09+00:00</updated><id>https://nvu01.github.io//featured_projects/waggle-power-bi-report</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-01-waggle-power-bi-report/"><![CDATA[<p>In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the LapDog fitness collar for dogs, Waggle launched a field test of its feline counterpart called “LapCat”. My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.</p>
+</ul>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="regression" /><category term="socioeconomic data" /><category term="poverty" /><category term="census data" /><category term="public policy" /><summary type="html"><![CDATA[A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle</title><link href="https://nvu01.github.io//featured_projects/2025-06-01-waggle-power-bi-report/" rel="alternate" type="text/html" title="Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle" /><published>2025-06-01T00:00:00+00:00</published><updated>2026-02-21T03:51:58+00:00</updated><id>https://nvu01.github.io//featured_projects/waggle-power-bi-report</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-06-01-waggle-power-bi-report/"><![CDATA[<p>In this project, I analyzed user and pet data from Waggle, a pet-tech startup known for its innovative smart devices for pets. After the success of the LapDog fitness collar for dogs, Waggle launched a field test of its feline counterpart called “LapCat”. My report aims to help stakeholders understand how the new device is performing and whether it justifies further development.</p>
 
 <p><a href="https://github.com/nvu01/Waggle-PowerBI-Report" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -605,7 +733,7 @@ The report also needed to meet Waggle’s design standards:</p>
 
 <p>This Power BI project for Waggle was a valuable opportunity for me to focus on data modeling, stakeholder communication, and interactive dashboard design.</p>
 
-<p>While branding and layout help engage stakeholders and make the report approachable, my top priority was always data accuracy and delivering practical, business-relevant insights. A visually polished report earns attention, but clear, correct, and useful insights are what drive decisions.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[An interactive Power BI report that visualizes product performance and user data for Waggle.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Preparing Data for Reporting Using PostgreSQL</title><link href="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/" rel="alternate" type="text/html" title="Preparing Data for Reporting Using PostgreSQL" /><published>2025-05-30T00:00:00+00:00</published><updated>2026-02-01T23:41:09+00:00</updated><id>https://nvu01.github.io//featured_projects/SQL-preparing-data-for-reporting</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"><![CDATA[<p>This project demonstrates how SQL and PostgreSQL can be used to transform raw transactional data into structured, analysis-ready tables. Using the DVD Rental Dataset, I built a structured workflow to extract, transform, and organize rental data for future insights and analysis.</p>
+<p>While branding and layout help engage stakeholders and make the report approachable, my top priority was always data accuracy and delivering practical, business-relevant insights. A visually polished report earns attention, but clear, correct, and useful insights are what drive decisions.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[An interactive Power BI report that visualizes product performance and user data for Waggle.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Preparing Data for Reporting Using PostgreSQL</title><link href="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/" rel="alternate" type="text/html" title="Preparing Data for Reporting Using PostgreSQL" /><published>2025-05-30T00:00:00+00:00</published><updated>2026-02-21T03:51:58+00:00</updated><id>https://nvu01.github.io//featured_projects/SQL-preparing-data-for-reporting</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"><![CDATA[<p>This project demonstrates how SQL and PostgreSQL can be used to transform raw transactional data into structured, analysis-ready tables. Using the DVD Rental Dataset, I built a structured workflow to extract, transform, and organize rental data for future insights and analysis.</p>
 
 <p><a href="https://github.com/nvu01/Advanced-Data-Management" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -966,7 +1094,7 @@ or from <a href="https://neon.tech/postgresql/postgresql-getting-started/postgre
 
 <h2 id="final-thoughts">Final Thoughts</h2>
 
-<p>This project highlights the power of SQL and PostgreSQL for preparing data in a way that supports scalable and automated business intelligence workflows. By creating a clean, transformed layer of data ready for analysis, I can bridge the gap between raw transactions and valuable insights. These structured tables can now be easily integrated with tools like Power BI or Tableau for dashboarding, trend analysis, and storytelling with data.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2026-02-01T23:41:09+00:00</updated><id>https://nvu01.github.io//featured_projects/youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
+<p>This project highlights the power of SQL and PostgreSQL for preparing data in a way that supports scalable and automated business intelligence workflows. By creating a clean, transformed layer of data ready for analysis, I can bridge the gap between raw transactions and valuable insights. These structured tables can now be easily integrated with tools like Power BI or Tableau for dashboarding, trend analysis, and storytelling with data.</p>]]></content><author><name>Ngan Vu</name><email>&lt;nganvu2601@gmail.com&gt;</email></author><category term="featured_projects" /><category term="Waggle" /><category term="Power BI report" /><category term="data visualization" /><category term="storytelling" /><category term="LapDog" /><category term="LapCat" /><summary type="html"><![CDATA[This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" /><media:content medium="image" url="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story</title><link href="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/" rel="alternate" type="text/html" title="U.S. YouTube Video Trends: A Tableau Dashboard &amp;amp; Story" /><published>2025-05-28T00:00:00+00:00</published><updated>2026-02-21T03:51:58+00:00</updated><id>https://nvu01.github.io//featured_projects/youtube-video-trends</id><content type="html" xml:base="https://nvu01.github.io//featured_projects/2025-05-28-youtube-video-trends/"><![CDATA[<p>What do trending YouTube videos reveal about American viewers? In this Tableau project, I analyzed U.S. YouTube trending data to uncover patterns in viewer sentiment, identify top-performing creators, and explore regional content preferences.</p>
 
 <p><a href="https://github.com/nvu01/Tableau-Public-Dashboard" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
