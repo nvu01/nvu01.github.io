@@ -2,11 +2,11 @@
 layout: post
 title: "Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines"
 description: >
-  This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies structured financial logic to detect undervalued opportunities and monitor exit risks.
+  This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies financial logic and statistical methods to detect undervalued opportunities and monitor exit signals.
 image: /assets/img/posts/6/Untitled design 2.jpg
 tags: [python, dashboard, stock market, financial market]
 ---
-This new version of Undervalued Stock Scanner is a complete architectural shift from my original system. What began as financial spreadsheet modeling has evolved into a modular Python pipeline that automates data ingestion, statistical processing, valuation screening, and exit monitoring.
+This new version of Undervalued Stock Scanner is a complete architectural shift from my original system. What began as financial spreadsheet modeling has evolved into modular Python pipelines that automate data ingestion, statistical processing, valuation screening, and exit monitoring.
 
 <a href="https://github.com/nvu01/Undervalued-Stock-Scanner-2.0" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo
@@ -21,9 +21,9 @@ This new version of Undervalued Stock Scanner is a complete architectural shift 
 
 The original <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">Undervalued Stock Scanner</a> was built using Excel, Power Query, and VBA. Excel is powerful. Power Query is flexible. VBA automates well within its environment. Everything worked well for structured analysis and dashboarding, but data processing was tied to a desktop workflow: manual refreshes, layered query dependencies, and logic embedded inside spreadsheet environments.
 
-I wanted:
+As a data analyst who’s always looking to streamline processes, I’m constantly searching for ways to make data workflows cleaner, more efficient, and easier to maintain. For this project, I wanted a more robust data processing method that offers:
 
-- Clear separation between data processing and presentation
+- A clear separation between data processing and presentation
 - Reproducible pipelines independent of UI tools
 - Modular scripts instead of layered query chains
 - Better statistical handling of outliers
@@ -39,7 +39,7 @@ Instead of relying on workbook refresh cycles, the new system uses Python script
 - Monitor held positions for red flags
 - Generate on-demand fundamental snapshots
 
-Raw sector CSV exports are placed into predefined input folders. From there, the scripts automatically retrieve all relevant files, process them in batch, apply screening and statistical logic, and export formatted Excel outputs into designated destination folders. Those outputs then serve as clean, structured data sources for the Power BI dashboards.
+Raw sector CSV exports are placed into predefined input folders. From there, the scripts automatically retrieve all relevant files, process them in batch, apply screening and statistical logic, and export Excel outputs into designated destination folders. Those outputs then serve as clean, structured data sources for the Power BI dashboards.
 
 The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.
 
@@ -86,9 +86,9 @@ Below are the interactive dashboards that bring this system to life.
 
 ## Final Reflection
 
-Rebuilding this project forced me to rethink more than just code. It required restructuring assumptions about where logic should live, how data should flow, how automation should scale, and how analytics should be engineered. 
+Rebuilding this project required more than a language change from Excel formulas and Power Query M to Python. It challenged me to rethink where logic should live, how data should flow, how automation should scale, and how analytics should be engineered. 
 
-It also meant moving on from a system I had invested significant time and effort building. The original Excel, Power Query, and VBA framework worked, and I was proud of it. But improvement sometimes requires letting go of what already works in order to build something more robust. The result is an example of how I approach data and workflow problems. I actively look for ways to streamline processes, even when that means redesigning them from the ground up. To me, improving systems is not about chasing new tools; it is about prioritizing accuracy, consistency, and long-term maintainability.
+It also meant moving on from a system I had invested significant time and effort building. The original Excel, Power Query, and VBA framework worked, and I was proud of it. But improvement sometimes requires letting go of what already works in order to build something more robust. The rebuilt system reflects how I approach data and workflow challenges. I actively look for ways to streamline processes, even when that means redesigning them from the ground up. For me, improving systems isn't about chasing new tools; it is about prioritizing accuracy, consistency, and long-term maintainability.
 
 
 ## 🔗 Related Projects
@@ -102,11 +102,10 @@ Feel free to check it out for more details on how I handle trade history, ETL, a
 👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a>
 
 
+### Undervalued Stock Scanner 1.0
 
-### Undervalued Stock Scanner 2.0
+The original Undervalued Stock Scanner used Excel, Power Query, VBA and Power BI to screen stocks based on financial valuation rules. It established the framework later rebuilt into the new version 2.0.
 
-The original Undervalued Stock Scanner used Excel, Power Query, VBA and Power BI to screen stocks based on structured valuation rules. It established the financial framework later rebuilt into the new version 2.0.
-
-Explore it to learn more about the original conceptual framework and legacy pipeline.
+Explore it to learn more about the original concepts and legacy pipeline.
 
 👉 <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">See Original Undervalued Stock Scanner</a>

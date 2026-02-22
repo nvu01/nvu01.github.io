@@ -161,9 +161,9 @@ Feel free to check it out for more details on how I handle trade history, ETL, a
 
 👉 <a href="https://nvu01.github.io/other_projects/#-undervalued-stock-trade-tracking" target="_blank" rel="noopener">See Undervalued Stock Trade Tracking</a>
 
-### Undervalued Stock Scanner 1.0
+### Undervalued Stock Scanner 2.0
 
 A new version of Undervalued Stock Scanner has been released. Unlike the original, this version moves all data processing and automation from Excel, Power Query, and VBA into modular Python scripts that enable fully automated ETL pipelines, batch processing of sector files, and clean outputs ready for Power BI dashboards.
 
-👉 <a href="https://nvu01.github.io/2026-02-20-undervalued-stock-scanner-2" target="_blank" rel="noopener">See Undervalued Stock Scanner 2.0</a>
+👉 <a href="https://nvu01.github.io/featured_projects/2026-02-20-undervalued-stock-scanner-2" target="_blank" rel="noopener">See Undervalued Stock Scanner 2.0</a>
 
