@@ -149,13 +149,14 @@ This project automates the tracking and analysis of undervalued stock trades usi
 <a href="https://github.com/nvu01/Undervalued-Stock-Trade-Tracking" target="_blank" rel="noopener">
   <i class="icon-github"></i> GitHub Repo</a>
 
-| **Tools:**                | Jupyter Notebook, VSCode, Excel, Power Query |
-| **Language:**             | Python, VBA                                  |
-| **Frameworks/Libraries:** | pandas, glob, os, io, argparse               |
+| **Tools:**                | Jupyter Notebook, PyCharm, Excel, Power Query |
+| **Language:**             | Python, VBA, Power Query M                    |
+| **Frameworks/Libraries:** | pandas, glob, os, io                          |
 
 **Skills:**
-- **ETL development**: Automating monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.
-- **Data manipulation (datetime-heavy)**: Converting and aligning timestamps, filtering trade history, and performing time-based merges between datasets.
-- **Excel reporting**: Building dynamic reports with real-time stock prices, treemaps, and waterfall charts.
-- **Financial analysis**: Generating performance metrics such as ROI, P&L, investment totals, and portfolio weight.
-- **Applying best practices for data confidentiality**: Protecting personal and financial information by masking and concealing sensitive data before publishing or sharing.
+- **ETL development**: Automated monthly extraction, transformation, and loading of trade and position data using file-system logic and custom Python functions.
+- **Data manipulation (datetime-heavy)**: Converted and aligned timestamps, filtering trade history, and performing time-based merges between datasets.
+- **Excel reporting**: Built dynamic reports using Power Query for data transformation, real-time stock price integration, and VBA macros to automate reporting and reduce manual intervention.
+- **Data visualization**: Designed treemaps to display relative weight of positions (by investment allocation and Open P&L contribution), and built waterfall charts to visualize cumulative profit and loss over time.
+- **Financial analysis**: Generated performance metrics such as Portfolio's Value, Open and Realized P&Ls, Open and Realized ROIs, Total Spending, Net Spending, Cummulative P&L.
+- **Applying best practices for data confidentiality**: Applied best practices in data privacy by masking, anonymizing, and safeguarding sensitive personal and financial information before publishing or sharing.
