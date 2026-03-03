@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg" />
 <meta property="twitter:title" content="Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-03-03T02:07:09+00:00","datePublished":"2026-02-20T00:00:00+00:00","description":"This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies financial logic and statistical methods to detect undervalued opportunities and monitor exit signals.","headline":"Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines","image":"https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-03-03T18:34:52+00:00","datePublished":"2026-02-20T00:00:00+00:00","description":"This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies financial logic and statistical methods to detect undervalued opportunities and monitor exit signals.","headline":"Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines","image":"https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -120,7 +120,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2026-03-03T02:07:57+00:00',
+    INDEX_KEY: 'index--2026-03-03T18:35:15+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -305,7 +305,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
             <span class="ellipsis" data-tippy-content="Last modified at: 03 Mar 2026">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2026-03-03T02:07:09+00:00">2026-03-03</time>
+              <time datetime="2026-03-03T18:34:52+00:00">2026-03-03</time>
             </span>
           
         
@@ -378,7 +378,9 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <h2 id="why-rebuild-it">Why Rebuild It?</h2>
 
-<p>The original <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">Undervalued Stock Scanner</a> was built using Excel, Power Query, and VBA. Excel is powerful. Power Query is flexible. VBA automates well within its environment. Everything worked well for structured analysis and dashboarding, but data processing was tied to a desktop workflow: manual refreshes, layered query dependencies, and logic embedded inside spreadsheet environments.</p>
+<p>The original <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">Undervalued Stock Scanner</a> was built using Excel, Power Query, and VBA. I initially chose Excel because I wanted to use the Real-Time Data (RTD) function to stream live stock prices directly from Thinkorswim into my valuation models. At first, this seemed essential as I could get real-time price-related metrics like P/E, P/B, and P/FCF. However, in practice, I review screening results on the same day that I update financial data, during after-hours. Because the analysis is performed after market close, intraday price fluctuations don’t affect my decision-making process. End-of-day pricing is sufficient for how I evaluate screening results.</p>
+
+<p>I continued to use this model for a year because it worked well for structured analysis and dashboarding. Excel was flexible. Power Query handled data transformation well. VBA automated repetitive data refresh tasks. However, data processing was tied to a desktop workflow: fragmented data update across separate sector workbooks, layered query dependencies, and logic embedded inside spreadsheet environments.</p>
 
 <p>As a data analyst who’s always looking to streamline processes, I’m constantly searching for ways to make data workflows cleaner, more efficient, and easier to maintain. For this project, I wanted a more robust data processing method that offers:</p>
 
@@ -387,6 +389,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li>Reproducible pipelines independent of UI tools</li>
   <li>Modular scripts instead of layered query chains</li>
   <li>Better statistical handling of outliers</li>
+  <li>Centralized batch processing across sectors</li>
   <li>A system that could scale without becoming fragile</li>
 </ul>
 
@@ -394,9 +397,9 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <h2 id="re-engineering-the-pipeline">Re-Engineering the Pipeline</h2>
 
-<p>Instead of relying on workbook refresh cycles, the new system uses Python scripts that:</p>
+<p>Instead of relying on fragmented workbook refresh cycles, the new system uses Python scripts that:</p>
 <ul>
-  <li>Process raw sector CSV files and applies valuation logic</li>
+  <li>Process raw sector CSV files and applies valuation logic in batch</li>
   <li>Monitor held positions for red flags</li>
   <li>Generate on-demand fundamental snapshots</li>
 </ul>
@@ -415,7 +418,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>A stock passes the preliminary scan only if it meets all baseline conditions. Stocks that pass are then ranked using bonus signals.</p>
 
-<p>A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering and processing these specialized metrics would require additional resources. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.</p>
+<p>A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering these specialized metrics would require additional resources that I don’t have access to. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.</p>
 
 <p>One of the biggest upgrades is the Exit Signals Framework. The original project only identified undervalued stocks. Now, it also flags overvaluation, quality deterioration, and severe financial red flags for held positions. These are review triggers, not automatic sell signals. My goal was to design a system that helps me manage the full lifecycle of an investment decision.</p>
 
