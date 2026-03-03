@@ -19,7 +19,9 @@ This new version of Undervalued Stock Scanner is a complete architectural shift 
 
 ## Why Rebuild It?
 
-The original <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">Undervalued Stock Scanner</a> was built using Excel, Power Query, and VBA. Excel is powerful. Power Query is flexible. VBA automates well within its environment. Everything worked well for structured analysis and dashboarding, but data processing was tied to a desktop workflow: manual refreshes, layered query dependencies, and logic embedded inside spreadsheet environments.
+The original <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/" target="_blank" rel="noopener">Undervalued Stock Scanner</a> was built using Excel, Power Query, and VBA. I initially chose Excel because I wanted to use the Real-Time Data (RTD) function to stream live stock prices directly from Thinkorswim into my valuation models. At first, this seemed essential as I could get real-time price-related metrics like P/E, P/B, and P/FCF. However, in practice, I review screening results on the same day that I update financial data, during after-hours. Because the analysis is performed after market close, intraday price fluctuations don’t affect my decision-making process. End-of-day pricing is sufficient for how I evaluate screening results.
+
+I continued to use this model for a year because it worked well for structured analysis and dashboarding. Excel was flexible. Power Query handled data transformation well. VBA automated repetitive data refresh tasks. However, data processing was tied to a desktop workflow: fragmented data update across separate sector workbooks, layered query dependencies, and logic embedded inside spreadsheet environments. 
 
 As a data analyst who’s always looking to streamline processes, I’m constantly searching for ways to make data workflows cleaner, more efficient, and easier to maintain. For this project, I wanted a more robust data processing method that offers:
 
@@ -27,6 +29,7 @@ As a data analyst who’s always looking to streamline processes, I’m constant
 - Reproducible pipelines independent of UI tools
 - Modular scripts instead of layered query chains
 - Better statistical handling of outliers
+- Centralized batch processing across sectors
 - A system that could scale without becoming fragile
 
 So I rebuilt the entire system in Python, all outside the constraints of Excel.
@@ -34,8 +37,8 @@ So I rebuilt the entire system in Python, all outside the constraints of Excel.
 
 ## Re-Engineering the Pipeline
 
-Instead of relying on workbook refresh cycles, the new system uses Python scripts that:
-- Process raw sector CSV files and applies valuation logic
+Instead of relying on fragmented workbook refresh cycles, the new system uses Python scripts that:
+- Process raw sector CSV files and applies valuation logic in batch
 - Monitor held positions for red flags
 - Generate on-demand fundamental snapshots
 
@@ -54,7 +57,7 @@ The scanner evaluates key fundamentals like P/FCF, P/B, P/E, ROE, ROA, and A/E. 
 
 A stock passes the preliminary scan only if it meets all baseline conditions. Stocks that pass are then ranked using bonus signals.
 
-A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering and processing these specialized metrics would require additional resources. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.
+A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering these specialized metrics would require additional resources that I don't have access to. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.
 
 One of the biggest upgrades is the Exit Signals Framework. The original project only identified undervalued stocks. Now, it also flags overvaluation, quality deterioration, and severe financial red flags for held positions. These are review triggers, not automatic sell signals. My goal was to design a system that helps me manage the full lifecycle of an investment decision.
 
