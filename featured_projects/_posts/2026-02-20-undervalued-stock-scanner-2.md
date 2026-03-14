@@ -72,7 +72,22 @@ Below are the interactive dashboards that bring this system to life.
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
-<iframe title="Undervalued Stock Scanner" style="width: 100%; height: 60vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
+<iframe 
+  title="Undervalued Stock Scanner" 
+  src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9"
+  style="
+    width: 1280px;
+    height: 850px;
+    transform: scale(0.65);
+    transform-origin: 0 0;
+    margin-bottom: -290px;
+    border: none;
+    display: block;
+  "
+  frameborder="0"
+  allowfullscreen="true">
+</iframe>
+
 
 >In this version, I added a drill-through page that allows users to right-click on any stock and navigate to a detailed profile view. This page displays all available fundamentals for the selected company, including its full company name, valuation and scoring signals. To bridge analytics with real-world research, the drill-through page also includes a direct link to the company’s profile on Yahoo Finance.
 {:.lead}
