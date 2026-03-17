@@ -97,31 +97,6 @@ To make the analysis more engaging, I created an interactive Power BI dashboard 
 >The dashboard functions as a scanner, not a recommendation engine or curated report. While the dashboard  highlights stocks that meet certain criteria and includes summary cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.
 {:.lead}
 
-### Key Features & How to Use Them
-
-This dashboard showcases stocks that meet preliminary undervaluation criteria, then scores and ranks them to help users identify top opportunities.
-
-**1. Filter by Sector and Market Cap:** Use the filters (top-right) to select a sector (e.g., Communication Services) and market cap group (Large, Mid, Small). 
-
-**2. Dynamic Title:** Page headers update automatically based on your selections, so you always know which stock group you're viewing.
-
-**3. Score-Based Stock Evaluation:** All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5) is shown as a horizontal stacked bar with one color-coded block per point.
-
-**4. Z-Score Matrix:** Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.
-
-Undervalued metrics:
-- P/FCF, P/B, A/E, P/E → negative z-score is better  
-- ROE, ROA → positive z-score is better
-
-Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
-Z-scores further from 0 (stronger deviations) are shaded in darker green for easy scanning.
-
-**5. Score Distribution Pie Chart:** See how many stocks earned each possible score (0–5), giving a sense of the dataset's overall quality.
-
-**6. Summary Cards:** Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in specific financial categories.
-
-**7. Industry Bar Charts (Page 2):** Compare average fundamentals across sectors and industries to spot which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).
-
 
 ## Automating the Mess: Turning Chaos into Clean Data
 
@@ -136,12 +111,12 @@ I completely re-engineered the process to be fast, accurate, and user-friendly b
 - **Conditional formatting**: To surface strong candidates visually, making stock analysis easier for users.
 - **Dynamic file paths**: So the project works across any machine without broken links.
 
+After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that enable non-technical users to explore insights without needing to touch the raw data.
+
 <iframe title="Undervalued Stock Scanner" style="width: 100%; height: 65vh;" src="https://1drv.ms/v/c/e518921fe1a64d0f/IQQelq_cXxVqRJOBlh08dsrjASQvfprWOkeOTJz0MzTxsoc?width=1920&height=1070" frameborder="0" allowfullscreen="true" ></iframe>
 
 >The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners for individual sectors, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
 {:.lead}
-
-After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that enable non-technical users to explore insights without needing to touch the raw data.
 
 
 ## Final Thoughts
