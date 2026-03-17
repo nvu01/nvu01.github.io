@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg" />
 <meta property="twitter:title" content="Undervalued Stock Scanner: From Raw Data to Smart Insights" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-03-17T04:34:49+00:00","datePublished":"2025-06-15T00:00:00+00:00","description":"A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.","headline":"Undervalued Stock Scanner: From Raw Data to Smart Insights","image":"https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-03-17T16:19:20+00:00","datePublished":"2025-06-15T00:00:00+00:00","description":"A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.","headline":"Undervalued Stock Scanner: From Raw Data to Smart Insights","image":"https://nvu01.github.io//assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2025-06-15-undervalued-stock-scanner/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -120,7 +120,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2026-03-17T04:35:13+00:00',
+    INDEX_KEY: 'index--2026-03-17T16:19:44+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -305,7 +305,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
             <span class="ellipsis" data-tippy-content="Last modified at: 17 Mar 2026">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2026-03-17T04:34:49+00:00">2026-03-17</time>
+              <time datetime="2026-03-17T16:19:20+00:00">2026-03-17</time>
             </span>
           
         
@@ -367,10 +367,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
       <li><a href="#how-we-evaluate-stocks-using-these-metrics" id="markdown-toc-how-we-evaluate-stocks-using-these-metrics">How We Evaluate Stocks Using These Metrics</a></li>
     </ul>
   </li>
-  <li><a href="#scanner-dashboard" id="markdown-toc-scanner-dashboard">Scanner Dashboard</a>    <ul>
-      <li><a href="#key-features--how-to-use-them" id="markdown-toc-key-features--how-to-use-them">Key Features &amp; How to Use Them</a></li>
-    </ul>
-  </li>
+  <li><a href="#scanner-dashboard" id="markdown-toc-scanner-dashboard">Scanner Dashboard</a></li>
   <li><a href="#automating-the-mess-turning-chaos-into-clean-data" id="markdown-toc-automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</a></li>
   <li><a href="#final-thoughts" id="markdown-toc-final-thoughts">Final Thoughts</a></li>
   <li><a href="#-related-projects" id="markdown-toc--related-projects">🔗 Related Projects</a>    <ul>
@@ -466,33 +463,6 @@ To make industry comparisons fair and statistically sound, we calculate the mean
   <p>The dashboard functions as a scanner, not a recommendation engine or curated report. While the dashboard  highlights stocks that meet certain criteria and includes summary cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.</p>
 </blockquote>
 
-<h3 id="key-features--how-to-use-them">Key Features &amp; How to Use Them</h3>
-
-<p>This dashboard showcases stocks that meet preliminary undervaluation criteria, then scores and ranks them to help users identify top opportunities.</p>
-
-<p><strong>1. Filter by Sector and Market Cap:</strong> Use the filters (top-right) to select a sector (e.g., Communication Services) and market cap group (Large, Mid, Small).</p>
-
-<p><strong>2. Dynamic Title:</strong> Page headers update automatically based on your selections, so you always know which stock group you’re viewing.</p>
-
-<p><strong>3. Score-Based Stock Evaluation:</strong> All stocks shown have already passed the baseline filters. Each stock is then evaluated on five additional criteria. It earns 1 point for each one met, with a maximum score of 5. The score for each stock (0-5) is shown as a horizontal stacked bar with one color-coded block per point.</p>
-
-<p><strong>4. Z-Score Matrix:</strong> Shows how far a stock’s metric deviates from the industry average. This helps users compare each stock to its peers.</p>
-
-<p>Undervalued metrics:</p>
-<ul>
-  <li>P/FCF, P/B, A/E, P/E → negative z-score is better</li>
-  <li>ROE, ROA → positive z-score is better</li>
-</ul>
-
-<p>Z-scores that go in the “wrong” direction (e.g. high P/E) are grayed out.
-Z-scores further from 0 (stronger deviations) are shaded in darker green for easy scanning.</p>
-
-<p><strong>5. Score Distribution Pie Chart:</strong> See how many stocks earned each possible score (0–5), giving a sense of the dataset’s overall quality.</p>
-
-<p><strong>6. Summary Cards:</strong> Quick-glance cards show a count of stocks per industry and the top 3 stocks for each metric (based on z-score), ideal for spotting individual leaders in specific financial categories.</p>
-
-<p><strong>7. Industry Bar Charts (Page 2):</strong> Compare average fundamentals across sectors and industries to spot which industries are overhyped with lower profitability (ROE, ROA) but higher valuations (P/B, P/E, P/FCF).</p>
-
 <h2 id="automating-the-mess-turning-chaos-into-clean-data">Automating the Mess: Turning Chaos into Clean Data</h2>
 
 <p>Initially, my husband manually cleaned and analyzed the raw stock data in Excel. But with 11 sector-specific datasets and dozens of formulas, the process quickly became time-consuming, repetitive, and prone to error. Especially with frequent data updates, each refresh could take hours.</p>
@@ -508,13 +478,13 @@ Z-scores further from 0 (stronger deviations) are shaded in darker green for eas
   <li><strong>Dynamic file paths</strong>: So the project works across any machine without broken links.</li>
 </ul>
 
+<p>After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that enable non-technical users to explore insights without needing to touch the raw data.</p>
+
 <iframe title="Undervalued Stock Scanner" style="width: 100%; height: 65vh;" src="https://1drv.ms/v/c/e518921fe1a64d0f/IQQelq_cXxVqRJOBlh08dsrjASQvfprWOkeOTJz0MzTxsoc?width=1920&amp;height=1070" frameborder="0" allowfullscreen="true"></iframe>
 
 <blockquote class="lead">
   <p>The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners for individual sectors, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that’s more accessible and engaging for non-technical users.</p>
 </blockquote>
-
-<p>After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that enable non-technical users to explore insights without needing to touch the raw data.</p>
 
 <h2 id="final-thoughts">Final Thoughts</h2>
 
