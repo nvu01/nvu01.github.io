@@ -86,17 +86,6 @@ We further rank stocks based on these bonus signals:
 
 For each criterion met, a stock gets 1 point. The highest score a stock can get is 5 points.
 
-## Scanner Dashboard
-
-To make the analysis more engaging, I created an interactive Power BI dashboard where users can explore top-scoring undervalued stocks by sector and market cap, alongside industry averages for key financial metrics.
-
-👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
-
-<iframe title="Undervalued Stock Scanner" style="width: 100%; height: 65vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
-
->The dashboard functions as a scanner, not a recommendation engine or curated report. While the dashboard  highlights stocks that meet certain criteria and includes summary cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.
-{:.lead}
-
 
 ## Automating the Mess: Turning Chaos into Clean Data
 
@@ -111,12 +100,18 @@ I completely re-engineered the process to be fast, accurate, and user-friendly b
 - **Conditional formatting**: To surface strong candidates visually, making stock analysis easier for users.
 - **Dynamic file paths**: So the project works across any machine without broken links.
 
-After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboards that enable non-technical users to explore insights without needing to touch the raw data.
+After processing the data in Excel, I brought the results into Power BI, where I created interactive dashboard that enables non-technical users to explore insights without needing to touch the raw data.
 
 <iframe title="Undervalued Stock Scanner" style="width: 100%; height: 65vh;" src="https://1drv.ms/v/c/e518921fe1a64d0f/IQQelq_cXxVqRJOBlh08dsrjASQvfprWOkeOTJz0MzTxsoc?width=1920&height=1070" frameborder="0" allowfullscreen="true" ></iframe>
 
 >The resulting Excel workbooks form the backbone of this project, acting as the central platform that integrates Power Query, advanced formulas, and VBA macros. These files can function independently as stock scanners for individual sectors, even without the dashboard. However, the dashboard plays a crucial role in bringing everything together, presenting the data in a way that's more accessible and engaging for non-technical users.
 {:.lead}
+
+The dashboard showcases top-scoring undervalued stocks by sector and market cap, alongside industry averages for each fundamental metric, to help users evaluate individual stocks and benchmark industries.
+
+👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTkwMDQ0OTEtYjMzZS00ZGQzLThiMWYtNzFlNTliZDUxYjAxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
+
+While the dashboard  highlights stocks that meet certain criteria and includes summary cards showing the top 3 stocks for each individual metric, it avoids naming a single “best overall” stock. What’s considered “best” can vary widely depending on which metrics an investor prioritizes. This design choice reflects an intentional effort to keep the analysis unbiased and flexible. The goal is to present clean, objective data, not advice.
 
 
 ## Final Thoughts
