@@ -2,7 +2,7 @@
 layout: post
 title: "Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle"
 description: >
-  An interactive Power BI report that visualizes product performance and user data for Waggle.
+  Power BI • DAX • Power Query • Data visualization • Branding
 image: /assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg
 tags: [Waggle, Power BI report, data visualization, storytelling, LapDog, LapCat]
 ---

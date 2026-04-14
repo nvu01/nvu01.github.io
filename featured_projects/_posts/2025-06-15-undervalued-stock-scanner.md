@@ -2,7 +2,7 @@
 layout: post
 title: "Undervalued Stock Scanner: From Raw Data to Smart Insights"
 description: >
-  A collaborative project that combines financial logic with automated Excel and Power BI tools to transform raw data into user-friendly and insight-driven dashboards.
+  Advanced Excel • Power Query • Power BI • VBA (Visual Basic for Applications) • Financial analytics • Stock fundametal analytics
 image: /assets/img/posts/4/adam-smigielski-K5mPtONmpHM-unsplash.jpg
 tags: [excel, vba macros, dashboard, stock market, financial market]
 ---

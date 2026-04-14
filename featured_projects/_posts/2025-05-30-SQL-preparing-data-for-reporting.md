@@ -2,7 +2,7 @@
 layout: post
 title: "Preparing Data for Reporting Using PostgreSQL"
 description: >
-  This project uses PostgreSQL and PL/pgSQL to extract, transform and organize DVD rental data to support future business reporting. It demonstrates skills in SQL functions, triggers, and stored procedures.
+  PostgreSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Triggers • Stored Procedures
 image: /assets/img/posts/2/PostgreSQL.png
 tags: [Waggle, Power BI report, data visualization, storytelling, LapDog, LapCat]
 ---

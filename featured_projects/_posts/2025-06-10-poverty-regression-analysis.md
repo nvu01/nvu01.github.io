@@ -2,7 +2,7 @@
 layout: post
 title: "Socioeconomic Factors Impacting Poverty in U.S. Counties: A Regression Approach"
 description: >
-  A regression-based analysis of how socioeconomic variables drive poverty rates across U.S. counties, using data from the U.S. Census Bureau.
+  Python (matplotlib, pandas, numpy, Requests, scikit-learn, scipy, seaborn, statsmodels) • Multiple linear regression • Hypothesis testing • Model validation • Robust standard errors (HC3) • API requests • JSON data parsing • EDA
 image: /assets/img/posts/3/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg
 tags: [regression, socioeconomic data, poverty, census data, public policy]
 ---

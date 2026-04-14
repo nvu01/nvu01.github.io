@@ -2,7 +2,7 @@
 layout: post
 title: "Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines"
 description: >
-  This project rebuilds a spreadsheet-based stock screener into scalable Python ETL pipelines that applies financial logic and statistical methods to detect undervalued opportunities and monitor exit signals.
+  Python (os, glob, pandas, numpy) • Power BI • DAX • Deneb visuals • Power Query • ETL pipeline
 image: /assets/img/posts/6/Untitled design 2.jpg
 tags: [python, dashboard, stock market, financial market]
 ---
@@ -89,7 +89,9 @@ Below are the interactive dashboards that bring this system to life.
 </iframe>
 
 
->In this version, I added a drill-through page that allows users to right-click on any stock and navigate to a detailed profile view. This page displays all available fundamentals for the selected company, including its full company name, valuation and scoring signals. To bridge analytics with real-world research, the drill-through page also includes a direct link to the company’s profile on Yahoo Finance.
+>I added a drill-through page that allows users to right-click on any stock to navigate to a detailed profile view displaying all available fundamentals for the selected company: its full company name, valuation metrics and scores. I also added a dynamic link to the company’s profile on Yahoo Finance so I can jump straight from the analysis to real-world research.
+>
+>Visually, I went with a frosty glass aesthetic to give it a more polished, modern feel. The dashboard uses Deneb visuals, which let me write JSON to fine-tune every aspect of the charts exactly the way I want.
 {:.lead}
 
 #### Exit Signals Dashboard
