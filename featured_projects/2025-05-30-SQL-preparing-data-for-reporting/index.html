@@ -35,8 +35,8 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="og:title" content="Preparing Data for Reporting Using PostgreSQL" />
 <meta name="author" content="Ngan Vu" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="PostgreSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Triggers • Stored Procedures" />
-<meta property="og:description" content="PostgreSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Triggers • Stored Procedures" />
+<meta name="description" content="PostgreSQL • PL/pgSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Joins • Subqueries • Triggers • Stored Procedures" />
+<meta property="og:description" content="PostgreSQL • PL/pgSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Joins • Subqueries • Triggers • Stored Procedures" />
 <link rel="canonical" href="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/" />
 <meta property="og:url" content="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/" />
 <meta property="og:site_name" content="Ngan Vu" />
@@ -47,7 +47,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="twitter:image" content="https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png" />
 <meta property="twitter:title" content="Preparing Data for Reporting Using PostgreSQL" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-04-14T18:13:44+00:00","datePublished":"2025-05-30T00:00:00+00:00","description":"PostgreSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Triggers • Stored Procedures","headline":"Preparing Data for Reporting Using PostgreSQL","image":"https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-04-14T19:02:15+00:00","datePublished":"2025-05-30T00:00:00+00:00","description":"PostgreSQL • PL/pgSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Joins • Subqueries • Triggers • Stored Procedures","headline":"Preparing Data for Reporting Using PostgreSQL","image":"https://nvu01.github.io//assets/img/posts/2/PostgreSQL.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -120,7 +120,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2026-04-14T18:14:30+00:00',
+    INDEX_KEY: 'index--2026-04-14T19:02:43+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -155,7 +155,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <!-- Open Graph tags for social sharing -->
 <meta property="og:title" content="Preparing Data for Reporting Using PostgreSQL">
-<meta property="og:description" content="PostgreSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Triggers • Stored Procedures
+<meta property="og:description" content="PostgreSQL • PL/pgSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Joins • Subqueries • Triggers • Stored Procedures
 ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nvu01.github.io//featured_projects/2025-05-30-SQL-preparing-data-for-reporting/">
@@ -305,7 +305,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
             <span class="ellipsis" data-tippy-content="Last modified at: 14 Apr 2026">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2026-04-14T18:13:44+00:00">2026-04-14</time>
+              <time datetime="2026-04-14T19:02:15+00:00">2026-04-14</time>
             </span>
           
         
@@ -342,7 +342,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
   
     <p class="note-sm" >
-      PostgreSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Triggers • Stored Procedures
+      PostgreSQL • PL/pgSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Joins • Subqueries • Triggers • Stored Procedures
 
     </p>
   
@@ -360,9 +360,8 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 <ul class="large-only" id="markdown-toc">
   <li><a href="#project-overview" id="markdown-toc-project-overview">Project Overview</a>    <ul>
       <li><a href="#database" id="markdown-toc-database">Database</a></li>
-      <li><a href="#business-use-cases" id="markdown-toc-business-use-cases">Business Use Cases</a></li>
+      <li><a href="#relevant-tables" id="markdown-toc-relevant-tables">Relevant Tables</a></li>
       <li><a href="#deliverables" id="markdown-toc-deliverables">Deliverables</a></li>
-      <li><a href="#tools--skills-used" id="markdown-toc-tools--skills-used">Tools &amp; Skills Used</a></li>
     </ul>
   </li>
   <li><a href="#key-sql-components" id="markdown-toc-key-sql-components">Key SQL Components</a>    <ul>
@@ -381,173 +380,206 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <h3 id="database">Database</h3>
 
-<p><strong>Sample Database:</strong> dvdrental.zip containing the database is available for download in my <a href="https://github.com/nvu01/Advanced-Data-Management">GitHub repo</a>
+<p>The <em>dvdrental.zip</em> file containing the database is available for download in my <a href="https://github.com/nvu01/Advanced-Data-Management">GitHub repo</a>
 or from <a href="https://neon.tech/postgresql/postgresql-getting-started/postgresql-sample-database">neon.tech</a></p>
 
-<p><strong>Data Model (ERD):</strong> <a href="/assets/img/posts/2/dvdrental_data_model.png" target="_blank">View data model</a></p>
+<p><strong>Data Model (ERD):</strong></p>
 
-<p><strong>Source Tables Used:</strong> I used two key tables from the DVD Rental sample database:</p>
+<p><a href="/assets/img/posts/2/dvdrental_data_model.png" target="_blank">View data model in new tab</a></p>
 
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">rental</code>: Contains information about each film rental.</li>
-</ul>
+<div style="
+  width: 100%;
+  max-height: 500px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+" id="img-frame">
+  <img id="zoomable-img" src="/assets/img/posts/2/dvdrental_data_model.png" alt="Your image description" style="width: 100%; display: block; transform-origin: top left; transition: transform 0.2s ease;" />
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Column Name</th>
-      <th>Data Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>rental_id</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>rental_date</td>
-      <td>timestamp without time zone</td>
-    </tr>
-    <tr>
-      <td>inventory_id</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>customer_id</td>
-      <td>smallint</td>
-    </tr>
-    <tr>
-      <td>return_date</td>
-      <td>timestamp without time zone</td>
-    </tr>
-    <tr>
-      <td>staff_id</td>
-      <td>smallint</td>
-    </tr>
-    <tr>
-      <td>last_update</td>
-      <td>timestamp without time zone</td>
-    </tr>
-  </tbody>
-</table>
+<div style="margin-top: 8px; display: flex; gap: 8px; align-items: center;">
+  <button onclick="zoom(-0.1)" style="padding: 4px 12px; cursor: pointer;">−</button>
+  <button onclick="zoom(0.1)" style="padding: 4px 12px; cursor: pointer;">+</button>
+  <button onclick="resetZoom()" style="padding: 4px 12px; cursor: pointer;">Reset</button>
+  <span id="zoom-label" style="font-size: 13px; color: #666;">100%</span>
+</div>
+
+<script>
+  let scale = 1;
+  function zoom(delta) {
+    scale = Math.min(Math.max(scale + delta, 0.5), 3);
+    document.getElementById('zoomable-img').style.transform = `scale(${scale})`;
+    document.getElementById('zoom-label').textContent = Math.round(scale * 100) + '%';
+  }
+  function resetZoom() {
+    scale = 1;
+    document.getElementById('zoomable-img').style.transform = 'scale(1)';
+    document.getElementById('zoom-label').textContent = '100%';
+  }
+</script>
+
+<h3 id="relevant-tables">Relevant Tables</h3>
+
+<p><strong>Source Tables:</strong>
+I used two key tables from the DVD Rental sample database:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">category</code>: Provides the category_name for each film.</li>
-</ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">rental</code>: Contains information about each film rental.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Column Name</th>
-      <th>Data Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>category_id</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td>character varying</td>
-    </tr>
-    <tr>
-      <td>last_update</td>
-      <td>timestamp without time zone</td>
-    </tr>
-  </tbody>
-</table>
+    <table>
+      <thead>
+        <tr>
+          <th>Column Name</th>
+          <th>Data Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rental_id</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>rental_date</td>
+          <td>timestamp without time zone</td>
+        </tr>
+        <tr>
+          <td>inventory_id</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>customer_id</td>
+          <td>smallint</td>
+        </tr>
+        <tr>
+          <td>return_date</td>
+          <td>timestamp without time zone</td>
+        </tr>
+        <tr>
+          <td>staff_id</td>
+          <td>smallint</td>
+        </tr>
+        <tr>
+          <td>last_update</td>
+          <td>timestamp without time zone</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">category</code>: Provides the category_name for each film.</p>
 
-<p><strong>Tables Created:</strong></p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">detailed_table</code>: A transactional table showing individual rental records with added time and category context.</li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th>Column Name</th>
-      <th>Data Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>rental_id</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>rental_year</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>rental_month</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>category_name</td>
-      <td>character varying</td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">summary_table</code>: An aggregated table used for reporting the total number of rentals by genre per month.</li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th>Column Name</th>
-      <th>Data Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>rental_year</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>rental_month</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>category_name</td>
-      <td>character varying</td>
-    </tr>
-    <tr>
-      <td>num_rentals</td>
-      <td>bigint</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="business-use-cases">Business Use Cases</h3>
-
-<p><strong>detailed_table:</strong></p>
-<ul>
-  <li>Useful for looking up individual rental instances by date and genre.</li>
-  <li>Helps analysts or support staff answer questions like:
-    <ul>
-      <li>“What genre was rented on a specific date?”</li>
-      <li>“How many horror movies were rented in a specific rental instance?”</li>
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Column Name</th>
+          <th>Data Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>category_id</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>character varying</td>
+        </tr>
+        <tr>
+          <td>last_update</td>
+          <td>timestamp without time zone</td>
+        </tr>
+      </tbody>
+    </table>
   </li>
 </ul>
 
-<p><strong>summary_table:</strong></p>
+<p><strong>Derived Tables:</strong> I created two tables that are designed to be refreshed monthly, ensuring that reporting and insights remain current for ongoing business needs.</p>
+
 <ul>
-  <li>Supports trend and performance analysis across months.</li>
-  <li>Helps stakeholders understand:
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">detailed_table</code>: A transactional table showing individual rental records with added time and category context.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Column Name</th>
+          <th>Data Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rental_id</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>rental_year</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>rental_month</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>category_name</td>
+          <td>character varying</td>
+        </tr>
+      </tbody>
+    </table>
+
     <ul>
-      <li>Which genres are most popular over time</li>
-      <li>Seasonal rental trends</li>
-      <li>How genre preferences shift month-to-month</li>
+      <li>Useful for looking up individual rental instances by date and genre.</li>
+      <li>Helps analysts or support staff answer these questions:
+        <ul>
+          <li>What genre was rented on a specific date?</li>
+          <li>How many horror movies were rented in a specific rental instance?</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">summary_table</code>: An aggregated table used for reporting the total number of rentals by genre per month.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Column Name</th>
+          <th>Data Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rental_year</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>rental_month</td>
+          <td>integer</td>
+        </tr>
+        <tr>
+          <td>category_name</td>
+          <td>character varying</td>
+        </tr>
+        <tr>
+          <td>num_rentals</td>
+          <td>bigint</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li>Supports trend and performance analysis across months.</li>
+      <li>Helps stakeholders understand:
+        <ul>
+          <li>Which genres are most popular over time</li>
+          <li>Seasonal rental trends</li>
+          <li>How genre preferences shift month-to-month</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
-
-<p>The data is designed to be refreshed monthly, ensuring that reporting and insights remain current for ongoing business needs.</p>
 
 <h3 id="deliverables">Deliverables</h3>
 
@@ -558,23 +590,9 @@ or from <a href="https://neon.tech/postgresql/postgresql-getting-started/postgre
   <li>Use a <strong>stored procedure</strong> to fully refresh both tables on a monthly basis.</li>
 </ul>
 
-<h3 id="tools--skills-used">Tools &amp; Skills Used</h3>
-
-<p><strong>Tools:</strong> PostgreSQL</p>
-
-<p><strong>Skills:</strong></p>
-<ul>
-  <li>PL/pgSQL scripting</li>
-  <li>Data transformation (timestamp extraction)</li>
-  <li>Joins &amp; subqueries</li>
-  <li>Table creation &amp; triggers</li>
-  <li>Stored procedures</li>
-  <li>Workflow automation using pgAgent (PostgreSQL’s job scheduler)</li>
-</ul>
-
 <h2 id="key-sql-components">Key SQL Components</h2>
 
-<p><a href="https://github.com/nvu01/Advanced-Data-Management/blob/main/dvdrental%20project.sql" target="_blank">View full SQL script</a></p>
+<p><a href="https://github.com/nvu01/Advanced-Data-Management/blob/main/dvdrental%20project.sql" target="_blank">View full SQL script in new tab</a></p>
 
 <h3 id="extracting-year-and-month-with-functions">Extracting Year and Month with Functions</h3>
 
