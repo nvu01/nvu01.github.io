@@ -77,7 +77,7 @@ Below are the interactive dashboards that bring this system to life.
   src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9"
   style="
     width: 1280px;
-    height: 850px;
+    height: 780px;
     transform: scale(0.65);
     transform-origin: 0 0;
     margin-bottom: -290px;
@@ -98,7 +98,7 @@ Below are the interactive dashboards that bring this system to life.
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
-<iframe title="Exit Signals" style="width: 100%; height: 60vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
+<iframe title="Exit Signals" style="width: 100%; height: 56vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
 
 >The Exit Signals dashboard uses conditional formatting to highlight valuation and quality signals that classify stocks into red flag types. Its simple layout, combined with dynamic filtering, allows for focused risk review.
 {:.lead}
