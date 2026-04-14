@@ -2,7 +2,7 @@
 layout: post
 title: "Preparing Data for Reporting Using PostgreSQL"
 description: >
-  PostgreSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Triggers • Stored Procedures
+  PostgreSQL • PL/pgSQL • Data extraction • DDL (Data Definition Language) • DML (Data Manipulation Language) • Joins • Subqueries • Triggers • Stored Procedures
 image: /assets/img/posts/2/PostgreSQL.png
 tags: [Waggle, Power BI report, data visualization, storytelling, LapDog, LapCat]
 ---
@@ -20,69 +20,106 @@ This project demonstrates how SQL and PostgreSQL can be used to transform raw tr
 
 ### Database
 
-**Sample Database:** dvdrental.zip containing the database is available for download in my [GitHub repo](https://github.com/nvu01/Advanced-Data-Management)
+The *dvdrental.zip* file containing the database is available for download in my [GitHub repo](https://github.com/nvu01/Advanced-Data-Management)
 or from [neon.tech](https://neon.tech/postgresql/postgresql-getting-started/postgresql-sample-database)
 
-**Data Model (ERD):** <a href="/assets/img/posts/2/dvdrental_data_model.png" target="_blank">View data model</a>
+**Data Model (ERD):**
 
-**Source Tables Used:** I used two key tables from the DVD Rental sample database:
+<a href="/assets/img/posts/2/dvdrental_data_model.png" target="_blank">View data model in new tab</a>
+
+<div style="
+  width: 100%;
+  max-height: 500px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+" id="img-frame">
+  <img 
+    id="zoomable-img"
+    src="/assets/img/posts/2/dvdrental_data_model.png" 
+    alt="Your image description"
+    style="width: 100%; display: block; transform-origin: top left; transition: transform 0.2s ease;"
+  />
+</div>
+
+<div style="margin-top: 8px; display: flex; gap: 8px; align-items: center;">
+  <button onclick="zoom(-0.1)" style="padding: 4px 12px; cursor: pointer;">−</button>
+  <button onclick="zoom(0.1)"  style="padding: 4px 12px; cursor: pointer;">+</button>
+  <button onclick="resetZoom()" style="padding: 4px 12px; cursor: pointer;">Reset</button>
+  <span id="zoom-label" style="font-size: 13px; color: #666;">100%</span>
+</div>
+
+<script>
+  let scale = 1;
+  function zoom(delta) {
+    scale = Math.min(Math.max(scale + delta, 0.5), 3);
+    document.getElementById('zoomable-img').style.transform = `scale(${scale})`;
+    document.getElementById('zoom-label').textContent = Math.round(scale * 100) + '%';
+  }
+  function resetZoom() {
+    scale = 1;
+    document.getElementById('zoomable-img').style.transform = 'scale(1)';
+    document.getElementById('zoom-label').textContent = '100%';
+  }
+</script>
+
+### Relevant Tables
+
+**Source Tables:**
+I used two key tables from the DVD Rental sample database:
 
 - `rental`: Contains information about each film rental.
 
-|Column Name|Data Type                |
-|-----------|---------------------------|
-|rental_id  |integer                    |
-|rental_date|timestamp without time zone|
-|inventory_id|integer                   |
-|customer_id|smallint                   |
-|return_date|timestamp without time zone|
-|staff_id   |smallint                   |
-|last_update|timestamp without time zone|
+    |Column Name|Data Type                  |
+    |-----------|---------------------------|
+    |rental_id  |integer                    |
+    |rental_date|timestamp without time zone|
+    |inventory_id|integer                   |
+    |customer_id|smallint                   |
+    |return_date|timestamp without time zone|
+    |staff_id   |smallint                   |
+    |last_update|timestamp without time zone|
 
 - `category`: Provides the category_name for each film.
 
-|Column Name|Data Type                  |
-|-----------|---------------------------|
-|category_id|integer                    |
-|name       |character varying          |
-|last_update|timestamp without time zone|
+    |Column Name|Data Type                  |
+    |-----------|---------------------------|
+    |category_id|integer                    |
+    |name       |character varying          |
+    |last_update|timestamp without time zone|
 
-**Tables Created:**
+**Derived Tables:** I created two tables that are designed to be refreshed monthly, ensuring that reporting and insights remain current for ongoing business needs.
 
 - `detailed_table`: A transactional table showing individual rental records with added time and category context.
 
-|Column Name  |Data Type                  |
-|-------------|---------------------------|
-|rental_id    |integer                    |
-|rental_year  |integer                    |
-|rental_month |integer                    |
-|category_name|character varying          |
+    |Column Name  |Data Type                  |
+    |-------------|---------------------------|
+    |rental_id    |integer                    |
+    |rental_year  |integer                    |
+    |rental_month |integer                    |
+    |category_name|character varying          |
+
+	- Useful for looking up individual rental instances by date and genre.
+	- Helps analysts or support staff answer these questions:
+		- What genre was rented on a specific date?
+		- How many horror movies were rented in a specific rental instance?
 
 - `summary_table`: An aggregated table used for reporting the total number of rentals by genre per month.
 
-|Column Name  |Data Type                  |
-|-------------|---------------------------|
-|rental_year  |integer                    |
-|rental_month |integer                    |
-|category_name|character varying          |
-|num_rentals  |bigint                     |
+    |Column Name  |Data Type                  |
+    |-------------|---------------------------|
+    |rental_year  |integer                    |
+    |rental_month |integer                    |
+    |category_name|character varying          |
+    |num_rentals  |bigint                     |
 
-### Business Use Cases
+	- Supports trend and performance analysis across months.
+	- Helps stakeholders understand:
+		- Which genres are most popular over time
+		- Seasonal rental trends
+		- How genre preferences shift month-to-month
 
-**detailed_table:**
-- Useful for looking up individual rental instances by date and genre.
-- Helps analysts or support staff answer questions like:
-  - “What genre was rented on a specific date?”
-  - “How many horror movies were rented in a specific rental instance?”
-
-**summary_table:**
-- Supports trend and performance analysis across months.
-- Helps stakeholders understand:
-  - Which genres are most popular over time
-  - Seasonal rental trends
-  - How genre preferences shift month-to-month
-
-The data is designed to be refreshed monthly, ensuring that reporting and insights remain current for ongoing business needs.
 
 ### Deliverables
 
@@ -91,21 +128,10 @@ The data is designed to be refreshed monthly, ensuring that reporting and insigh
 - Implement a **trigger function** to auto-update summary metrics when new data is inserted.
 - Use a **stored procedure** to fully refresh both tables on a monthly basis.
 
-### Tools & Skills Used
-
-**Tools:** PostgreSQL
-
-**Skills:**
-- PL/pgSQL scripting
-- Data transformation (timestamp extraction)
-- Joins & subqueries
-- Table creation & triggers
-- Stored procedures
-- Workflow automation using pgAgent (PostgreSQL's job scheduler)
 
 ## Key SQL Components
 
-<a href="https://github.com/nvu01/Advanced-Data-Management/blob/main/dvdrental%20project.sql" target="_blank">View full SQL script</a>
+<a href="https://github.com/nvu01/Advanced-Data-Management/blob/main/dvdrental%20project.sql" target="_blank">View full SQL script in new tab</a>
 
 ### Extracting Year and Month with Functions
 
