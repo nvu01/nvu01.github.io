@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Power BI Report: Analyzing LapCat vs LapDog Performance at Waggle"
+title: "Power BI Dashboard: Analyzing LapCat vs LapDog Performance at Waggle"
 description: >
   Power BI • DAX • Power Query • Data visualization • Branding
 image: /assets/img/posts/5/andrew-s-ouo1hbizWwo-unsplash.jpg
