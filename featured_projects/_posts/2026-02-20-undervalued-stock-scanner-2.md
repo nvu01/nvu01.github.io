@@ -38,17 +38,19 @@ So I rebuilt the entire system in Python, all outside the constraints of Excel.
 ## Re-Engineering the Pipeline
 
 Instead of relying on fragmented workbook refresh cycles, the new system uses Python scripts that:
-- Process raw sector CSV files and applies valuation logic in batch
+- Process raw CSV files and applies valuation logic in batch
 - Monitor held positions for red flags
-- Generate on-demand fundamental snapshots
+- Generate on-demand snapshots of stock fundamentals
 
 Raw sector CSV exports are placed into predefined input folders. From there, the scripts automatically retrieve all relevant files, process them in batch, apply screening and statistical logic, and export Excel outputs into designated destination folders. Those outputs then serve as clean, structured data sources for the Power BI dashboards.
 
-The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.
+**The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.**
 
 The scripts use Python’s *os* and *glob* libraries to automatically locate and retrieve all relevant files and export structured outputs into designated destination folders. The system maintains consistent naming conventions and directory organization. This design reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors.
 
 Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.
+
+I also created *.bat* files to streamline batch execution, allowing scripts to be run with just a few clicks.
 
 
 ## Conceptual Framework Summary
@@ -66,9 +68,11 @@ For a deeper dive into the original methodology and screening logic, see <a href
 
 ## Explore the Dashboards
 
-Below are the interactive dashboards that bring this system to life.
-
 #### Undervalued Stock Scanner Dashboard
+
+For this scanner version, I added a drill-through page that allows users to right-click on any stock to navigate to a detailed profile view displaying all available information for the selected company: its full company name, valuation metrics and scores. I also added a dynamic link to the company’s profile on Yahoo Finance so I can jump straight from the analysis to real-world research.
+
+Visually, I went with a frosty glass aesthetic to give it a more polished, modern feel. The dashboard uses Deneb visuals, which let me write JSON to fine-tune every aspect of the charts exactly the way I want.
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjMyNWFiOTQtZTdjYy00MDExLWEzNWUtYzYxODllZDY1MGI3IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
@@ -80,7 +84,7 @@ Below are the interactive dashboards that bring this system to life.
     height: 780px;
     transform: scale(0.65);
     transform-origin: 0 0;
-    margin-bottom: -290px;
+    margin-bottom: -240px;
     border: none;
     display: block;
   "
@@ -88,20 +92,12 @@ Below are the interactive dashboards that bring this system to life.
   allowfullscreen="true">
 </iframe>
 
-
->I added a drill-through page that allows users to right-click on any stock to navigate to a detailed profile view displaying all available fundamentals for the selected company: its full company name, valuation metrics and scores. I also added a dynamic link to the company’s profile on Yahoo Finance so I can jump straight from the analysis to real-world research.
->
->Visually, I went with a frosty glass aesthetic to give it a more polished, modern feel. The dashboard uses Deneb visuals, which let me write JSON to fine-tune every aspect of the charts exactly the way I want.
-{:.lead}
-
 #### Exit Signals Dashboard
+The Exit Signals dashboard uses conditional formatting to highlight valuation and quality signals that classify stocks into red flag types. Its simple layout, combined with dynamic filtering, allows for focused risk review.
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
 <iframe title="Exit Signals" style="width: 100%; height: 56vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
-
->The Exit Signals dashboard uses conditional formatting to highlight valuation and quality signals that classify stocks into red flag types. Its simple layout, combined with dynamic filtering, allows for focused risk review.
-{:.lead}
 
 
 ## Final Reflection
