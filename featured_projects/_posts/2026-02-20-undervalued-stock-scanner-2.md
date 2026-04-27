@@ -59,11 +59,11 @@ The scanner evaluates key fundamentals like P/FCF, P/B, P/E, ROE, ROA, and A/E. 
 
 A stock passes the preliminary scan only if it meets all baseline conditions. Stocks that pass are then ranked using bonus signals.
 
+For a deeper dive into the original methodology and screening logic, see <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/#what-makes-a-stock-undervalued" target="_blank" rel="noopener">What Makes a Stock Undervalued?</a>
+
 A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering these specialized metrics would require additional resources that I don't have access to. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.
 
 One of the biggest upgrades is the Exit Signals Framework. The original project only identified undervalued stocks. Now, it also flags overvaluation, quality deterioration, and severe financial red flags for held positions. These are review triggers, not automatic sell signals. My goal was to design a system that helps me manage the full lifecycle of an investment decision.
-
-For a deeper dive into the original methodology and screening logic, see <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/#what-makes-a-stock-undervalued" target="_blank" rel="noopener">What Makes a Stock Undervalued?</a>
 
 
 ## Explore the Dashboards
