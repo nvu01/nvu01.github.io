@@ -99,6 +99,7 @@ The Exit Signals dashboard uses conditional formatting to highlight valuation an
 
 <iframe title="Exit Signals" style="width: 100%; height: 56vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
 
+Note: Some data in the dashboard's data source was masked and concealed to ensure personal and financial information security. Hence, the dashboard does not reflect my real portfolio holdings.
 
 ## Final Reflection
 
