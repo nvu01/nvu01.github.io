@@ -12,6 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      EXECJS_RUNTIME: Node
+      NODE_ENV: production
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
