@@ -64,19 +64,24 @@ The main analytical approach was a **multiple linear regression** method, which 
 To evaluate the model’s predictive performance, I used metrics such as **R-squared** on both the training and test sets, **adjusted R-squared**, and **mean squared error (MSE)** on the test set. These metrics provided insight into how well the model fit the training data and how accurately it predicted poverty rates on new, unseen data.
 
 To evaluate the role of socioeconomic factors in explaining poverty rates across U.S. counties, both a global and individual hypothesis testing framework will be used.
-- **Global hypothesis** (F-test): This test evaluates whether the full set of predictors contributes to explaining poverty rates.
-  - Null hypothesis: All regression coefficients are equal to zero.  
-      $$ H_0:\;\beta_1=\beta_2=\dots=\beta_k=0 $$
 
-  - Alternative hypothesis: At least one regression coefficient is not equal to zero.  
-      $$ H_1:\;\text{at least one } \beta_i \ne 0 $$
+- **Global hypothesis** (F-test): This test evaluates whether the full set of predictors contributes to explaining poverty rates.
+  - Null hypothesis: All regression coefficients are equal to zero.
+  
+$$ H_0: \beta_1 = \beta_2 = \dots = \beta_k = 0 $$
+
+  - Alternative hypothesis: At least one regression coefficient is not equal to zero.
+  
+$$ H_1: \text{at least one } \beta_i \neq 0 $$
 
 - **Individual hypotheses** (t-test for each coefficient): These tests assess the significance of each predictor.
-	- Null Hypothesis: The coefficient for predictor i is zero.  
-    $$ H_0:\;\beta_i = 0 $$
+  - Null Hypothesis: The coefficient for predictor i is zero.
+  
+$$ H_0: \beta_i = 0 $$
 
-	- Alternative Hypothesis: The coefficient for predictor i is not zero.  
-    $$ H_0:\;\beta_i \neq 0 $$
+  - Alternative Hypothesis: The coefficient for predictor i is not zero.
+  
+$$ H_1: \beta_i \neq 0 $$
 
 To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using **MinMaxScaler** before fitting the model. This will ensure that the predictors are on the same scale.
 
