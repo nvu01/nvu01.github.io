@@ -38,37 +38,38 @@ So I rebuilt the entire system in Python, all outside the constraints of Excel.
 ## Re-Engineering the Pipeline
 
 Instead of relying on fragmented workbook refresh cycles, the new system uses Python scripts that:
-- Process raw CSV files and applies valuation logic in batch
-- Monitor held positions for red flags
-- Generate on-demand snapshots of stock fundamentals
+- Batch Processing: Processes raw CSV files and applies valuation logic in bulk.
+- Risk Monitoring: Tracks held positions for active financial red flags.
+- Historical Storage: Commits monthly stock data to a local SQLite database for time-series trend analysis.
 
 Raw sector CSV exports are placed into predefined input folders. From there, the scripts automatically retrieve all relevant files, process them in batch, apply screening and statistical logic, and export Excel outputs into designated destination folders. Those outputs then serve as clean, structured data sources for the Power BI dashboards.
 
-**The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.**
+**The process becomes: Drop files in → Run the scripts → Clean outputs generated → Update SQLite Database → Refresh dashboards.**
 
-The scripts use Python’s *os* and *glob* libraries to automatically locate and retrieve all relevant files and export structured outputs into designated destination folders. The system maintains consistent naming conventions and directory organization. This design reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors.
+This architecture reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors. Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.
 
-Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.
-
-I also created *.bat* files to streamline batch execution, allowing scripts to be run with just a few clicks.
+To further streamline operations, I created .bat files to allow full batch execution with a single click.
 
 
 ## Conceptual Framework Summary
 
 The scanner evaluates key fundamentals like P/FCF, P/B, P/E, ROE, ROA, and A/E. To make comparisons fair, it assesses stocks relative to industry peers in the same market cap groups rather than across the entire market. Outliers are filtered using quartile bounds, and z-scores standardize each metric to allow consistent comparison between stocks.
 
-A stock passes the preliminary scan only if it meets all baseline conditions. Stocks that pass are then ranked using bonus signals.
+Stocks must clear all baseline conditions to pass the preliminary scan, after which they are ranked using additional bonus signals.
 
 For a deeper dive into the original methodology and screening logic, see <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/#what-makes-a-stock-undervalued" target="_blank" rel="noopener">What Makes a Stock Undervalued?</a>
 
-A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering these specialized metrics would require additional resources that I don't have access to. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.
+Key Scope & Feature Upgrades:
+- Sector Optimization (Excluding REITs): Real Estate Investment Trusts (REITs) are explicitly excluded from the scanner. Evaluating REITs accurately requires specialized metrics like AFFO, NAV, and NOI. Because sourcing this data requires premium resources, the scanner purposefully focuses on non-REIT companies where standard fundamental metrics remain highly meaningful and comparable.
+- Exit Signals Framework: While the initial iteration only identified undervalued entries, this upgrade introduces an active monitoring framework. The system flags overvaluation, quality deterioration, and severe financial red flags for existing positions. These act as systematic review triggers rather than automated sell signals.
+- Time-Series Analysis: By capturing historical data over time, the system enables diagnostic health checks on individual stocks.
 
-One of the biggest upgrades is the Exit Signals Framework. The original project only identified undervalued stocks. Now, it also flags overvaluation, quality deterioration, and severe financial red flags for held positions. These are review triggers, not automatic sell signals. My goal was to design a system that helps me manage the full lifecycle of an investment decision.
+My goal was to design a system that helps me manage the full lifecycle of an investment decision.
 
 
 ## Explore the Dashboards
 
-#### Undervalued Stock Scanner Dashboard
+#### 1. Undervalued Stock Scanner Dashboard
 
 For this scanner version, I added a drill-through page that allows users to right-click on any stock to navigate to a detailed profile view displaying all available information for the selected company: its full company name, valuation metrics and scores. I also added a dynamic link to the company’s profile on Yahoo Finance so I can jump straight from the analysis to real-world research.
 
@@ -92,12 +93,15 @@ Visually, I went with a frosty glass aesthetic to give it a more polished, moder
   allowfullscreen="true">
 </iframe>
 
-#### Exit Signals Dashboard
-The Exit Signals dashboard uses conditional formatting to highlight valuation and quality signals that classify stocks into red flag types. Its simple layout, combined with dynamic filtering, allows for focused risk review.
+#### 2. Stock Monitor Dashboard
+
+**Exit Signals View**: Employs precise conditional formatting to categorize and highlight specific risk types, utilizing dynamic filters for rapid portfolio health reviews.
+
+**Trend Analysis View**: Surfaces interactive time-series charts for every tracked metric, making it easy to isolate and analyze historical performance trajectories for any chosen ticker.
 
 👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.
 
-<iframe title="Exit Signals" style="width: 100%; height: 56vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
+<iframe title="Stock Monitor" style="width: 100%; height: 56vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiOGFiYTkwNjAtMjU3NS00YmNkLWI0OTEtMzI2NDFlNmFkNzMxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true" ></iframe>
 
 Note: Some data in the dashboard's data source was masked and concealed to ensure personal and financial information security. Hence, the dashboard does not reflect my real portfolio holdings.
 
