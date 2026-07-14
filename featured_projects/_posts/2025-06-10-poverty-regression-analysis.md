@@ -67,20 +67,20 @@ To evaluate the role of socioeconomic factors in explaining poverty rates across
 
 - **Global hypothesis** (F-test): This test evaluates whether the full set of predictors contributes to explaining poverty rates.
   - Null hypothesis: All regression coefficients are equal to zero.
-  
-$$ H_0: \beta_1 = \beta_2 = \dots = \beta_k = 0 $$
+
+$$ H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0 $$
 
   - Alternative hypothesis: At least one regression coefficient is not equal to zero.
-  
-$$ H_1: \text{at least one } \beta_i \neq 0 $$
+
+$$ H_1: \text{At least one } \beta_i \neq 0 $$
 
 - **Individual hypotheses** (t-test for each coefficient): These tests assess the significance of each predictor.
   - Null Hypothesis: The coefficient for predictor i is zero.
-  
+
 $$ H_0: \beta_i = 0 $$
 
   - Alternative Hypothesis: The coefficient for predictor i is not zero.
-  
+
 $$ H_1: \beta_i \neq 0 $$
 
 To evaluate the relative importance of each socioeconomic factor in explaining poverty rates, I also used the standardized coefficients from the multiple linear regression model. These coefficients were obtained by scaling all independent variables using **MinMaxScaler** before fitting the model. This will ensure that the predictors are on the same scale.
