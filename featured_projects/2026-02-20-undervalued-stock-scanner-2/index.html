@@ -43,12 +43,12 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta property="og:image" content="https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-02-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2026-07-14T23:39:34+00:00" />
+<meta property="article:modified_time" content="2026-07-14T23:42:28+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg" />
 <meta name="twitter:title" content="Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-07-14T23:39:34+00:00","datePublished":"2026-02-20T00:00:00+00:00","description":"Python (os, glob, pandas, numpy) • Power BI • DAX • Deneb visuals • Power Query • ETL pipeline","headline":"Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines","image":"https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ngan Vu"},"dateModified":"2026-07-14T23:42:28+00:00","datePublished":"2026-02-20T00:00:00+00:00","description":"Python (os, glob, pandas, numpy) • Power BI • DAX • Deneb visuals • Power Query • ETL pipeline","headline":"Undervalued Stock Scanner 2.0: From Spreadsheet Automation to Scalable Python Pipelines","image":"https://nvu01.github.io//assets/img/posts/6/Untitled%20design%202.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nvu01.github.io//assets/img/logo/logo_black_bg.png"},"name":"Ngan Vu"},"url":"https://nvu01.github.io//featured_projects/2026-02-20-undervalued-stock-scanner-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -121,7 +121,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2026-07-14T23:40:01+00:00',
+    INDEX_KEY: 'index--2026-07-14T23:42:57+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -306,7 +306,7 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
             <span class="ellipsis" data-tippy-content="Last modified at: 14 Jul 2026">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2026-07-14T23:39:34+00:00">2026-07-14</time>
+              <time datetime="2026-07-14T23:42:28+00:00">2026-07-14</time>
             </span>
           
         
@@ -365,8 +365,8 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   <li><a href="#re-engineering-the-pipeline" id="markdown-toc-re-engineering-the-pipeline">Re-Engineering the Pipeline</a></li>
   <li><a href="#conceptual-framework-summary" id="markdown-toc-conceptual-framework-summary">Conceptual Framework Summary</a></li>
   <li><a href="#explore-the-dashboards" id="markdown-toc-explore-the-dashboards">Explore the Dashboards</a>    <ul>
-      <li><a href="#undervalued-stock-scanner-dashboard" id="markdown-toc-undervalued-stock-scanner-dashboard">Undervalued Stock Scanner Dashboard</a></li>
-      <li><a href="#exit-signals-dashboard" id="markdown-toc-exit-signals-dashboard">Exit Signals Dashboard</a></li>
+      <li><a href="#1-undervalued-stock-scanner-dashboard" id="markdown-toc-1-undervalued-stock-scanner-dashboard">1. Undervalued Stock Scanner Dashboard</a></li>
+      <li><a href="#2-stock-monitor-dashboard" id="markdown-toc-2-stock-monitor-dashboard">2. Stock Monitor Dashboard</a></li>
     </ul>
   </li>
   <li><a href="#final-reflection" id="markdown-toc-final-reflection">Final Reflection</a></li>
@@ -400,36 +400,39 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
 
 <p>Instead of relying on fragmented workbook refresh cycles, the new system uses Python scripts that:</p>
 <ul>
-  <li>Process raw CSV files and applies valuation logic in batch</li>
-  <li>Monitor held positions for red flags</li>
-  <li>Generate on-demand snapshots of stock fundamentals</li>
+  <li>Batch Processing: Processes raw CSV files and applies valuation logic in bulk.</li>
+  <li>Risk Monitoring: Tracks held positions for active financial red flags.</li>
+  <li>Historical Storage: Commits monthly stock data to a local SQLite database for time-series trend analysis.</li>
 </ul>
 
 <p>Raw sector CSV exports are placed into predefined input folders. From there, the scripts automatically retrieve all relevant files, process them in batch, apply screening and statistical logic, and export Excel outputs into designated destination folders. Those outputs then serve as clean, structured data sources for the Power BI dashboards.</p>
 
-<p><strong>The process becomes: Drop files in → Run the scripts → Clean outputs generated → Refresh dashboard.</strong></p>
+<p><strong>The process becomes: Drop files in → Run the scripts → Clean outputs generated → Update SQLite Database → Refresh dashboards.</strong></p>
 
-<p>The scripts use Python’s <em>os</em> and <em>glob</em> libraries to automatically locate and retrieve all relevant files and export structured outputs into designated destination folders. The system maintains consistent naming conventions and directory organization. This design reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors.</p>
+<p>This architecture reduces manual error, improves reproducibility, and makes the workflow significantly easier to scale across sectors. Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.</p>
 
-<p>Most importantly, calculation logic is now explicit and centralized in code rather than distributed across interconnected spreadsheet formulas.</p>
-
-<p>I also created <em>.bat</em> files to streamline batch execution, allowing scripts to be run with just a few clicks.</p>
+<p>To further streamline operations, I created .bat files to allow full batch execution with a single click.</p>
 
 <h2 id="conceptual-framework-summary">Conceptual Framework Summary</h2>
 
 <p>The scanner evaluates key fundamentals like P/FCF, P/B, P/E, ROE, ROA, and A/E. To make comparisons fair, it assesses stocks relative to industry peers in the same market cap groups rather than across the entire market. Outliers are filtered using quartile bounds, and z-scores standardize each metric to allow consistent comparison between stocks.</p>
 
-<p>A stock passes the preliminary scan only if it meets all baseline conditions. Stocks that pass are then ranked using bonus signals.</p>
+<p>Stocks must clear all baseline conditions to pass the preliminary scan, after which they are ranked using additional bonus signals.</p>
 
 <p>For a deeper dive into the original methodology and screening logic, see <a href="https://nvu01.github.io/featured_projects/2025-06-15-undervalued-stock-scanner/#what-makes-a-stock-undervalued" target="_blank" rel="noopener">What Makes a Stock Undervalued?</a></p>
 
-<p>A small change in business logic: REITs in the Real Estate sector are excluded. Metrics like AFFO, NAV, and NOI are more appropriate for evaluating REITs, but gathering these specialized metrics would require additional resources that I don’t have access to. For now, the scanner focuses on non-REIT companies, where standard fundamentals are meaningful and comparable.</p>
+<p>Key Scope &amp; Feature Upgrades:</p>
+<ul>
+  <li>Sector Optimization (Excluding REITs): Real Estate Investment Trusts (REITs) are explicitly excluded from the scanner. Evaluating REITs accurately requires specialized metrics like AFFO, NAV, and NOI. Because sourcing this data requires premium resources, the scanner purposefully focuses on non-REIT companies where standard fundamental metrics remain highly meaningful and comparable.</li>
+  <li>Exit Signals Framework: While the initial iteration only identified undervalued entries, this upgrade introduces an active monitoring framework. The system flags overvaluation, quality deterioration, and severe financial red flags for existing positions. These act as systematic review triggers rather than automated sell signals.</li>
+  <li>Time-Series Analysis: By capturing historical data over time, the system enables diagnostic health checks on individual stocks.</li>
+</ul>
 
-<p>One of the biggest upgrades is the Exit Signals Framework. The original project only identified undervalued stocks. Now, it also flags overvaluation, quality deterioration, and severe financial red flags for held positions. These are review triggers, not automatic sell signals. My goal was to design a system that helps me manage the full lifecycle of an investment decision.</p>
+<p>My goal was to design a system that helps me manage the full lifecycle of an investment decision.</p>
 
 <h2 id="explore-the-dashboards">Explore the Dashboards</h2>
 
-<h4 id="undervalued-stock-scanner-dashboard">Undervalued Stock Scanner Dashboard</h4>
+<h4 id="1-undervalued-stock-scanner-dashboard">1. Undervalued Stock Scanner Dashboard</h4>
 
 <p>For this scanner version, I added a drill-through page that allows users to right-click on any stock to navigate to a detailed profile view displaying all available information for the selected company: its full company name, valuation metrics and scores. I also added a dynamic link to the company’s profile on Yahoo Finance so I can jump straight from the analysis to real-world research.</p>
 
@@ -448,12 +451,15 @@ html{--accent-color: rgb(245,245,245);--accent-color-faded: rgba(245, 245, 245, 
   " frameborder="0" allowfullscreen="true">
 </iframe>
 
-<h4 id="exit-signals-dashboard">Exit Signals Dashboard</h4>
-<p>The Exit Signals dashboard uses conditional formatting to highlight valuation and quality signals that classify stocks into red flag types. Its simple layout, combined with dynamic filtering, allows for focused risk review.</p>
+<h4 id="2-stock-monitor-dashboard">2. Stock Monitor Dashboard</h4>
+
+<p><strong>Exit Signals View</strong>: Employs precise conditional formatting to categorize and highlight specific risk types, utilizing dynamic filters for rapid portfolio health reviews.</p>
+
+<p><strong>Trend Analysis View</strong>: Surfaces interactive time-series charts for every tracked metric, making it easy to isolate and analyze historical performance trajectories for any chosen ticker.</p>
 
 <p>👉 <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" target="_blank" rel="noopener">Open the dashboard in new tab</a>.</p>
 
-<iframe title="Exit Signals" style="width: 100%; height: 56vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYzI4MWZmMGYtZTYwNy00MmNjLWI3NDUtZWRlOWM5ZGFhY2U0IiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+<iframe title="Stock Monitor" style="width: 100%; height: 56vh;" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiOGFiYTkwNjAtMjU3NS00YmNkLWI0OTEtMzI2NDFlNmFkNzMxIiwidCI6IjEwZGVlN2UzLWJjMGQtNGNjNy1iMzZhLWEzZDQzMGEzZGI5ZCIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
 
 <p>Note: Some data in the dashboard’s data source was masked and concealed to ensure personal and financial information security. Hence, the dashboard does not reflect my real portfolio holdings.</p>
 
